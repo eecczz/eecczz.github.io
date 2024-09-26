@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hwang Seonwoo
+title: 황선우
 
 # Is this the primary user of the site?
 superuser: true
