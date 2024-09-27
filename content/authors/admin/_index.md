@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 게임과 웹을 개발하고 있습니다.
+bio: 다양한 장르의 게임과 웹을 개발하고 있습니다.
 
 #interests:
 #- Artificial Intelligence
