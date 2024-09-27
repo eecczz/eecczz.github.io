@@ -6,7 +6,7 @@ title: 황선우
 superuser: true
 
 # Role/position
-role: ''
+role: '백엔드/게임 개발'
 
 # Status emoji
 status:
