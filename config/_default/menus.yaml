@@ -10,12 +10,12 @@ main:
   - name: Resumé
     url: about/
     weight: 20
-  - name: Resumé1
-    url: about/contact/
-    weight: 20
-  - name: Resumé2
-    url: about/education/
-    weight: 20
-  - name: Resumé3
-    url: about/experience/
-    weight: 20
+  - name: contact
+    url: about/
+    weight: 30
+  - name: education
+    url: about/
+    weight: 40
+  - name: experience
+    url: about/
+    weight: 50
