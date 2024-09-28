@@ -11,11 +11,11 @@ main:
     url: about/
     weight: 20
   - name: Resumé1
-    url: contact/
+    url: about/contact/
     weight: 30
   - name: Resumé2
-    url: education/
+    url: about/education/
     weight: 40
   - name: Resumé3
-    url: experience/
+    url: about/experience/
     weight: 50
