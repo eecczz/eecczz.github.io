@@ -10,3 +10,5 @@ languages:
     languageName: "한국어"
     weight: 2
     contentDir: "content/ko"
+params:
+  fontawesome: true
