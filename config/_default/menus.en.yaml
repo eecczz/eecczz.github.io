@@ -20,8 +20,6 @@ main:
     weight: 30
 
   - identifier: "language"
-    name: "language"
-    url: "#"
     weight: 40
     pre: '<i class="fas fa-globe"></i>'
     children:
