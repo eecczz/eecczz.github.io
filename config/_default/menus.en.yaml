@@ -15,3 +15,7 @@ main:
   - name: "contact"
     url: "/contact/"
     weight: 30
+  - name: ""
+    url: "/search/"
+    weight: 30
+    pre: '<i class="fas fa-search"></i>'  # 검색 아이콘 추가
