@@ -4,18 +4,30 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
-    url: /
+  - identifier: "home"
+    name: "{{ i18n 'menu.home' }}"  # i18n 파일에서 'menu.home' 키를 사용
+    url: "/"
     weight: 10
-  - name: Resumé
-    url: about/
+
+  - identifier: "about"
+    name: "{{ i18n 'menu.about' }}"
+    url: "/about/"
     weight: 20
-  - name: contact
-    url: about/
+
+  - identifier: "contact"
+    name: "{{ i18n 'menu.contact' }}"
+    url: "/contact/"
     weight: 30
-  - name: education
-    url: about/
+
+  - identifier: "language"
+    name: "{{ i18n 'menu.language' }}"
+    url: "#"
     weight: 40
-  - name: experience
-    url: about/
-    weight: 50
+    pre: '<i class="fas fa-globe"></i>'
+    children:
+      - name: "English"
+        url: "/en/"
+        identifier: "en"
+      - name: "한국어"
+        url: "/ko/"
+        identifier: "ko"

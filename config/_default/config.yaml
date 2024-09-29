@@ -1,2 +1,11 @@
 title: My Page
 baseURL: 'https://eecczz.github.io/'
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en"
+  ko:
+    languageName: "한국어"
+    weight: 2
+    contentDir: "content/ko"

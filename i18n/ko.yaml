@@ -1,0 +1,8 @@
+menu.home:
+  other: "홈"
+menu.about:
+  other: "소개"
+menu.contact:
+  other: "연락처"
+menu.language:
+  other: "언어"
