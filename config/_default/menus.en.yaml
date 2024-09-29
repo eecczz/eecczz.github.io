@@ -4,17 +4,14 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - identifier: "home"
-    name: "home"  # i18n 파일에서 'menu.home' 키를 사용
+  - name: "home"  # i18n 파일에서 'menu.home' 키를 사용
     url: "/"
     weight: 10
 
-  - identifier: "about"
-    name: "about"
+  - name: "about"
     url: "/about/"
     weight: 20
 
-  - identifier: "contact"
-    name: "contact"
+  - name: "contact"
     url: "/contact/"
     weight: 30
