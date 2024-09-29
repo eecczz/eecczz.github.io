@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: eecczz's page # Website name
+title: 'eecczz's page' # Website name
 baseURL: 'https://eecczz.github.io/' # Website URL
 
 ############################
