@@ -10,6 +10,3 @@ languages:
     languageName: "한국어"
     weight: 2
     contentDir: "content/ko"
-features:
-  search:
-    provider: wowchemy
