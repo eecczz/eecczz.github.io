@@ -19,8 +19,8 @@ main:
     url: "/contact/"
     weight: 30
 
-    pre: '<i class="fas fa-globe"></i>'  # 아이콘만 표시
     children:
+        pre: '<i class="fas fa-globe"></i>'  # 아이콘만 표시
       - name: "English"
         url: "/en/"
         identifier: "en"
