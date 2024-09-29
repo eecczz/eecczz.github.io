@@ -13,9 +13,9 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-organizations:
-- name: 腾讯
-  url: ""
+#organizations:
+#- name: 腾讯
+#  url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: 게임, 웹을 개발하고 있습니다.
