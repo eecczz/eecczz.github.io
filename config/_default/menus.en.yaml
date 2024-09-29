@@ -20,8 +20,10 @@ main:
     weight: 30
 
   - identifier: "language"
+    name: ""  # 빈 값으로 설정해서 '언어' 텍스트 숨김
+    url: ""   # URL 비워서 클릭 불가하게 설정
     weight: 40
-    pre: '<i class="fas fa-globe"></i>'
+    pre: '<i class="fas fa-globe"></i>'  # 아이콘만 표시
     children:
       - name: "English"
         url: "/en/"
