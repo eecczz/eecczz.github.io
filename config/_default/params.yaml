@@ -93,7 +93,7 @@ features:
       min_length: 1  # Only the matches whose length exceeds this value will be returned.
       threshold: 0.3  # Where 0 requires a perfect match and 1 matches anything.
   map:
-    provider: ''
+    provider: 'mapnik'
     api_key: ''
     zoom: 15
 
