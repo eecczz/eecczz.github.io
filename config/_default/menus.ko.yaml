@@ -5,22 +5,22 @@
 
 main:
   - identifier: "home"
-    name: "menu.home"  # i18n 파일에서 'menu.home' 키를 사용
+    name: "홈"  # i18n 파일에서 'menu.home' 키를 사용
     url: "/"
     weight: 10
 
   - identifier: "about"
-    name: "menu.about"
+    name: "소개"
     url: "/about/"
     weight: 20
 
   - identifier: "contact"
-    name: "menu.contact"
+    name: "연락처"
     url: "/contact/"
     weight: 30
 
   - identifier: "language"
-    name: "menu.language"
+    name: "언어"
     url: "#"
     weight: 40
     pre: '<i class="fas fa-globe"></i>'
