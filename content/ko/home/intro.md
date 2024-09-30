@@ -16,12 +16,6 @@ author: admin
 #    video:
 #      path:  # enter filename of a video in /assets/media
 #  css_class: fullscreen
----
-
-👋 Hi, there! I'm **Alice**, a machine learning researcher at Netflix.
-{style="font-size: 1.2rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-
-Check out my [resumé](/about/) and portfolio below 😍
 
 - block: slider
     content:
@@ -130,3 +124,9 @@ Check out my [resumé](/about/) and portfolio below 😍
       loop: true
       # Duration of transition between slides (in ms)
       interval: 3000
+---
+
+👋 Hi, there! I'm **Alice**, a machine learning researcher at Netflix.
+{style="font-size: 1.2rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+
+Check out my [resumé](/about/) and portfolio below 😍
