@@ -36,7 +36,6 @@ content:
       tag: NLP
 
 design:
-  columns: '1'
   view: community/custom_card
   columns: '2'
 ---
