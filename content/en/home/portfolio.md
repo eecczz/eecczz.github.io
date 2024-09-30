@@ -37,5 +37,8 @@ content:
 
 design:
   view: community/custom_card
-  columns: '2'
+  columns: '1'
+  flip_alt_rows: true
+  background: {}
+  spacing: {padding: [0, 0, 0, 0]}
 ---

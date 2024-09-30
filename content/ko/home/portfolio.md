@@ -36,8 +36,8 @@ content:
       tag: NLP
 
 design:
+  view: community/custom_card
   columns: '1'
-  view: masonry
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
