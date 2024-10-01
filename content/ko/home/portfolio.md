@@ -13,10 +13,8 @@ weight: 20
 title: ''
 subtitle: ''
 
-sections:
-  - block: slider
-    content:
-      slides:
+content:
+  slides:
         - title: 👋 Welcome to the group
           content: Take a look at what we're working on...
           align: center
@@ -67,8 +65,6 @@ sections:
       loop: false
       # Duration of transition between slides (in ms)
       interval: 2000
-      
-content:
   # Page type to display. E.g. project.
   page_type: project
 
