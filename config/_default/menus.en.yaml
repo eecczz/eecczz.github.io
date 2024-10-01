@@ -4,41 +4,59 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
+  # 상위 메뉴 항목
   - name: "home"  # i18n 파일에서 'menu.home' 키를 사용
     url: "/"
     weight: 10
-    children:  # 홈의 서브탭
-      - name: "main"
-        url: "/"
-  
+
   - name: "about"
     url: "/about/"
     weight: 20
-    children:  # 소개의 서브탭
-      - name: "Hwang-seonwoo"
-        url: "/about/"
 
   - name: "game projects"
     url: "/game-projects/"
     weight: 30
-    children:  # 게임프로젝트의 서브탭
-      - name: "swordplay"
-        url: "/game-projects/swordplay/"
-      - name: "soulslike game"
-        url: "/game-projects/soulslike-game/"
 
   - name: "web projects"
     url: "/web-projects/"
     weight: 40
-    children:  # 웹프로젝트의 서브탭
-      - name: "youtuve-clone"
-        url: "/web-projects/youtube-clone/"
-      - name: "쇼핑몰"
-        url: "/web-projects/shopping-mall/"
 
   - name: "contact"
     url: "/contact/"
     weight: 50
-    children:  # 연락처의 서브탭
-      - name: "join project"
-        url: "/contact/join-project/"
+
+  # 하위 메뉴 항목 (parent 속성을 사용)
+  - name: "main"
+    url: "/"
+    parent: "home"
+    weight: 11
+
+  - name: "Hwang-seonwoo"
+    url: "/about/"
+    parent: "about"
+    weight: 21
+
+  - name: "swordplay"
+    url: "/game-projects/swordplay/"
+    parent: "game projects"
+    weight: 31
+
+  - name: "soulslike game"
+    url: "/game-projects/soulslike-game/"
+    parent: "game projects"
+    weight: 32
+
+  - name: "youtube-clone"
+    url: "/web-projects/youtube-clone/"
+    parent: "web projects"
+    weight: 41
+
+  - name: "shopping-mall"
+    url: "/web-projects/shopping-mall/"
+    parent: "web projects"
+    weight: 42
+
+  - name: "join project"
+    url: "/contact/join-project/"
+    parent: "contact"
+    weight: 51
