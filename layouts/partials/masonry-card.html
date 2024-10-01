@@ -1,18 +1,4 @@
 <!-- layouts/partials/masonry-card.html -->
-{{ $isCV := false }}
-{{ with .Params.tags }}
-  {{ if in . "CV" }}
-    {{ $isCV = true }}
-  {{ end }}
-{{ end }}
-
-{{ if $isCV }}
-  <!-- CV 태그가 있는 경우, 다른 템플릿을 사용 -->
-  {{ partial "masonry-team-card.html" . }}
-{{ else }}
-  <!-- 기본 masonry-card 템플릿을 사용 -->
-  {{ partial "masonry-card.html" . }}
-{{ end }}
 
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
   {{ range .Pages }}
