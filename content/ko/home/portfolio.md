@@ -34,7 +34,4 @@ content:
       tag: CV
     - name: NLP
       tag: NLP
-
-  design:
-    view: "partials/masonry-card.html"  # 분기를 처리할 partial로 설정
 ---
