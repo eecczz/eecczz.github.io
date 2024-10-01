@@ -1,5 +1,4 @@
 ---
-
 # Display name
 title: 황선우
 
@@ -21,8 +20,6 @@ status:
 # Short bio (displayed in user profile at end of posts)
 bio: 게임, 웹을 개발하고 있습니다.
 
-# This file represents a page section.
-headless: true
 #interests:
 #- Artificial Intelligence
 #- Computational Linguistics
@@ -61,16 +58,6 @@ social:
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
-
-sections:
-  - block: hero
-    content:
-      title: "Welcome to the Admin Page"
-      text: "This is the hero section of the admin page."
-  - block: markdown
-    content:
-      title: "Admin Section"
-      text: "Here you can manage the content and settings for the site."
 ---
 
 Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
