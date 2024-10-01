@@ -7,4 +7,3 @@
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
-  - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
