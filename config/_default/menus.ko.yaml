@@ -57,6 +57,6 @@ main:
     weight: 42
 
   - name: "프로젝트 참여하기"
-    url: "/contact/join-project/"
+    url: "/contact/"
     parent: "연락처"
     weight: 51

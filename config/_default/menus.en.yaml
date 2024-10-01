@@ -57,6 +57,6 @@ main:
     weight: 42
 
   - name: "join project"
-    url: "/contact/join-project/"
+    url: "/contact/"
     parent: "contact"
     weight: 51
