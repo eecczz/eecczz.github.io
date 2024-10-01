@@ -10,7 +10,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 30
 
-title: ''
+title: 'project'
 subtitle: ''
 
 content:
@@ -34,4 +34,7 @@ content:
       tag: CV
     - name: NLP
       tag: NLP
+
+  design:
+    view: "partials/masonry-card.html"  # 분기를 처리할 partial로 설정
 ---
