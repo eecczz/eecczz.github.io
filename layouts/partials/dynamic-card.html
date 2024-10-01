@@ -1,6 +1,6 @@
 <!-- layouts/partials/dynamic-card.html -->
 
-{{ $isCV := false }}
+{{ $isCV = false }}
 {{ with .Params.tags }}
   {{ if in . "CV" }}
     {{ $isCV = true }}
