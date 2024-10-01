@@ -12,8 +12,3 @@ languages:
     contentDir: "content/ko"
 # 기본적으로 Wowchemy가 테마로 설정되었는지 확인
 theme: "wowchemy"
-
-# 필요한 Wowchemy 모듈 설정
-module:
-  imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
