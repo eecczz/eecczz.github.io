@@ -36,5 +36,5 @@ content:
       tag: NLP
 
 design:
-  view: "partials/dynamic-card.html"
+  view: "partials/masonry-card.html"
 ---
