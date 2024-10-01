@@ -1,4 +1,4 @@
-<!-- layouts/partials/masonry-card.html -->
+<!-- layouts/partials/masonry-team-card.html -->
 
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
   {{ range .Pages }}
@@ -9,6 +9,14 @@
           <a href="{{ .Permalink }}">{{ .Title }}</a> <!-- 제목이 이미지 아래에 위치 -->
         </h2>
         <p class="masonry-card-summary">{{ .Params.summary }}</p> <!-- 설명이 제목 아래에 위치 -->
+        
+        <!-- 대회종류 추가 -->
+        {{ with .Params.competition }}
+        <p class="masonry-card-competition">
+          <strong>Competition:</strong> {{ . }} <!-- 대회종류 텍스트 -->
+        </p>
+        {{ end }}
+
       </div>
   </div>
   {{ end }}
@@ -59,5 +67,12 @@
 .masonry-card-summary {
   font-size: 0.9rem;
   color: #666;
+}
+
+/* 대회종류 스타일 */
+.masonry-card-competition {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 8px;
 }
 </style>
