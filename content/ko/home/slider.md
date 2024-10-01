@@ -8,7 +8,7 @@ content:
   title: "AI Research"
   text: "Explore AI research"
   image:
-    filename: Ai.jpg
+    filename: "Ai.jpg" 
     position: center
     color: '#000'
 design:
