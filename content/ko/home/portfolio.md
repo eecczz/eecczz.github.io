@@ -35,6 +35,5 @@ content:
     - name: NLP
       tag: NLP
 
-  design:
-    view: masonry-card  # 분기를 처리할 partial로 설정
+  view: masonry-card  # 분기를 처리할 partial로 설정
 ---
