@@ -35,6 +35,6 @@ content:
     - name: NLP
       tag: NLP
 
-  design:
-    view: "partials/dynamic-card.html"  # 분기를 처리할 partial로 설정
+design:
+  view: "partials/masonry-card.html"
 ---
