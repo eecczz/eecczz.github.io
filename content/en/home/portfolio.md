@@ -36,5 +36,5 @@ content:
       tag: NLP
 
 design:
-  view: "partials/community/custom_card.html"
+  view: community/custom_card
 ---
