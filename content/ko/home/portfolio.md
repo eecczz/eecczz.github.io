@@ -35,6 +35,5 @@ content:
     - name: NLP
       tag: NLP
 
-design:
-  view: "partials/masonry-card.html"
+view: masonry-card
 ---
