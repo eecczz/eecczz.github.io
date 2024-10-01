@@ -2,7 +2,7 @@
 # A section created with the Portfolio widget.
 # This section displays content from `content/project/`.
 # See https://docs.hugoblox.com/widget/portfolio/
-widget: masonry-card
+widget: custom-card
 
 # This file represents a page section.
 headless: true
@@ -10,7 +10,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 30
 
-title: ''
+title: 'card'
 subtitle: ''
 
 content:
