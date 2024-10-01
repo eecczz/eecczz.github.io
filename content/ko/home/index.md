@@ -1,7 +1,4 @@
 ---
-# Homepage
-type: widget_page
-
 sections:
   - block: slider
     content:
