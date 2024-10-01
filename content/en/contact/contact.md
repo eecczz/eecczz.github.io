@@ -1,7 +1,9 @@
 ---
 widget: contact
-headless: true  # 이 섹션이 다른 페이지에서 참조되기 위한 것인지 여부
-weight: 50  # 이 섹션이 페이지 내에서 표시되는 순서
+weight: 20  # 이 섹션이 페이지 내에서 표시되는 순서
+# Set to true to publish this section
+active: true
+type: landing
 title: 'Contact'
 
 content:
