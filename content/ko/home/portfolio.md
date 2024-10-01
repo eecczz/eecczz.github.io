@@ -4,9 +4,6 @@
 # See https://docs.hugoblox.com/widget/portfolio/
 widget: portfolio
 
-# This file represents a page section.
-headless: true
-
 # Order that this section appears on the page.
 weight: 30
 
@@ -36,5 +33,5 @@ content:
       tag: NLP
 
   design:
-    view: "partials/masonry-card.html"  # 분기를 처리할 partial로 설정
+    view: "masonry-card"  # 분기를 처리할 partial로 설정
 ---
