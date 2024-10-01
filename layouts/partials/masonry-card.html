@@ -1,16 +1,6 @@
 <!-- layouts/partials/masonry-card.html -->
 
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
-  {{ range .Pages }}
-  <div class="masonry-card">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="masonry-card-image"> <!-- 이미지가 왼쪽에 위치 -->
-      <div class="masonry-card-content">
-        <h2 class="masonry-card-title">
-          <a href="{{ .Permalink }}">{{ .Title }}</a> <!-- 제목이 이미지 오른쪽에 위치 -->
-        </h2>
-        <p class="masonry-card-summary">{{ .Params.summary }}</p> <!-- 설명이 제목 아래에 위치 -->
-      </div>
-  </div>
-  {{ end }}
+
 </div>
 
