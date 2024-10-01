@@ -5,7 +5,7 @@
 widget: portfolio
 
 # This file represents a page section.
-headless: false
+headless: true
 
 # Order that this section appears on the page.
 weight: 30
@@ -35,6 +35,4 @@ content:
     - name: NLP
       tag: NLP
 
-design:
-  view: masonry-card
 ---
