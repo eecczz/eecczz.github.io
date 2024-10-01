@@ -1,6 +1,7 @@
 ---
-widget: hero  # slider 대신 hero 위젯을 사용하여 슬라이더를 구현
+widget: slider  # slider 대신 hero 위젯을 사용하여 슬라이더를 구현
 headless: true
+active: true  # Publish this section?
 weight: 30
 title: 'slider'
 text: 'slider'
