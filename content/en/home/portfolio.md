@@ -36,5 +36,5 @@ content:
       tag: NLP
 
 design:
-  view: community/custom_card
+  view: "partials/masonry-card.html"
 ---
