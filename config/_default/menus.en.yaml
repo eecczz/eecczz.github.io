@@ -37,7 +37,7 @@ main:
         url: "/web-projects/shopping-mall/"
 
   - name: "contact"
-    url: "/about/contact/"
+    url: "/contact/"
     weight: 50
     children:  # 연락처의 서브탭
       - name: "join project"
