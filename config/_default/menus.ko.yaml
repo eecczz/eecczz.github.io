@@ -4,12 +4,12 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: "홈"  # i18n 파일에서 'menu.home' 키를 사용
+  - name: 홈  # i18n 파일에서 'menu.home' 키를 사용
     url: "/"
     weight: 10
-    children:  # 홈의 서브탭
-      - name: "메인"
-        url: "/"
+  - name: "메인"
+    url: "/"
+    parent: 홈
   
   - name: "소개"
     url: "/about/"
