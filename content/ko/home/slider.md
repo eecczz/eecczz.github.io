@@ -2,9 +2,8 @@
 widget: hero  # slider 대신 hero 위젯을 사용하여 슬라이더를 구현
 headless: true
 weight: 30
-type: landing
-title: ''
-subtitle: ''
+title: 'slider'
+text: 'slider'
 content:
   slides:
     - title: "<span style='font-size:90%'>AI</span>"
