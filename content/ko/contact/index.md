@@ -1,8 +1,9 @@
 ---
 widget: contact
+weight: 20  # 이 섹션이 페이지 내에서 표시되는 순서
 # Set to true to publish this section
 active: true
-type: "page"
+type: landing
 title: 'Contact'
 
 content:
