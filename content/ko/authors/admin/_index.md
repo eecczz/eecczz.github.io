@@ -1,4 +1,5 @@
 ---
+
 # Display name
 title: 황선우
 
@@ -20,6 +21,8 @@ status:
 # Short bio (displayed in user profile at end of posts)
 bio: 게임, 웹을 개발하고 있습니다.
 
+# This file represents a page section.
+headless: true
 #interests:
 #- Artificial Intelligence
 #- Computational Linguistics
