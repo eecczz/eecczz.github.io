@@ -3,13 +3,13 @@
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
   {{ range .Pages }}
   <div class="masonry-card">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="masonry-card-image">
       <div class="masonry-card-content">
         <h2 class="masonry-card-title">
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
         <p class="masonry-card-summary">{{ .Params.summary }}</p>
       </div>
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="masonry-card-image">
   </div>
   {{ end }}
 </div>
@@ -26,7 +26,7 @@
 /* Masonry Card 스타일 (이미지 좌측 배치) */
 .masonry-card {
   display: flex;
-  flex-direction: row;  /* 이미지와 텍스트를 좌우 배치 */
+  flex-direction: row;  /* 텍스트와 이미지 좌우 배치 */
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -37,10 +37,10 @@
 
 /* 이미지 스타일 */
 .masonry-card-image {
-  width: 150px;  /* 이미지를 좌측에 고정된 크기로 설정 */
+  width: 150px;  /* 이미지를 고정된 크기로 설정 */
   height: 150px; /* 원하는 이미지 크기로 설정 */
   object-fit: cover;
-  margin-right: 16px;  /* 이미지와 텍스트 간 간격 */
+  margin-left: 16px;  /* 텍스트와 이미지 간 간격 */
   border-radius: 8px;  /* 이미지 모서리 둥글게 */
 }
 
