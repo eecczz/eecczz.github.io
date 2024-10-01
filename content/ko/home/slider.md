@@ -11,8 +11,4 @@ content:
     filename: "Ai.jpg" 
     position: center
     color: '#000'
-design:
-  slide_height: '400px'
-  loop: true
-  interval: 5000
 ---
