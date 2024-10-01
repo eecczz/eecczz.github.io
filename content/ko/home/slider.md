@@ -1,5 +1,5 @@
 ---
-widget: portfolio  # slider 대신 hero 위젯을 사용하여 슬라이더를 구현
+widget: hero  # slider 대신 hero 위젯을 사용하여 슬라이더를 구현
 headless: true
 weight: 30
 type: landing
