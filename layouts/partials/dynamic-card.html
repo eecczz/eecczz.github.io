@@ -2,7 +2,7 @@
 
 {{ $isCV := false }}
 {{ with .Params.tags }}
-  {{ if in . CV }}
+  {{ if in . "CV" }}
     {{ $isCV = true }}
   {{ end }}
 {{ end }}
