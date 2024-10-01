@@ -8,7 +8,7 @@ main:
     url: "/"
     weight: 10
     children:  # 홈의 서브탭
-      - name: "메인"
+      - name: "main"
         url: "/"
   
   - name: "about"
@@ -18,27 +18,27 @@ main:
       - name: "Hwang-seonwoo"
         url: "/about/"
 
-  - name: "게임프로젝트"
+  - name: "game projects"
     url: "/game-projects/"
     weight: 30
     children:  # 게임프로젝트의 서브탭
-      - name: "검술대련"
+      - name: "swordplay"
         url: "/game-projects/swordplay/"
-      - name: "소울라이크 게임"
+      - name: "soulslike game"
         url: "/game-projects/soulslike-game/"
 
-  - name: "웹프로젝트"
+  - name: "web projects"
     url: "/web-projects/"
     weight: 40
     children:  # 웹프로젝트의 서브탭
-      - name: "유튜브클론웹"
+      - name: "youtuve-clone"
         url: "/web-projects/youtube-clone/"
       - name: "쇼핑몰"
         url: "/web-projects/shopping-mall/"
 
-  - name: "연락처"
-    url: "/contact/"
+  - name: "contact"
+    url: "/about/contact/"
     weight: 50
     children:  # 연락처의 서브탭
-      - name: "프로젝트 참여하기"
+      - name: "join project"
         url: "/contact/join-project/"

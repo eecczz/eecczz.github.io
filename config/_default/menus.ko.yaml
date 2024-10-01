@@ -23,7 +23,7 @@ main:
     weight: 30
     children:  # 게임프로젝트의 서브탭
       - name: "검술대련"
-        url: "/game-projects/sword-duel/"
+        url: "/game-projects/swordplay/"
       - name: "소울라이크 게임"
         url: "/game-projects/soulslike-game/"
 
@@ -37,7 +37,7 @@ main:
         url: "/web-projects/shopping-mall/"
 
   - name: "연락처"
-    url: "/contact/"
+    url: "/about/contact/"
     weight: 50
     children:  # 연락처의 서브탭
       - name: "프로젝트 참여하기"
