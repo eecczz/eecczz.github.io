@@ -1,4 +1,4 @@
-<!-- layouts/partials/masonry-team-card.html -->
+<!-- layouts/partials/masonry-card.html -->
 
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
   {{ range .Pages }}
@@ -9,14 +9,6 @@
           <a href="{{ .Permalink }}">{{ .Title }}</a> <!-- 제목이 이미지 아래에 위치 -->
         </h2>
         <p class="masonry-card-summary">{{ .Params.summary }}</p> <!-- 설명이 제목 아래에 위치 -->
-        
-        <!-- 대회종류 추가 -->
-        {{ with .Params.competition }}
-        <p class="masonry-card-competition">
-          <strong>Competition:</strong> {{ . }} <!-- 대회종류 텍스트 -->
-        </p>
-        {{ end }}
-
       </div>
   </div>
   {{ end }}
@@ -35,10 +27,10 @@
 .masonry-card {
   display: flex;
   flex-direction: column;  /* 이미지를 위, 텍스트를 아래로 배치 */
-  background: #8d1a4c;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(40, 154, 242, 0.892);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 16px;
   align-items: center; /* 이미지와 텍스트를 가운데 정렬 */
   text-align: center;  /* 텍스트 가운데 정렬 */
@@ -49,7 +41,7 @@
   width: 100%;  /* 이미지를 카드 전체 너비로 설정 */
   height: auto; /* 비율에 맞게 높이 자동 설정 */
   object-fit: cover;
-  border-bottom: 1px solid #08f2237b; /* 이미지 아래 구분선 */
+  border-bottom: 1px solid #ddd; /* 이미지 아래 구분선 */
 }
 
 /* 카드 내용 스타일 */
@@ -67,12 +59,5 @@
 .masonry-card-summary {
   font-size: 0.9rem;
   color: #666;
-}
-
-/* 대회종류 스타일 */
-.masonry-card-competition {
-  font-size: 0.85rem;
-  color: #444;
-  margin-top: 8px;
 }
 </style>
