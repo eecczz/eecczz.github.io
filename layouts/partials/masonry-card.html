@@ -1,61 +1,64 @@
 <!-- layouts/partials/masonry-card.html -->
 
 <div class="masonry-grid"> <!-- 그리드 부모 요소 추가 -->
-    {{ range .Pages }}
-    <div class="masonry-card">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="masonry-card-image">
-        <div class="masonry-card-content">
-          <h2 class="masonry-card-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h2>
-          <p class="masonry-card-summary">{{ .Params.summary }}</p>
-        </div>
-    </div>
-    {{ end }}
+  {{ range .Pages }}
+  <div class="masonry-card">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="masonry-card-image">
+      <div class="masonry-card-content">
+        <h2 class="masonry-card-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="masonry-card-summary">{{ .Params.summary }}</p>
+      </div>
   </div>
-  
-  <style>
-    /* Masonry Grid 스타일 */
-    .masonry-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      grid-gap: 16px;
-      padding: 16px; /* 그리드에 여백 추가 */
-    }
-  
-    /* Masonry Card 스타일 */
-    .masonry-card {
-      display: flex;
-      flex-direction: column;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 16px;
-    }
-  
-    /* 이미지 스타일 */
-    .masonry-card-image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-  
-    /* 카드 내용 스타일 */
-    .masonry-card-content {
-      padding: 16px;
-    }
-  
-    /* 제목 스타일 */
-    .masonry-card-title {
-      font-size: 1.25rem;
-      margin: 0 0 8px;
-    }
-  
-    /* 설명 스타일 */
-    .masonry-card-summary {
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
-  
+  {{ end }}
+</div>
+
+<style>
+/* Masonry Grid 스타일 */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 16px;
+  padding: 16px; /* 그리드에 여백 추가 */
+}
+
+/* Masonry Card 스타일 (이미지 좌측 배치) */
+.masonry-card {
+  display: flex;
+  flex-direction: row;  /* 이미지와 텍스트를 좌우 배치 */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  align-items: center; /* 이미지와 텍스트 수직 정렬 */
+}
+
+/* 이미지 스타일 */
+.masonry-card-image {
+  width: 150px;  /* 이미지를 좌측에 고정된 크기로 설정 */
+  height: 150px; /* 원하는 이미지 크기로 설정 */
+  object-fit: cover;
+  margin-right: 16px;  /* 이미지와 텍스트 간 간격 */
+  border-radius: 8px;  /* 이미지 모서리 둥글게 */
+}
+
+/* 카드 내용 스타일 */
+.masonry-card-content {
+  flex: 1;  /* 텍스트가 나머지 공간을 차지 */
+  padding: 16px;
+}
+
+/* 제목 스타일 */
+.masonry-card-title {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+/* 설명 스타일 */
+.masonry-card-summary {
+  font-size: 0.9rem;
+  color: #666;
+}
+</style>
