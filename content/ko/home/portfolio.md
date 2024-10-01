@@ -35,4 +35,5 @@ content:
     - name: NLP
       tag: NLP
 
+view: masonry-card
 ---
