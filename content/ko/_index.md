@@ -9,7 +9,7 @@ sections:
     content:
       title: "황선우"
       image:
-        filename: "avatar.jpg"  # 프로필 이미지 파일명
+        filename: "authors/admin/avatar.jpg"  # authors/admin 경로의 프로필 이미지
         alt: "황선우의 프로필 사진"
       text: |
         게임, 웹을 개발하고 있습니다.
