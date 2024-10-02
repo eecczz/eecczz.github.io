@@ -8,13 +8,8 @@ sections:
   - block: about
     content:
       title: "황선우"
-      image:
-        filename: {{ with site.GetPage "authors/admin" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
-        alt: "황선우의 프로필 사진"
       text: |
-        {{ with site.GetPage "authors/admin" }}
-          {{ .Params.bio }}  # short bio 불러오기
-        {{ end }}
+        게임, 웹을 개발하고 있습니다.
     design:
       columns: '1'
   - block: slider

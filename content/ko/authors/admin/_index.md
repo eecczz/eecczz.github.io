@@ -20,7 +20,6 @@ status:
 # Short bio (displayed in user profile at end of posts)
 bio: 게임, 웹을 개발하고 있습니다.
 
-avatar: "avatar.jpg"  # 이미지 파일명 추가
 #interests:
 #- Artificial Intelligence
 #- Computational Linguistics
