@@ -120,21 +120,33 @@ sections:
       interval: 3000
   - block: collection
     content:
-      title: 'card'
-      subtitle: ''
-      page_type: project
-      filter_default: 0
-      filter_button:
-        - name: All
-          tag: '*'
-        - name: Machine Learning
-          tag: ML
-        - name: Computer Vision
-          tag: CV
-        - name: NLP
-          tag: NLP
+      title: project
+      count: 3
+      offset: 0
+      filters:
+        folders:
+          - cartoon
+          - cosmetics
+          - recomendation
     design:
       view: masonry-card  # 사용자 정의된 카드를 사용
+  - block: collection
+    content:
+      id: section-1
+      title: Notifications & News
+      subtitle:
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - notification
+          - post
+          - event
+    design:
+      view: community/custom_card
+      columns: '2'
   # - block: hero
   #   content:
   #     title: |
