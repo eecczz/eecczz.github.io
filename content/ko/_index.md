@@ -9,10 +9,12 @@ sections:
     content:
       title: "황선우"
       image:
-        filename: "avatar.jpg"  # 프로필 이미지 파일명
+        filename: {{ with site.GetPage "authors/admin" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
         alt: "황선우의 프로필 사진"
       text: |
-        게임, 웹을 개발하고 있습니다.
+        {{ with site.GetPage "authors/admin" }}
+          {{ .Params.bio }}  # short bio 불러오기
+        {{ end }}
     design:
       columns: '1'
   - block: slider
