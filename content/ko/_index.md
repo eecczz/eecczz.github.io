@@ -123,11 +123,12 @@ sections:
       title: project
       count: 3
       offset: 0
+      order: desc
       filters:
         folders:
-          - cartoon
-          - cosmetics
-          - recomendation
+          - project/cartoon
+          - project/cosmetics
+          - project/recomendation
     design:
       view: masonry-card  # 사용자 정의된 카드를 사용
   - block: collection
