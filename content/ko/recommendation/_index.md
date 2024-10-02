@@ -2,7 +2,7 @@
 title: Recommendation
 
 # Listing view
-view: masonry-card
+view: community/custom_card
 tags:
   - ML
 date: 2022-01-01

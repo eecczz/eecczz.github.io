@@ -2,7 +2,7 @@
 title: Cartoon
 
 # Listing view
-view: masonry-card
+view: community/custom_card
 tags:
   - CV
 date: 2022-01-01

@@ -131,7 +131,7 @@ sections:
           - cosmetics
           - recomendation
     design:
-      view: masonry-card  # 사용자 정의된 카드를 사용
+      view: community/custom_card  # 사용자 정의된 카드를 사용
       columns: '2'
   - block: collection
     content:
