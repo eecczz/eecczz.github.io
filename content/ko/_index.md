@@ -1,28 +1,26 @@
 ---
-# Leave the homepage title empty to use the site title
-title:
-date: 2024-03-25
-type: landing
+# Display name
+title: 이경수
+
+# Full Name (for SEO)
+first_name: Kyungsu
+last_name: Lee
+
+# Is this the primary user of the site?
+superuser: true
+
+# Role/position
+role: 조교수
+
+# Organizations/Affiliations
+organizations:
+  - name: 전북대학교 컴퓨터인공지능학부
+    url: 'https://csai.jbnu.ac.kr/csai/index.do'
+
+# Short bio (displayed in user profile at end of posts)
+bio: 연합학습 및 표현 학습을 사용한 medical 도메인에서의 딥 러닝 기법, 도메인 적응 및 테스트 타임 학습과 같은 딥 러닝 기반 컴퓨터 비전 응용, 이미지 처리 및 이미지-텍스트 캡셔닝을 포함한 의료 응용의 딥 러닝 기반 진단 등을 포함합니다.
 
 sections:
-  - block: hero
-    content:
-      title: 황선우
-      subtitle: '백엔드/게임 개발'
-      text: "게임, 웹을 개발하고 있습니다."
-      image:
-        filename: avatar.jpg  # avatar 이미지는 동일한 디렉터리에 위치
-        alt: '프로필 이미지'
-        height: 150px  # 이미지 크기를 설정할 수 있습니다.
-        width: 150px
-      icon: ☕️  # 상태 이모지 표시
-    design:
-      columns: 2  # 이미지와 텍스트를 나란히 배치
-      background:
-        color: "#F0F0F0"  # 배경색 설정 (필요 시)
-      spacing:
-        padding: ["20px", "20px", "20px", "20px"]  # 원하는 여백 설정
-
   - block: slider
     content:
       slides:
