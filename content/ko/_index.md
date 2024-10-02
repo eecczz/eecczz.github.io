@@ -9,19 +9,14 @@ sections:
     content:
       title: "황선우"
       image:
-        filename: avatar.jpg  # avatar 이미지 파일
-        alt: "황선우의 사진"
+        filename: {{ with site.GetPage "author/admin" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
+        alt: "황선우의 프로필 사진"
       text: |
-        안녕하세요! 저는 백엔드 및 게임 개발을 하고 있는 황선우입니다. 게임과 웹을 개발하며, 새로운 기술을 배우고 성장하는 것을 좋아합니다.
+        {{ with site.GetPage "author/admin" }}
+          {{ .Params.bio }}  # short bio 불러오기
+        {{ end }}
     design:
       columns: '1'
-  - block: features
-    content:
-      title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
-      text: <br><span style="font-size:125%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span> <br><br>
-        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
-
-
   - block: slider
     content:
       slides:
