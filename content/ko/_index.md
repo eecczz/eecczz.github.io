@@ -5,13 +5,6 @@ date: 2024-03-25
 type: landing
 
 sections:
-  - block: about
-    content:
-      title: "황선우"
-      text: |
-        게임, 웹을 개발하고 있습니다.
-    design:
-      columns: '1'
   - block: slider
     content:
       slides:
