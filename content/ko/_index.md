@@ -120,17 +120,19 @@ sections:
       interval: 3000
   - block: collection
     content:
+      id: section-1
       title: project
       count: 3
       offset: 0
       order: desc
       filters:
         folders:
-          - project/cartoon
-          - project/cosmetics
-          - project/recomendation
+          - cartoon
+          - cosmetics
+          - recomendation
     design:
       view: masonry-card  # 사용자 정의된 카드를 사용
+      columns: '2'
   - block: collection
     content:
       id: section-1
