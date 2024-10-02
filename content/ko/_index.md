@@ -9,10 +9,10 @@ sections:
     content:
       title: "황선우"
       image:
-        filename: {{ with site.GetPage "authors" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
+        filename: {{ with site.GetPage "authors/admin" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
         alt: "황선우의 프로필 사진"
       text: |
-        {{ with site.GetPage "authors" }}
+        {{ with site.GetPage "authors/admin" }}
           {{ .Params.bio }}  # short bio 불러오기
         {{ end }}
     design:
