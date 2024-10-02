@@ -12,7 +12,7 @@ sections:
         filename: {{ with site.GetPage "author/admin" }}{{ .Params.avatar }}{{ end }}  # avatar 불러오기
         alt: "황선우의 프로필 사진"
       text: |
-        {{ with site.GetPage "author/admin" }}
+        {{ with site.GetPage "authors/admin" }}
           {{ .Params.bio }}  # short bio 불러오기
         {{ end }}
     design:
