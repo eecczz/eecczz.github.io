@@ -7,16 +7,21 @@ type: landing
 sections:
   - block: hero
     content:
-      title: "황선우"
+      title: 황선우
+      subtitle: '백엔드/게임 개발'
+      text: "게임, 웹을 개발하고 있습니다."
       image:
-        filename: "avatar.jpg"  # authors/admin 경로의 프로필 이미지
+        filename: avatar.jpg  # avatar 이미지는 동일한 디렉터리에 위치
         alt: '프로필 이미지'
         height: 150px  # 이미지 크기를 설정할 수 있습니다.
         width: 150px
-      text: |
-        게임, 웹을 개발하고 있습니다.
+      icon: ☕️  # 상태 이모지 표시
     design:
-      columns: '1'
+      columns: 2  # 이미지와 텍스트를 나란히 배치
+      background:
+        color: "#F0F0F0"  # 배경색 설정 (필요 시)
+      spacing:
+        padding: ["20px", "20px", "20px", "20px"]  # 원하는 여백 설정
 
   - block: slider
     content:
