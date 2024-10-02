@@ -5,7 +5,16 @@ date: 2024-03-25
 type: landing
 
 sections:
-
+  - block: about
+    content:
+      title: "황선우"
+      image:
+        filename: avatar.jpg  # avatar 이미지 파일
+        alt: "황선우의 사진"
+      text: |
+        안녕하세요! 저는 백엔드 및 게임 개발을 하고 있는 황선우입니다. 게임과 웹을 개발하며, 새로운 기술을 배우고 성장하는 것을 좋아합니다.
+    design:
+      columns: '1'
   - block: features
     content:
       title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
