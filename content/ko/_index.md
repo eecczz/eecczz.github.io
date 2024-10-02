@@ -5,12 +5,14 @@ date: 2024-03-25
 type: landing
 
 sections:
-  - block: features
+  - block: hero
     content:
       title: "황선우"
       image:
         filename: "avatar.jpg"  # authors/admin 경로의 프로필 이미지
-        alt: "황선우의 프로필 사진"
+        alt: '프로필 이미지'
+        height: 150px  # 이미지 크기를 설정할 수 있습니다.
+        width: 150px
       text: |
         게임, 웹을 개발하고 있습니다.
     design:
