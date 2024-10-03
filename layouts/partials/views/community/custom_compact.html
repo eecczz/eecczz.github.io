@@ -33,7 +33,6 @@
     <div class="section-subheading article-title mb-1 mt-3">
         <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
-    
 
     {{ if $item.Params.authors }}
     <div class="article-metadata">
@@ -56,7 +55,7 @@
       {{ end }}
     </div>
     {{ end }}
-    
+
     {{ if $has_attachments }}
     <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
@@ -64,3 +63,18 @@
     {{ end }}
   </div>
 </div>
+
+<style>
+  .btn-link {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+  }
+  .btn-link:hover {
+    background-color: #0056b3;
+  }
+</style>
