@@ -1,10 +1,10 @@
 ---
 # Display name
-title: 이경수
+title: 황선우
 
 # Full Name (for SEO)
-first_name: Kyungsu
-last_name: Lee
+first_name: Seonwoo
+last_name: Hwang
 
 # Username (this should match the folder name)
 authors:
@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: 조교수
+role: 재학생
 
 # Organizations/Affiliations
 organizations:
@@ -22,15 +22,15 @@ organizations:
     url: 'https://csai.jbnu.ac.kr/csai/index.do'
 
 # Short bio (displayed in user profile at end of posts)
-bio: 연합학습 및 표현 학습을 사용한 medical 도메인에서의 딥 러닝 기법, 도메인 적응 및 테스트 타임 학습과 같은 딥 러닝 기반 컴퓨터 비전 응용, 이미지 처리 및 이미지-텍스트 캡셔닝을 포함한 의료 응용의 딥 러닝 기반 진단 등을 포함합니다.
+bio: 게임/웹을 개발합니다.
 
 interests:
   - 인공지능 (AI)
-  - Vision & Language
-  - 의료수학 (Medical Mathematics)
-  - 항공우주 (Aerospace)
-  - 컨텐츠 (Contents)
-  - 개발 (Development & Deploy)
+  - 알고리즘
+  - 기획
+  - 네트워크
+  - 게임 개발
+  - 웹 개발
 
 education:
   courses:
@@ -48,7 +48,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:ksl@jbnu.ac.kr'
+    link: 'mailto:swh06084@jbnu.ac.kr'
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.co.kr/citations?hl=ko&user=Srg-7JMAAAAJ&view_op=list_works&authuser=3&gmla=AKKJWFdKkn6oOSodKydbVjFB9IpHqHHucjz06KnXACXkcsad_elmO3TnVclXh3i46QOPtpevNt2mKEReoILewOZrWPw38nBujERgFLA6D1JXhmVcGPzUiQU4Fg
@@ -78,4 +78,4 @@ user_groups:
 
 ---
 
-Fine-Tuning Deep Learning Network for Multi-Domain and Multi-Task Applications이라는 제목의 논문으로 2023년 대구경북과학기술원에서 통합 석사 및 박사 학위를 받았습니다. 2024년에 전북대학교 컴퓨터인공지능학부에 조교수 position으로 임명받고 현재까지 근무하고 있습니다. 연구 분야는 연합학습 및 표현 학습을 사용한 medical 도메인에서의 딥 러닝 기법, 도메인 적응 및 테스트 타임 학습과 같은 딥 러닝 기반 컴퓨터 비전 응용, 이미지 처리를 포함하고 있으며, AI의 이론부터 다양한 특성화 분야의 어플리케이션까지 넓은 범위를 포함하고 있습니다. 
+전북대학교 컴퓨터인공지능학부에 재학 중으로, 주력분야인 게임개발 경력은 IT정보공학과 동아리 Coala 팀에서 Gone 게임을 만들고 출시하였으며, 창의적공학설계입문 팀프로젝트로 소울라이크 게임을 만들고, 비공식적으로는 wii swordplay 클론게임을 개발 중에 있습니다. 그리고 현재 학습중인 웹개발은 쇼핑몰 프로젝트와 유튜브 클론웹서비스를 만들며 리액트, 스프링 부트에 숙련도를 더해가고 있습니다.
