@@ -30,7 +30,7 @@ main:
     weight: 11
 
   - name: "Hwang-seonwoo"
-    url: "/about/"
+    url: "/authors/admin"
     parent: "about"
     weight: 21
 

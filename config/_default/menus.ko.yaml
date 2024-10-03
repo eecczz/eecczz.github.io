@@ -30,7 +30,7 @@ main:
     weight: 11
 
   - name: "황선우"
-    url: "/about/"
+    url: "/authors/admin"
     parent: "소개"
     weight: 21
 
