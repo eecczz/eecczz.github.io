@@ -15,6 +15,12 @@ sections:
           <span style="font-size:110%; font-weight: bold;">황선우</span><br>
           <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
         </div>
+      link:
+          icon: user
+          icon_pack: fas
+          text: <span style="font-size:60%">Join Us</span>
+          text-color: '#000'
+          url: about
 
 
   - block: slider
