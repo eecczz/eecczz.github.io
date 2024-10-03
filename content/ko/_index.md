@@ -23,25 +23,8 @@ sections:
     content:
       slides:
 
-      - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">Interested in MacsLAB?</span>
-        align: center
-        background:
-          image:
-            filename: recruitment.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">Join Us</span>
-          text-color: '#000'
-          url: contact
-
-      - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발<span style="font-size:70%">
+      - title: <span style="font-size:70%">가상현실 게임</span>
+        content: <span style="font-size:70%">조작방식이 실제 움직임과 유사하여 몰입감을 느낄 수 있는 게임<span style="font-size:70%">
         align: center
         background:
           image:
@@ -51,8 +34,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">Healthcare</span>
-        content: <span style="font-size:70%">의료 및 헬스케어 분야에 적용 가능한 AI 기술 개발</span>
+      - title: <span style="font-size:70%">웹서비스</span>
+        content: <span style="font-size:70%">창의적이고 편리한 웹서비스를 제작</span>
         align: center
         background:
           image:
@@ -62,23 +45,12 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">Mathematics</span>
-        content: <span style="font-size:70%">AI와 관련된 수학 및 최적화 이론 연구</span>
+      - title: <span style="font-size:70%">기획</span>
+        content: <span style="font-size:70%">특정 주제에 대한 창의적이고 재밌는 게임/ 웹서비스 기획</span>
         align: center
         background:
           image:
             filename: mathematics.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: <span style="font-size:70%">Development</span>
-        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
-        align: center
-        background:
-          image:
-            filename: development.jpg
             filters:
               brightness: 0.4
           position: center
@@ -98,33 +70,33 @@ sections:
   - block: features
     id: features
     content:
-      title: <span style="font-size:75%">Lab's Interests</span>
+      title: <span style="font-size:75%">학습중인 분야</span>
       text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 쏟고 있습니다.<br><br><br><br>
       items:
         - name: 인공지능(AI)
           icon: code-branch
           icon_pack: fas
-          description: <span style="font-size:90%">의료 (Medical), 항공우주 (Aerospace), 컨텐츠 (Contents) 등 다양한 특성화 분야에 적응형 AI 기술 적용.</span><br><br>
-        - name: 멀티모달(Multi-modality)
+          description: <span style="font-size:90%">창의적이고 혁신적인 AI 서비스를 제작</span><br><br>
+        - name: 알고리즘
           icon: globe
           icon_pack: fas
-          description:  <span style="font-size:90%">Vision & Language 분야의 기반 AI 기술 개발 및 관련 응용 어플리케이션에 기술 적용.</span><br><br>
-        - name: 의료수학(Medical Math)
+          description:  <span style="font-size:90%">코딩 테스트에 나올 수 있는 알고리즘과 AI에 적용되는 알고리즘들을 학습하고 문제풀이 진행</span><br><br>
+        - name: 기획
           icon: calculator
           icon_pack: fas
-          description:  <span style="font-size:90%">의료 분야에 대한 통계 분석 수행 및 의료 질병에 대한 수학적인 모델링 관련 연구 수행.</span><br><br>
+          description:  <span style="font-size:90%">특정 주제가 주어지고 그에 관련된 웹/앱을 만드는 요구사항이 주어질 때, 유저가 관심을 가질 만한 아이디어를 내고, 체계적으로 정리하는 것을 연구</span><br><br>
         - name: 컨텐츠 (Contents)
           icon: comment-dots
           icon_pack: fas
           description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
-        - name: 개발 (Development)
+        - name: 게임 개발
           icon: laptop
           icon_pack: fas
-          description:  <span style="font-size:90%">Full-Stack 기반의 응용 어플리케이션 개발.</span><br><br>
-        - name: 솔루션 (Solution)
+          description:  <span style="font-size:90%">내가 취업하려고 하는 게임회사나 유저들에게 필요한 재밌고 트렌디한 게임을 최적의 방법으로 구현하는 것을 공부 </span><br><br>
+        - name: 웹 개발
           icon: app-store-ios
           icon_pack: fab
-          description:  <span style="font-size:90%">AI 기반기술 및 관련 어플리케이션에 적용을 통한 통합 솔루션 개발!</span><br><br>
+          description:  <span style="font-size:90%">현재 회사들이 필요한, 적절한 디자인 패턴을 사용해 지속가능한 코드와, 실무에서 겪을 수 있는 트래픽 등 다양한 상황들을 해결하는 데 필요한 개념을 학습하고 구현 </span><br><br>
 
 
   - block: collection
@@ -189,7 +161,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
+        {{% cta cta_link="./contact/" cta_text="Join Project →" %}}
     design:
       columns: '1'
 ---

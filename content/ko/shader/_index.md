@@ -1,5 +1,5 @@
 ---
-title: Shader
+title: Wii-Style Shader
 
 # Listing view
 view: community/custom_card
