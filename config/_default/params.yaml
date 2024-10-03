@@ -97,6 +97,15 @@ features:
     api_key: ''
     zoom: 15
 
+# Extensions
+
+extensions:
+  decap_cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true    
+
 extensions:
   cms:
     branch: main
