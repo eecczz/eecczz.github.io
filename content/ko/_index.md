@@ -15,7 +15,8 @@ sections:
           <span style="font-size:110%; font-weight: bold;">황선우</span><br>
           <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
         </div>
-        {{% cta cta_link="./about/" cta_text="더보기" %}}
+        <br><br>
+        {{% cta cta_link="./about/" cta_text="More →" %}}
 
 
   - block: slider
