@@ -8,18 +8,20 @@ sections:
 
   - block: features
     content:
-      title: |
-        <div style="text-align: center;">
-          <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%;"><br><br>
-          <span style='font-size:70%'>Medical AI & Computational Science (Macs) Lab</span><br>
-          <span style='font-size:125%'>전북대학교 의료 AI 및 계산 과학 연구실</span>
-        </div>
+      title: ""
       text: |
-        <br>
         <div style="text-align: center;">
-          <span style="font-size:110%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span><br><br>
-          {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
+          <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%;">
         </div>
+        <div style="text-align: left; padding-left: calc(50% - 75px);">
+          <span style="font-size:110%; font-weight: bold;">황선우</span><br>
+          <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
+        </div>
+        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
+
+
+
+
 
   - block: slider
     content:
