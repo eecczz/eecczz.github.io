@@ -20,7 +20,7 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card">
+<div class="card1">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
@@ -29,13 +29,13 @@
          alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
   </a>
   {{ end }}
-  <div class="card-text">
-    <div class="section-subheading article-title mb-1 mt-3">
+  <div class="card-text1">
+    <div class="section-subheading article-title mb-1 mt-31">
         <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata">
+    <div class="article-metadata1">
         <div>
             {{ partial "page_metadata_authors" $item }}
         </div>
@@ -43,13 +43,13 @@
     {{ end }}
 
     {{ with $summary }}
-    <div class="article-style">
+    <div class="article-style1">
       <p>{{ . }}</p>
     </div>
     {{ end }}
 
     {{ if $item.Params.tags }}
-    <div class="tags">
+    <div class="external-links1">
       {{ range $item.Params.tags }}
       <a href="/tags/{{ . | urlize }}" class="btn-link">{{ . }}</a><br>
       {{ end }}
@@ -57,7 +57,7 @@
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links">
+    <div class="btn-links1">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
@@ -65,7 +65,7 @@
 </div>
 
 <style>
-  .btn-link {
+  .btn-link1 {
     background-color: #007BFF;
     color: white;
     padding: 8px 12px;
@@ -74,7 +74,7 @@
     margin: 5px 0;
     display: inline-block;
   }
-  .btn-link:hover {
+  .btn-link1:hover {
     background-color: #0056b3;
   }
 </style>
