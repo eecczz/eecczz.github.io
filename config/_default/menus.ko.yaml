@@ -51,12 +51,12 @@ main:
     parent: "웹프로젝트"
     weight: 41
 
-  - name: "쇼핑몰"
-    url: "/web-projects/shopping-mall/"
-    parent: "웹프로젝트"
-    weight: 42
-
   - name: "프로젝트 참여하기"
     url: "/contact/"
     parent: "연락처"
     weight: 51
+
+  - name: "더 많은 프로젝트"
+    url_source: 'https://github.com/eecczz?tab=repositories'
+    parent: "연락처"
+    weight: 52

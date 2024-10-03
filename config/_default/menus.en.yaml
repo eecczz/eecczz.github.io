@@ -51,12 +51,12 @@ main:
     parent: "web projects"
     weight: 41
 
-  - name: "shopping-mall"
-    url: "/web-projects/shopping-mall/"
-    parent: "web projects"
-    weight: 42
-
   - name: "join project"
     url: "/contact/"
     parent: "contact"
     weight: 51
+
+  - name: "see more project"
+    url_source: 'https://github.com/eecczz?tab=repositories'
+    parent: "contact"
+    weight: 52
