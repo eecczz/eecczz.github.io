@@ -41,8 +41,8 @@ main:
     parent: "게임프로젝트"
     weight: 31
 
-  - name: "Gone"
-    url: "/team-projects"
+  - name: "team Project"
+    url: "/team-project"
     parent: "게임프로젝트"
     weight: 32
 

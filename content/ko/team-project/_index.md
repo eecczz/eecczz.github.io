@@ -1,5 +1,5 @@
 ---
-title: Gone
+title: Team projects
 
 # Listing view
 view: community/custom_compact

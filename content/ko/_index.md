@@ -137,7 +137,7 @@ sections:
 
   - block: collection
     content:
-      title: Gone
+      title: Team Projects
       subtitle:
       text:
       count: 3
@@ -149,7 +149,7 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: gone
+      page_type: team-projects
     design:
       view: community/custom_card
       columns: '2'
