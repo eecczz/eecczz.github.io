@@ -10,11 +10,13 @@ sections:
     content:
       title: ""
       text: |
-        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%;"><br>
-        <span style="font-size:110%; font-weight: bold; text-align: left;">황선우</span><br>
-        <span style="font-size:100%; text-align: left;">게임/웹을 개발하고 있습니다.</span><br><br>
+        <div style="text-align: center;">
+          <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%;"><br>
+          <span style="font-size:110%; font-weight: bold;">황선우</span><br>
+          <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
+        </div>
         {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
-
+        
   - block: slider
     content:
       slides:
