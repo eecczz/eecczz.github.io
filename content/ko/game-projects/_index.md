@@ -17,9 +17,9 @@ sections:
       order: desc
       filters:
         folders:
-          - sword-motion
-          - hit-reaction
-          - shader
+          - swordplay/sword-motion
+          - swordplay/hit-reaction
+          - swordplay/shader
     design:
       view: community/custom_card
       columns: '2'
