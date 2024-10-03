@@ -6,7 +6,7 @@ type: landing
 
 sections:
 
-  - block: features
+  - block: markdown
     content:
       title: ""
       text: |
