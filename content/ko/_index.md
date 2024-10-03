@@ -16,7 +16,7 @@ sections:
           <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
         </div>
         <br><br>
-        {{% cta cta_link="./about/" cta_text="More →" %}}
+        {{% cta cta_link="./about/" cta_text="More→" %}}
 
 
   - block: slider
@@ -130,7 +130,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Notifications & News
+      title: wii 검술대련 클론게임
       subtitle:
       text:
       count: 3
@@ -138,16 +138,34 @@ sections:
       order: desc
       filters:
         folders:
-          - notification
-          - post
-          - event
+          - sword-motion
+          - hit-reaction
+          - shader
     design:
       view: community/custom_card
       columns: '2'
 
   - block: collection
     content:
-      title: Latest Publications
+      id: section-1
+      title: 유튜부 클론웹
+      subtitle:
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - react&spring
+          - aws-lambda
+          - video-preview
+    design:
+      view: community/custom_card
+      columns: '2'
+
+  - block: collection
+    content:
+      title: Gone
       subtitle:
       text:
       count: 3
@@ -159,7 +177,7 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: publication
+      page_type: gone
     design:
       view: community/custom_card
       columns: '2'

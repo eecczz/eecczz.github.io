@@ -41,8 +41,8 @@ main:
     parent: "game projects"
     weight: 31
 
-  - name: "soulslike game"
-    url: "/game-projects/soulslike-game/"
+  - name: "Gone"
+    url: "/game-projects/gone/"
     parent: "game projects"
     weight: 32
 

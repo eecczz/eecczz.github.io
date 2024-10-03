@@ -41,8 +41,8 @@ main:
     parent: "게임프로젝트"
     weight: 31
 
-  - name: "소울라이크 게임"
-    url: "/game-projects/soulslike-game/"
+  - name: "Gone"
+    url: "/game-projects/gone/"
     parent: "게임프로젝트"
     weight: 32
 
