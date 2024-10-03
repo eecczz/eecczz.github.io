@@ -13,10 +13,10 @@ main:
     url: "/about/"
     weight: 20
 
-  - name: "game projects"
+  - name: "personal projects"
     weight: 30
 
-  - name: "web projects"
+  - name: "team projects"
     weight: 40
 
   - name: "contact"
@@ -36,17 +36,17 @@ main:
 
   - name: "swordplay"
     url: "/swordplay/"
-    parent: "game projects"
+    parent: "personal projects"
     weight: 31
-
-  - name: "team project"
-    url: "/team-project/"
-    parent: "game projects"
-    weight: 32
 
   - name: "youtube-clone"
     url: "/youtube-clone/"
-    parent: "web projects"
+    parent: "personal projects"
+    weight: 32
+
+  - name: "see team projects"
+    url: "/team-project/"
+    parent: "team projects"
     weight: 41
 
   - name: "join project"

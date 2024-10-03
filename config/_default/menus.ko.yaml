@@ -13,10 +13,10 @@ main:
     url: "/about/"
     weight: 20
 
-  - name: "게임프로젝트"
+  - name: "개인프로젝트"
     weight: 30
 
-  - name: "웹프로젝트"
+  - name: "팀프로젝트"
     weight: 40
 
   - name: "연락처"
@@ -36,17 +36,17 @@ main:
 
   - name: "검술대련"
     url: "/swordplay/"
-    parent: "게임프로젝트"
+    parent: "개인프로젝트"
     weight: 31
-
-  - name: "team Project"
-    url: "/team-project"
-    parent: "게임프로젝트"
-    weight: 32
 
   - name: "유튜브클론웹"
     url: "/youtube-clone/"
-    parent: "웹프로젝트"
+    parent: "개인프로젝트"
+    weight: 32
+
+  - name: "팀프로젝트들"
+    url: "/team-project"
+    parent: "팀프로젝트"
     weight: 41
 
   - name: "프로젝트 참여하기"
