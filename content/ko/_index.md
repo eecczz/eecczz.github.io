@@ -5,28 +5,6 @@ date: 2024-03-25
 type: landing
 
 sections:
-
-  - block: hero
-  content:
-    title: "Medical AI & Computational Science (Macs) Lab"
-    text: "전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다."
-    image:
-      filename: "authors/admin/avatar.jpg"  # authors/admin 폴더에 있는 이미지 사용
-      alt: "Profile Image"
-      height: 150px
-      width: 150px
-    social:
-      - icon: envelope
-        icon_pack: fas
-        link: "mailto:ksl@jbnu.ac.kr"
-  design:
-    columns: 2  # 이미지와 텍스트를 나란히 배치
-
-# 블록 추가하여 authors/admin의 index.md 내용을 불러오기
-- block: markdown
-  content:
-    file: "authors/admin/index.md"  # index.md 파일을 불러오기
-
   - block: slider
     content:
       slides:
