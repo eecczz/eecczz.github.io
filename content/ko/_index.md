@@ -148,7 +148,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: 유튜부 클론웹
+      title: 유튜브 클론웹
       subtitle:
       text:
       count: 3
