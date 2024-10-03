@@ -48,10 +48,10 @@
     </div>
     {{ end }}
 
-    {{ if $item.Params.external_links }}
-    <div class="external-links">
-      {{ range $item.Params.external_links }}
-      <a href="{{ .url }}" target="_blank" class="btn-link">{{ .text }}</a><br>
+    {{ if $item.Params.tags }}
+    <div class="tags">
+      {{ range $item.Params.tags }}
+      <a href="/tags/{{ . | urlize }}" class="btn-link">{{ . }}</a><br>
       {{ end }}
     </div>
     {{ end }}
