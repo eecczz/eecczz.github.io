@@ -37,17 +37,17 @@ main:
     weight: 21
 
   - name: "swordplay"
-    url: "/game-projects/swordplay/"
+    url: "/swordplay/"
     parent: "game projects"
     weight: 31
 
   - name: "Gone"
-    url: "/game-projects/gone/"
+    url: "/team-projects/"
     parent: "game projects"
     weight: 32
 
   - name: "youtube-clone"
-    url: "/web-projects/youtube-clone/"
+    url: "/youtube-clone/"
     parent: "web projects"
     weight: 41
 

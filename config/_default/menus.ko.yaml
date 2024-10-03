@@ -37,17 +37,17 @@ main:
     weight: 21
 
   - name: "검술대련"
-    url: "/game-projects/swordplay/"
+    url: "/swordplay/"
     parent: "게임프로젝트"
     weight: 31
 
   - name: "Gone"
-    url: "/game-projects/gone/"
+    url: "/team-projects"
     parent: "게임프로젝트"
     weight: 32
 
   - name: "유튜브클론웹"
-    url: "/web-projects/youtube-clone/"
+    url: "/youtube-clone/"
     parent: "웹프로젝트"
     weight: 41
 
