@@ -4,13 +4,6 @@ title: 'Wide-field 3D Ultrasound Imaging Platform with a Semi-Automatic 3D Segme
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
-authors:
-  - 이문환
-  - 김준영
-  - 이경수
-  - 최창혁
-  - 
-  - 황재윤
   
 # {{equal}}
 
@@ -28,6 +21,7 @@ publication_types: ['article-journal']
 # Publication name and optional abbreviated publication name.
 #publication: IEEE ACCESS
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
+summary: ___SCI(E); IF=3.37, 34.25% (Q2)___ <br> _IEEE ACCESS (IEEE ACCESS, 2020, Vol. 8, Issue 1, pp. 65472-65487)_
 
 tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
 
