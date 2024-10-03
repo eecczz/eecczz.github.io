@@ -45,8 +45,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">기획</span>
-        content: <span style="font-size:70%">특정 주제에 대한 창의적이고 재밌는 게임/ 웹서비스 기획</span>
+      - title: <span style="font-size:70%">RPG 게임 개발</span>
+        content: <span style="font-size:70%">취업에 맞춤화된 장르의 게임들을 개발</span>
         align: center
         background:
           image:
@@ -85,10 +85,10 @@ sections:
           icon: calculator
           icon_pack: fas
           description:  <span style="font-size:90%">특정 주제가 주어지고 그에 관련된 웹/앱을 만드는 요구사항이 주어질 때, 유저가 관심을 가질 만한 아이디어를 내고, 체계적으로 정리하는 것을 연구</span><br><br>
-        - name: 컨텐츠 (Contents)
+        - name: 네트워크
           icon: comment-dots
           icon_pack: fas
-          description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
+          description:  <span style="font-size:90%">개발 실무에서 다양한 문제 해결을 위한 네트워크 지식 공부</span><br><br>
         - name: 게임 개발
           icon: laptop
           icon_pack: fas
