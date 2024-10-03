@@ -23,6 +23,11 @@ publication_types: ['article-journal']
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
 summary: ___SCI(E); IF=3.37, 34.25% (Q2)___ <br> _IEEE ACCESS (IEEE ACCESS, 2020, Vol. 8, Issue 1, pp. 65472-65487)_
 
+links:
+  - name: "Read Full Article"
+    url: "https://www.example.com/full-article"
+
+
 tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
 
 # Display this page in the Featured widget?
