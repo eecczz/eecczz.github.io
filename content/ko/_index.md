@@ -8,7 +8,7 @@ sections:
 
   - block: features
     content:
-      title: "<span style='font-size:70%'>Medical AI & Computational Science (Macs) Lab</span>"
+      title: ""
       text: |
         <div style="text-align: center;">
           <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%;"><br>
