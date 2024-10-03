@@ -1,12 +1,22 @@
 {{ $item := .item }}
-{{ $has_attachments := partial "functions/has_attachments" $item }}
 
+{{/* Dynamic view adjusts to content type. */}}
+{{ $show_authors_only := false }}{{/* Show authors only or full metadata? */}}
 {{ $link := $item.RelPermalink }}
 {{ $target := "" }}
 {{ if $item.Params.external_link }}
   {{ $link = $item.Params.external_link }}
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
+{{ if eq $item.Type "event" }}
+  {{ $show_authors_only = true }}
+{{ else if eq $item.Type "publication" }}
+  {{ $show_authors_only = true }}
+{{ else if eq $item.Type "project" }}
+  {{ $show_authors_only = true }}
+{{ end }}
+
+{{ $has_attachments := partial "functions/has_attachments" $item }}
 
 {{/* Get summary. */}}
 {{ $summary := "" }}
@@ -18,63 +28,38 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+<div class="media stream-item view-compact">
+  <div class="media-body">
 
-<div class="card1">
-  {{ with $resource }}
-  {{ $image := .Resize "550x" }}
-  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
-    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
-  </a>
-  {{ end }}
-  <div class="card-text1">
-    <div class="section-subheading article-title mb-1 mt-31">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
+    <div class="section-subheading article-title mb-0 mt-0" style="justify-content: center; align-items: center; text-align: justify; text-justify: auto; font-size: 0.99em;">
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </div>
-
-    {{ if $item.Params.authors }}
-    <div class="article-metadata1">
-        <div>
-            {{ partial "page_metadata_authors" $item }}
-        </div>
-    </div>
-    {{ end }}
 
     {{ with $summary }}
-    <div class="article-style1">
-      <p>{{ . }}</p>
-    </div>
-    {{ end }}
-
-    {{ if $item.Params.tags }}
-    <div class="external-links1">
-      {{ range $item.Params.tags }}
-      <a href="/tags/{{ . | urlize }}" class="btn-link">{{ . }}</a><br>
-      {{ end }}
-    </div>
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+      <div class="article-style">
+        {{.}}
+      </div>
+    </a>
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links1">
+    <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
-  </div>
-</div>
 
-<style>
-  .btn-link1 {
-    background-color: #007BFF;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px 0;
-    display: inline-block;
-  }
-  .btn-link1:hover {
-    background-color: #0056b3;
-  }
-</style>
+    <div style="margin-bottom: 50px;"></div>
+  </div>
+  <!-- <div class="ml-3">
+    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+    {{ with $resource }}
+      {{ $image := .Resize "150x" }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+            alt="{{ $item.Title }}" loading="lazy">
+      </a>
+    {{end}}
+  </div> -->
+</div>
