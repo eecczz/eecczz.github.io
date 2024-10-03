@@ -17,9 +17,9 @@ sections:
       order: desc
       filters:
         folders:
-          - youtube-clone/react&spring
-          - youtube-clone/aws-lambda
-          - youtube-clone/video-preview
+          - react&spring
+          - aws-lambda
+          - video-preview
     design:
       view: community/custom_card
       columns: '2'
