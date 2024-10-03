@@ -29,7 +29,7 @@ main:
     parent: "홈"
     weight: 11
 
-  - name: "황선우"
+  - name: "이경수"
     url: "/authors/이경수/"
     parent: "소개"
     weight: 21
