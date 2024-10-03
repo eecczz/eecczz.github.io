@@ -14,11 +14,9 @@ main:
     weight: 20
 
   - name: "게임프로젝트"
-    url: "/game-projects/"
     weight: 30
 
   - name: "웹프로젝트"
-    url: "/web-projects/"
     weight: 40
 
   - name: "연락처"

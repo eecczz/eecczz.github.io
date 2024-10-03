@@ -14,11 +14,9 @@ main:
     weight: 20
 
   - name: "game projects"
-    url: "/game-projects/"
     weight: 30
 
   - name: "web projects"
-    url: "/web-projects/"
     weight: 40
 
   - name: "contact"
