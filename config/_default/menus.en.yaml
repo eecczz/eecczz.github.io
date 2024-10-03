@@ -57,6 +57,6 @@ main:
     weight: 51
 
   - name: "see more project"
-    url_source: 'https://github.com/eecczz?tab=repositories'
+    url: 'https://github.com/eecczz?tab=repositories'
     parent: "contact"
     weight: 52
