@@ -1,5 +1,5 @@
 ---
-title: 'Wide-field 3D Ultrasound Imaging Platform with a Semi-Automatic 3D Segmentation Algorithm for Quantitative Analysis of Rotator Cuff Tears'
+title: '쇼핑몰 프로젝트 (웹서비스설계 2인 팀프로젝트)'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -21,11 +21,11 @@ publication_types: ['article-journal']
 # Publication name and optional abbreviated publication name.
 #publication: IEEE ACCESS
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
-summary: ___SCI(E); IF=3.37, 34.25% (Q2)___ <br> _IEEE ACCESS (IEEE ACCESS, 2020, Vol. 8, Issue 1, pp. 65472-65487)_
+summary: '사용된 에셋 :'
 
 links:
-  - name: "Read Full Article"
-    url: "https://www.example.com/full-article"
+  - name: "Shop Homepage"
+    url: "https://startbootstrap.com/template/shop-homepage"
 
 
 tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
