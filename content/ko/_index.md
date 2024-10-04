@@ -14,6 +14,12 @@ sections:
         <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br>
         <span style="font-size:110%; font-weight: bold;">황선우</span><br>
         <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
+        <!-- 이메일 아이콘 추가 및 스타일 수정 -->
+        <div style="text-align: center;">
+          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;">
+            <i class="fas fa-envelope" style="font-size: 2rem;"></i>
+          </a>
+        </div>
 
   - block: slider
     content:
@@ -66,7 +72,7 @@ sections:
   - block: features
     id: features
     content:
-      title: <br><br><br><br><span style="font-size:75%">학습중인 분야</span><br><br><br><br>
+      title: <br><br><br><br><span style="font-size:75%">학습중인 분야</span>
       text: 개발자가 되기 위한 학습목표와 관심사입니다.<br><br><br><br>
       items:
         - name: 인공지능(AI)
@@ -99,8 +105,8 @@ sections:
     content:
       id: section-1
       title: wii 검술대련 클론게임
-      subtitle: <br><br><br><br>
-      text:
+      subtitle:
+      text: <br><br><br><br>
       count: 3
       offset: 0
       order: desc
@@ -117,8 +123,8 @@ sections:
     content:
       id: section-1
       title: 유튜브 클론웹
-      subtitle: <br><br><br><br>
-      text:
+      subtitle:
+      text: <br><br><br><br>
       count: 3
       offset: 0
       order: desc
@@ -134,8 +140,8 @@ sections:
   - block: collection
     content:
       title: Team Projects
-      subtitle: <br><br><br><br>
-      text:
+      subtitle:
+      text: <br><br><br><br>
       count: 3
       filters:
         author: ''
