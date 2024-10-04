@@ -67,3 +67,5 @@ user_groups:
 ---
 
 Currently enrolled in the School of Computer Science and Artificial Intelligence at Chonbuk National University, my main focus is game development. I have experience creating and releasing the game *Gone* with the Coala team from the Department of IT Convergence Engineering. For the *Creative Engineering Design Introduction* team project, I developed a Soulslike game, and as an individual, I am currently working on a *Wii Swordplay* clone game. I am also learning web development by creating a shopping mall project and a YouTube clone web service, enhancing my proficiency in React and Spring Boot. Through long-term personal project planning and development, I have become skilled in project planning, and with my experience using various frameworks like Unity, React, and Spring, I have the flexibility to quickly learn any new framework. 
+
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
