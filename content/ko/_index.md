@@ -9,13 +9,12 @@ sections:
   - block: features
     content:
       title: ""
-      subtitle: |
+      text: |
         <div style="text-align: center;">
           <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br>
           <span style="font-size:110%; font-weight: bold;">황선우</span><br>
           <span style="font-size:100%">게임/웹을 개발하고 있습니다.</span><br><br>
         </div>
-        <br><br>
       email: 'swh06084@jbnu.ac.kr'
 
 
