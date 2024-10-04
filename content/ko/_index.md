@@ -96,7 +96,7 @@ sections:
           icon_pack: fas
           description:  <span style="font-size:90%">내가 취업하려고 하는 게임회사나 유저들에게 필요한 재밌고 트렌디한 게임을 최적의 방법으로 구현</span><br><br>
         - name: 웹 개발
-          icon: decktop
+          icon: file
           icon_pack: fas
           description:  <span style="font-size:90%">현재 회사들이 필요한, 적절한 디자인 패턴을 사용해 지속가능한 코드와, 실무에서 겪을 수 있는 트래픽 등 다양한 상황들을 해결하는 데 필요한 개념 </span><br><br>
 
