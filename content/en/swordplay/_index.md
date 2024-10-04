@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Wii Swordplay
+      title: Wii Swordplay Clone
       subtitle:
       text:
       count: 3

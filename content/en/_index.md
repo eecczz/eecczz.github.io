@@ -104,7 +104,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: <br>Wii Swordplay Clone Game
+      title: <br>Wii Swordplay Clone
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -122,7 +122,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: <br>YouTube Clone Web
+      title: <br>YouTube Clone
       subtitle:
       text: <br><br><br><br>
       count: 3

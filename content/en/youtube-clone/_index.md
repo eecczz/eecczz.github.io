@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Youtube Clone Web
+      title: Youtube Clone
       subtitle:
       text:
       count: 3

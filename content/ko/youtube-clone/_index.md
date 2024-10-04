@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Youtube 클론웹
+      title: 유튜브 클론
       subtitle:
       text:
       count: 3

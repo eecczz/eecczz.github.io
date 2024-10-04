@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Wii Swordplay 클론게임
+      title: Wii Swordplay 클론
       subtitle:
       text:
       count: 3
