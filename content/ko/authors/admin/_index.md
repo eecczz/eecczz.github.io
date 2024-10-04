@@ -34,12 +34,9 @@ interests:
 
 education:
   courses:
-    - course: Integrated M.S. & Ph.D. in (전기전자컴퓨터공학과)
-      institution: 대구경북과학기술원 (DGIST)
-      year: 2018 - 2023
-    - course: B.S. in (전산전자공학부)
-      institution: 한동대학교
-      year: 2014 - 2018
+    - course: 컴퓨터인공지능학부 (재학중)
+      institution: 전북대학교
+      year: 2021
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -49,15 +46,6 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:swh06084@jbnu.ac.kr'
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.kr/citations?hl=ko&user=Srg-7JMAAAAJ&view_op=list_works&authuser=3&gmla=AKKJWFdKkn6oOSodKydbVjFB9IpHqHHucjz06KnXACXkcsad_elmO3TnVclXh3i46QOPtpevNt2mKEReoILewOZrWPw38nBujERgFLA6D1JXhmVcGPzUiQU4Fg
-  - icon: orcid
-    icon_pack: ai
-    link: https://orcid.org/0009-0000-7223-0903
-  - icon: cv
-    icon_pack: ai
-    link: https://kyungsu-lee.s3.ap-northeast-2.amazonaws.com/%5BCV%5D+Kyungsu+Lee.pdf
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
