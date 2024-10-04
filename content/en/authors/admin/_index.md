@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Seonwoo Hwang
+title: Hwang Seon-woo
 
 # Full Name (for SEO)
 first_name: Seonwoo
