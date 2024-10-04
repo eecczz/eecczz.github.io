@@ -30,7 +30,11 @@ sections:
       slides:
 
       - title: <span style="font-size:70%">Virtual Reality Game</span>
-        content: <span style="font-size:70%">A game that immerses players with controls that mimic real-life movements.</span>
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">A game that allows immersive gameplay with controls similar to real-world movements</span>
+          </div>
         align: center
         background:
           image:
@@ -41,7 +45,11 @@ sections:
           color: '#000'
 
       - title: <span style="font-size:70%">Web Service</span>
-        content: <span style="font-size:70%">Creating creative and user-friendly web services.</span>
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">Creating creative and convenient web services</span>
+          </div>
         align: center
         background:
           image:
@@ -52,7 +60,11 @@ sections:
           color: '#000'
 
       - title: <span style="font-size:70%">RPG Game Development</span>
-        content: <span style="font-size:70%">Developing games tailored for career opportunities in the RPG genre.</span>
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">Developing games tailored to employment opportunities</span>
+          </div>
         align: center
         background:
           image:
@@ -63,14 +75,12 @@ sections:
           color: '#000'
 
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '350px'
       slide_width: '100px'
       is_fullscreen: false
-      # Automatically transition through slides?
       loop: true
-      # Duration of transition between slides (in ms)
       interval: 3000
+
 
 
   - block: features

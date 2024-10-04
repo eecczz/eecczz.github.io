@@ -30,7 +30,11 @@ sections:
       slides:
 
       - title: <span style="font-size:70%">가상현실 게임</span>
-        content: <span style="font-size:70%">조작방식이 실제 움직임과 유사하여 몰입감을 느낄 수 있는 게임<span style="font-size:70%">
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">조작방식이 실제 움직임과 유사하여 몰입감을 느낄 수 있는 게임</span>
+          </div>
         align: center
         background:
           image:
@@ -41,7 +45,11 @@ sections:
           color: '#000'
 
       - title: <span style="font-size:70%">웹서비스</span>
-        content: <span style="font-size:70%">창의적이고 편리한 웹서비스를 제작</span>
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">창의적이고 편리한 웹서비스를 제작</span>
+          </div>
         align: center
         background:
           image:
@@ -52,7 +60,11 @@ sections:
           color: '#000'
 
       - title: <span style="font-size:70%">RPG 게임 개발</span>
-        content: <span style="font-size:70%">취업에 맞춤화된 장르의 게임들을 개발</span>
+        content: |
+          <div style="position: relative; text-align: center; color: white;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+            <span style="position: relative; font-size: 70%;">취업에 맞춤화된 장르의 게임들을 개발</span>
+          </div>
         align: center
         background:
           image:
@@ -63,14 +75,12 @@ sections:
           color: '#000'
 
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '350px'
       slide_width: '100px'
       is_fullscreen: false
-      # Automatically transition through slides?
       loop: true
-      # Duration of transition between slides (in ms)
       interval: 3000
+
 
 
   - block: features
