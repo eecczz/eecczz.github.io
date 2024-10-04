@@ -17,8 +17,6 @@ sections:
         </div>
         <br><br>
       email: 'swh06084@jbnu.ac.kr'
-      text:  |       
-        {{% cta cta_link="./about/" cta_text="More→" %}}
 
 
   - block: slider
