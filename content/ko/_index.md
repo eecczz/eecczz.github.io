@@ -143,7 +143,7 @@ sections:
 
   - block: collection
     content:
-      title: <br>Team Projects
+      title: <br>팀프로젝트
       subtitle:
       text: <br><br><br><br>
       count: 3

@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Team projects
+      title: 팀프로젝트
       subtitle:
       text:
       count: 3
