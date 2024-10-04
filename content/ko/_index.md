@@ -20,7 +20,7 @@ sections:
             <i class="fas fa-envelope" style="font-size: 2rem;"></i> 
           </a> 
           &nbsp;&nbsp; <!-- 아이콘 사이에 간격 추가 --> 
-          <a href="https://github.com/your-github-username" style="text-decoration: none; color: #ff5722;"> 
+          <a href="https://github.com/eecczz" style="text-decoration: none; color: #ff5722;"> 
             <i class="fab fa-github" style="font-size: 2rem;"></i> 
           </a> 
         </div><br><br>
