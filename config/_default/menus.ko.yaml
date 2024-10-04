@@ -45,7 +45,7 @@ main:
     weight: 32
 
   - name: "팀프로젝트들"
-    url: "/team-project"
+    url: "/team-projects"
     parent: "팀프로젝트"
     weight: 41
 
