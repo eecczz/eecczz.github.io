@@ -2,7 +2,7 @@
 // https://hugoblox.com/hugo-themes/
 
 body {
-  background-color: rgb(255, 245, 230); // 밝고 따뜻한 베이지 톤 (light 모드)
+  background-color: rgb(255, 245, 230); // 밝고 따뜻한 베이지 톤으로 변경
 }
 
 .article-container {
@@ -11,7 +11,7 @@ body {
 }
 
 .dark .article-container {
-  background-color: rgb(90, 45, 20);  // 다크 오렌지 계열 (dark 모드)
+  background-color: rgb(34, 40, 49);  // 어두운 모드에서 진한 다크 그레이로 변경
 }
 
 // custom footer color
@@ -20,7 +20,7 @@ body {
 }
 
 .dark .page-footer {
-  background-color: rgb(90, 45, 20);  // 다크 오렌지로 설정
+  background-color: rgb(26, 32, 44);  // 기존 다크 모드의 컬러 유지
 }
 
 // more rounded cards and larger gap between cards
@@ -30,7 +30,7 @@ body {
 }
 
 .dark .card-simple {
-  background: rgb(90, 45, 20);  // 다크 모드에서 카드 배경색도 다크 오렌지로 변경
+  background: rgb(34, 40, 49);  // 다크 모드에서 카드 배경색 조정
 }
 
 // no navbar shadow
