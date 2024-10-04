@@ -32,8 +32,6 @@ links:
     url: "https://assetstore.unity.com/packages/3d/environments/dungeons/the-red-prison-40198"
 
 
-tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
-
 # Display this page in the Featured widget?
 featured: true
 

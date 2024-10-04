@@ -30,8 +30,6 @@ links:
     url: "https://assetstore.unity.com/packages/templates/systems/multislot-save-system-for-fungus-141890"
 
 
-tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
-
 # Display this page in the Featured widget?
 featured: true
 

@@ -28,8 +28,6 @@ links:
     url: "https://startbootstrap.com/template/shop-homepage"
 
 
-tags: ['AI', 'medical', 'ultrasound', 'segmentation', 'Q2']
-
 # Display this page in the Featured widget?
 featured: true
 
