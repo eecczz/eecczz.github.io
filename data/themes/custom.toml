@@ -3,23 +3,23 @@ name = "Starter Blog"
 
 [light]
   # Primary
-  primary = "#2962ff"
-
+  primary = "#ff5722"  # 활기찬 오렌지 컬러로 변경
+  
   # Menu
   menu_primary = "rgb(247, 250, 252)"
   menu_text = "#34495e"
-  menu_text_active = "#2962ff"
+  menu_text_active = "#ff5722"  # primary와 맞춘 메뉴 활성화 색상
   menu_title = "#2b2b2b"
 
   # Home sections
-  home_section_odd = "rgb(247, 250, 252)"
-  home_section_even = "rgb(247, 250, 252)"
+  home_section_odd = "rgb(255, 243, 224)"  # 밝은 베이지로 변경해 배경에 변화를 줌
+  home_section_even = "rgb(255, 236, 179)"  # 밝은 노란색으로 구분감 제공
 
 [dark]
-  primary = "#bbdefb"
-  link = "#bbdefb"
-  link_hover = "#bbdefb"
+  primary = "#ff8a65"  # 다크 모드에서 따뜻한 오렌지 컬러
+  link = "#ff8a65"
+  link_hover = "#ffccbc"
   background = "rgb(26, 32, 44)"
   home_section_odd = "rgb(26, 32, 44)"
-  home_section_even = "rgb(26, 32, 44)"
+  home_section_even = "rgb(33, 41, 52)"
   menu_primary = "rgb(26, 32, 44)"
