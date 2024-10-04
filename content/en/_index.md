@@ -6,19 +6,23 @@ type: landing
 
 sections:
 
-  - block: features
-    content:
-      title: ""
-      text: |
-        <div style="text-align: center;">
-        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br>
-        <span style="font-size:110%; font-weight: bold;">Hwang Seon-woo</span><br><br>
-        <span style="font-size:100%">I'm a sophomore at Chonbuk National University's Department of Computer and Artificial Intelligence, developing games and web applications, and preparing for a career as a developer.</span><br><br>
-        <!-- Email icon added and styled -->
-        <div style="text-align: center;">
-          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;">
-            <i class="fas fa-envelope" style="font-size: 2rem;"></i>
-          </a>
+  - block: features 
+    content: 
+      title: "" 
+      text: | 
+        <div style="text-align: center;"> 
+        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br> 
+        <span style="font-size:110%; font-weight: bold;">Seonwoo Hwang</span><br><br> 
+        <span style="font-size:100%">I am a second-year student at Chonbuk National University's School of Computer and Artificial Intelligence, developing games/web applications and preparing for a career as a developer.</span><br><br> 
+        <!-- Add email and GitHub icons with styling --> 
+        <div style="text-align: center;"> 
+          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;"> 
+            <i class="fas fa-envelope" style="font-size: 2rem;"></i> 
+          </a> 
+          &nbsp;&nbsp; <!-- Add space between icons --> 
+          <a href="https://github.com/your-github-username" style="text-decoration: none; color: #ff5722;"> 
+            <i class="fab fa-github" style="font-size: 2rem;"></i> 
+          </a> 
         </div><br><br>
 
   - block: slider

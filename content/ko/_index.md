@@ -6,19 +6,23 @@ type: landing
 
 sections:
 
-  - block: features
-    content:
-      title: ""
-      text: |
-        <div style="text-align: center;">
-        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br>
-        <span style="font-size:110%; font-weight: bold;">황선우</span><br><br>
-        <span style="font-size:100%">전북대학교 컴퓨터인공지능학부 2학년으로, 게임/웹을 개발하고 있고, 개발자로 취업을 준비하고 있습니다.</span><br><br>
-        <!-- 이메일 아이콘 추가 및 스타일 수정 -->
-        <div style="text-align: center;">
-          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;">
-            <i class="fas fa-envelope" style="font-size: 2rem;"></i>
-          </a>
+  - block: features 
+    content: 
+      title: "" 
+      text: | 
+        <div style="text-align: center;"> 
+        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br> 
+        <span style="font-size:110%; font-weight: bold;">황선우</span><br><br> 
+        <span style="font-size:100%">전북대학교 컴퓨터인공지능학부 2학년으로, 게임/웹을 개발하고 있고, 개발자로 취업을 준비하고 있습니다.</span><br><br> 
+        <!-- 이메일 및 깃허브 아이콘 추가 및 스타일 수정 --> 
+        <div style="text-align: center;"> 
+          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;"> 
+            <i class="fas fa-envelope" style="font-size: 2rem;"></i> 
+          </a> 
+          &nbsp;&nbsp; <!-- 아이콘 사이에 간격 추가 --> 
+          <a href="https://github.com/your-github-username" style="text-decoration: none; color: #ff5722;"> 
+            <i class="fab fa-github" style="font-size: 2rem;"></i> 
+          </a> 
         </div><br><br>
 
   - block: slider
