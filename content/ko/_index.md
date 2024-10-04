@@ -73,7 +73,7 @@ sections:
     id: features
     content:
       title: <br><br><span style="font-size:75%">학습중인 분야</span>
-      text: <br><br>개발자가 되기 위한 학습목표와 관심사입니다.<br><br><br><br>
+      text: 개발자가 되기 위한 학습목표와 관심사입니다.<br><br>
       items:
         - name: 인공지능(AI)
           icon: code-branch
@@ -104,7 +104,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: <br><br> wii 검술대련 클론게임
+      title: wii 검술대련 클론게임
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -122,7 +122,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: <br><br>유튜브 클론웹
+      title: 유튜브 클론웹
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -139,7 +139,7 @@ sections:
 
   - block: collection
     content:
-      title: <br><br>Team Projects
+      title: Team Projects
       subtitle:
       text: <br><br><br><br>
       count: 3

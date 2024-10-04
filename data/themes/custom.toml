@@ -7,7 +7,7 @@ name = "Starter Blog"
   
   # Menu
   menu_primary = "rgb(247, 250, 252)"
-  menu_text = "#34495e"
+  menu_text = "#ffffff"  # 메뉴 텍스트를 흰색으로 변경
   menu_text_active = "#ff5722"  # primary와 맞춘 메뉴 활성화 색상
   menu_title = "#2b2b2b"
 
@@ -19,10 +19,8 @@ name = "Starter Blog"
   primary = "#ff8a65"  # 다크 모드에서 따뜻한 오렌지 컬러
   link = "#ff8a65"
   link_hover = "#ffccbc"
-  background = "rgb(34, 34, 44)"  # 어두운 회색 톤을 추가하여 차분한 느낌 유지
-  home_section_odd = "rgb(44, 44, 54)"  # 오렌지와 대비를 주기 위해 더 깊은 회색 추가
-  home_section_even = "rgb(54, 54, 64)"  # 배경에 경미한 변화를 주기 위해 더 밝은 회색
-  menu_primary = "rgb(26, 32, 44)"  # 메뉴 배경은 어두운 색상으로 유지
-  menu_text = "#ffccbc"  # 오렌지와 잘 어울리는 밝은 텍스트 색상
-  menu_text_active = "#ff8a65"  # 활성화된 메뉴는 따뜻한 오렌지색으로
-  menu_title = "#ffffff"  # 타이틀 텍스트는 밝은 색상으로 가독성 유지
+  background = "rgb(26, 32, 44)"
+  home_section_odd = "rgb(26, 32, 44)"
+  home_section_even = "rgb(33, 41, 52)"
+  menu_primary = "rgb(26, 32, 44)"
+  menu_text = "#ffffff"  # 다크 모드 메뉴 텍스트도 흰색으로 변경
