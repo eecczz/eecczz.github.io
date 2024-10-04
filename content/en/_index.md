@@ -8,71 +8,51 @@ sections:
 
   - block: features
     content:
-      title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
-      text: <br><span style="font-size:125%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span> <br><br>
-        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
-
+      title: ""
+      text: |
+        <div style="text-align: center;">
+        <img src="avatar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;"><br>
+        <span style="font-size:110%; font-weight: bold;">황선우</span><br>
+        <span style="font-size:100%">전북대학교 컴퓨터인공지능학부 2학년으로, 게임/웹을 개발하고 있고, 개발자로 취업을 준비하고 있습니다.</span><br><br>
+        <!-- 이메일 아이콘 추가 및 스타일 수정 -->
+        <div style="text-align: center;">
+          <a href="mailto:swh06084@jbnu.ac.kr" style="text-decoration: none; color: #ff5722;">
+            <i class="fas fa-envelope" style="font-size: 2rem;"></i>
+          </a>
+        </div><br><br>
 
   - block: slider
     content:
       slides:
 
-      - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">Interested in MacsLAB?</span>
+      - title: <span style="font-size:70%">가상현실 게임</span>
+        content: <span style="font-size:70%">조작방식이 실제 움직임과 유사하여 몰입감을 느낄 수 있는 게임<span style="font-size:70%">
         align: center
         background:
           image:
-            filename: recruitment.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">Join Us</span>
-          text-color: '#000'
-          url: contact
-
-      - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발<span style="font-size:70%">
-        align: center
-        background:
-          image:
-            filename: Ai.jpg
+            filename: nikita-kachanovsky-FJFPuE1MAOM-unsplash.jpg
             filters:
               brightness: 0.4
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">Healthcare</span>
-        content: <span style="font-size:70%">의료 및 헬스케어 분야에 적용 가능한 AI 기술 개발</span>
+      - title: <span style="font-size:70%">웹서비스</span>
+        content: <span style="font-size:70%">창의적이고 편리한 웹서비스를 제작</span>
         align: center
         background:
           image:
-            filename: healthcare.jpg
+            filename: luke-chesser-2Bdyxgz3OM0-unsplash.jpg
             filters:
               brightness: 0.4
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">Mathematics</span>
-        content: <span style="font-size:70%">AI와 관련된 수학 및 최적화 이론 연구</span>
+      - title: <span style="font-size:70%">RPG 게임 개발</span>
+        content: <span style="font-size:70%">취업에 맞춤화된 장르의 게임들을 개발</span>
         align: center
         background:
           image:
-            filename: mathematics.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: <span style="font-size:70%">Development</span>
-        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
-        align: center
-        background:
-          image:
-            filename: development.jpg
+            filename: alice-alinari-HUqxgjORAnw-unsplash.jpg
             filters:
               brightness: 0.4
           position: center
@@ -92,58 +72,76 @@ sections:
   - block: features
     id: features
     content:
-      title: <span style="font-size:75%">Lab's Interests</span>
-      text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 쏟고 있습니다.<br><br><br><br>
+      title: <br><br><span style="font-size:75%">학습중인 분야</span>
+      text: 개발자가 되기 위한 학습목표와 관심사입니다.<br><br>
       items:
         - name: 인공지능(AI)
           icon: code-branch
           icon_pack: fas
-          description: <span style="font-size:90%">의료 (Medical), 항공우주 (Aerospace), 컨텐츠 (Contents) 등 다양한 특성화 분야에 적응형 AI 기술 적용.</span><br><br>
-        - name: 멀티모달(Multi-modality)
-          icon: globe
+          description: <span style="font-size:90%">창의적이고 혁신적인 AI 서비스를 제작</span><br><br>
+        - name: 알고리즘
+          icon: code
           icon_pack: fas
-          description:  <span style="font-size:90%">Vision & Language 분야의 기반 AI 기술 개발 및 관련 응용 어플리케이션에 기술 적용.</span><br><br>
-        - name: 의료수학(Medical Math)
-          icon: calculator
+          description:  <span style="font-size:90%">코딩 테스트에 나올 수 있는 알고리즘과 AI에 적용되는 알고리즘들을 학습하고 문제풀이</span><br><br>
+        - name: 기획
+          icon: align-right
           icon_pack: fas
-          description:  <span style="font-size:90%">의료 분야에 대한 통계 분석 수행 및 의료 질병에 대한 수학적인 모델링 관련 연구 수행.</span><br><br>
-        - name: 컨텐츠 (Contents)
-          icon: comment-dots
+          description:  <span style="font-size:90%">특정 주제가 주어지고 그에 관련된 웹/앱을 만드는 요구사항이 주어질 때, 유저가 관심을 가질 만한 아이디어를 내고, 체계적으로 정리하기</span><br><br>
+        - name: 네트워크
+          icon: wifi
           icon_pack: fas
-          description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
-        - name: 개발 (Development)
-          icon: laptop
+          description:  <span style="font-size:90%">개발 실무에서 다양한 문제 해결을 위한 네트워크 지식</span><br><br>
+        - name: 게임 개발
+          icon: gamepad
           icon_pack: fas
-          description:  <span style="font-size:90%">Full-Stack 기반의 응용 어플리케이션 개발.</span><br><br>
-        - name: 솔루션 (Solution)
-          icon: app-store-ios
-          icon_pack: fab
-          description:  <span style="font-size:90%">AI 기반기술 및 관련 어플리케이션에 적용을 통한 통합 솔루션 개발!</span><br><br>
+          description:  <span style="font-size:90%">내가 취업하려고 하는 게임회사나 유저들에게 필요한 재밌고 트렌디한 게임을 최적의 방법으로 구현</span><br><br>
+        - name: 웹 개발
+          icon: file
+          icon_pack: fas
+          description:  <span style="font-size:90%">현재 회사들이 필요한, 적절한 디자인 패턴을 사용해 지속가능한 코드와, 실무에서 겪을 수 있는 트래픽 등 다양한 상황들을 해결하는 데 필요한 개념 </span><br><br>
 
 
   - block: collection
     content:
       id: section-1
-      title: Notifications & News
+      title: <br>wii 검술대련 클론게임
       subtitle:
-      text:
+      text: <br><br><br><br>
       count: 3
       offset: 0
       order: desc
       filters:
         folders:
-          - notification
-          - post
-          - event
+          - sword-motion
+          - hit-reaction
+          - shader
     design:
       view: community/custom_card
       columns: '2'
 
   - block: collection
     content:
-      title: Latest Publications
+      id: section-1
+      title: <br>유튜브 클론웹
       subtitle:
-      text:
+      text: <br><br><br><br>
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - react&spring
+          - aws-lambda
+          - video-preview
+    design:
+      view: community/custom_card
+      columns: '2'
+
+  - block: collection
+    content:
+      title: <br>Team Projects
+      subtitle:
+      text: <br><br><br><br>
       count: 3
       filters:
         author: ''
@@ -153,7 +151,7 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: publication
+      page_type: team-projects
     design:
       view: community/custom_card
       columns: '2'
@@ -165,7 +163,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
+        {{% cta cta_link="./contact/" cta_text="Join Project →" %}}
     design:
       columns: '1'
 ---

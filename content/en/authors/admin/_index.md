@@ -2,40 +2,41 @@
 # Display name
 title: 황선우
 
+# Full Name (for SEO)
+first_name: Seonwoo
+last_name: Hwang
+
+# Username (this should match the folder name)
+authors:
+  - admin
+
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: '백엔드/게임 개발'
-
-# Status emoji
-status:
-  icon: ☕️
+role: 재학생
 
 # Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+organizations:
+  - name: 전북대학교 컴퓨터인공지능학부
+    url: 'https://csai.jbnu.ac.kr/csai/index.do'
 
 # Short bio (displayed in user profile at end of posts)
-bio: 게임, 웹을 개발하고 있습니다.
+bio: 게임/웹을 개발합니다.
 
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
+interests:
+  - 인공지능 (AI)
+  - 알고리즘
+  - 기획
+  - 네트워크
+  - 게임 개발
+  - 웹 개발
 
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
+education:
+  courses:
+    - course: 컴퓨터인공지능학부 (재학중)
+      institution: 전북대학교
+      year: 2021
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -44,12 +45,7 @@ bio: 게임, 웹을 개발하고 있습니다.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
-
+    link: 'mailto:swh06084@jbnu.ac.kr'
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -57,11 +53,17 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+email: 'swh06084@jbnu.ac.kr'
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+
+# Organizational groups that you belong to (for People widget)
+#   Set this to `[]` or comment out if you are not using People widget.
+user_groups:
+  - admin
+
+
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+전북대학교 컴퓨터인공지능학부에 재학 중으로, 주력분야인 게임개발 경력은 IT정보공학과 동아리 Coala 팀에서 Gone 게임을 만들고 출시하였으며, 창의적공학설계입문 팀프로젝트로 소울라이크 게임을 만들고, 개인으로는 wii swordplay 클론게임을 개발 중에 있습니다. 그리고 현재 학습중인 웹개발은 쇼핑몰 프로젝트와 유튜브 클론웹서비스를 만들며 리액트, 스프링 부트에 숙련도를 더해가고 있습니다. 개인 프로젝트를 장기간 스스로 구상하며 개발하는 과정에서 기획 또한 잘할 수 있고, unity, react, spring 등 프레임워크들을 다양하게 써본 경험을 토대로, 처음 접한 프레임워크라도 금방 익힐 수 있는 유연성도 갖추고 있습니다.
