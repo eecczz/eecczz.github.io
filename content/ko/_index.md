@@ -104,7 +104,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: wii 검술대련 클론게임
+      title: <br>wii 검술대련 클론게임
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -122,7 +122,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: 유튜브 클론웹
+      title: <br>유튜브 클론웹
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -139,7 +139,7 @@ sections:
 
   - block: collection
     content:
-      title: Team Projects
+      title: <br>Team Projects
       subtitle:
       text: <br><br><br><br>
       count: 3
