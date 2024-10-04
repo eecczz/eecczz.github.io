@@ -1,5 +1,5 @@
 ---
-title: '소울라이크게임 (창의적공학설계입문 4인 팀프로젝트)'
+title: 'Soulslike Game (Creative Engineering Design 4-person Team Project)'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -21,12 +21,12 @@ publication_types: ['article-journal']
 # Publication name and optional abbreviated publication name.
 #publication: IEEE ACCESS
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
-summary: '사용된 에셋 :'
+summary: 'Assets Used:'
 
 links:
   - name: "Armored Barbarian"
     url: "https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/armored-barbarian-14821"
-  - name: "Asesome Fantasy Character"
+  - name: "Awesome Fantasy Character"
     url: "https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/awesome-fantasy-characters-glory-armor-132786"
   - name: "The Red Prison"
     url: "https://assetstore.unity.com/packages/3d/environments/dungeons/the-red-prison-40198"

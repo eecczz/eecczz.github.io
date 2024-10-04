@@ -9,7 +9,7 @@ title: 'Contact'
 content:
   title: Contact
   text: |-
-    <br> <span style="font-size:95%">전북대학교 의료 AI 및 계산 수학 연구실 (Macs)의 학부연구생/석사 position에 관심 있으시면 아래로 연락주시면 감사드리겠습니다.</span> <br>
+    <br> <span style="font-size:95%">저의 프로젝트들에 관심이 있으시다면 아래로 연락바랍니다.</span> <br>
   email: swh06084(at)jbnu.ac.kr
   phone: 010-7661-1491
   address:

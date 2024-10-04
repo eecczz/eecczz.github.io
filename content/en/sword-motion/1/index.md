@@ -3,16 +3,10 @@ title: Sword-motion
 date: 2024-03-29
 ---
 
-wii 검술대련의 재미에 가장 큰 기여를 했던 것은 인터랙티브한 검의 움직임입니다.
-이것으로 인해 wii 리모컨을 마치 검을 휘두르듯 쥐고 사용하면, 게임상의 캐릭터는 
-실제 유저가 취한 자세와 유사한 자세로 움직이도록 조작되어, 매우 몰입감이 높습니다.
+One of the biggest contributors to the fun of Wii swordplay is the interactive motion of the sword. When users hold the Wii remote as if swinging a sword, the in-game character moves in a way that closely mimics the player's actual stance, greatly enhancing immersion.
 <!--more-->
-이러한 인터랙티브한 검의 움직임은 결코 단순하지 않습니다. 검의 움직임에는 회전이 포함됩니다.
-그리고 회전은 회전축을 기반으로 회전하는데, 실제 우리가 검을 쥔 자세를 생각하며 회전축을 어떻게
-설정할지 봅시다.
+This interactive sword movement is far from simple. The motion includes rotation, and rotation occurs around an axis. Let's consider how to set the rotation axis based on how we actually hold a sword.
 
-우리가 검을 쥐고 다양한 자세를 취할 때, 어깨와 팔꿈치, 손목 관절로 총 3가지 회전축에 의해 검의 위치가 결정됩니다.
-게임상에서 현실에서 취할 수 있는 모든 자세에 대응할 수 있어야하므로 여기서도 역시 회전축이 3가지가 필요합니다.
-그러나 여러 회전축이 동시에 회전에 관여한다면 각각의 회전축의 적절한 가중치값을 찾거나, 특정 회전축에 의한 회전에 따른 하위 회전축의 위치변화 등 고려할 것이 매우 복잡하므로, 실제론 단일 회전축이 검의 위치에 따라 위치가 변화하도록 설계하였습니다.
+When we hold a sword and take different stances, the position of the sword is determined by three rotational axes: the shoulder, elbow, and wrist joints. Since the game needs to respond to all possible real-world stances, it also requires three axes of rotation. However, if multiple axes are involved in rotation simultaneously, it becomes extremely complex to calculate appropriate weighting for each axis or account for changes in lower axes' positions due to rotation along higher axes. Therefore, the sword's position was designed to shift dynamically based on a single rotation axis.
 
-수없이 게임 플레이 영상을 봐가며 검의 움직임에 대한 코드를 예측하고, 숫자나 식을 수정한 끝에 실제 게임과 거의 차이가 없는 검의 움직임을 구현하는 데 성공했고, 예상대로 인터랙티브한 검의 움직임에서 굉장한 몰입감과 재미가 더해졌습니다.
+After watching countless gameplay videos, predicting the code for sword movement, and tweaking numbers and formulas, I successfully implemented sword motion that closely mirrors the actual game. As expected, the interactive sword motion added a significant level of immersion and enjoyment to the gameplay.

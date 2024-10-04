@@ -3,19 +3,14 @@ title: Video Preview
 date: 2024-03-29
 ---
 
-유튜브 서비스에서 가장 사용자경험이 좋았던 부분은 바로 동영상 프리뷰 기능입니다.
-동영상의 썸네일에 커서를 갖다대면 동영상의 상세페이지로 들어가지 않아도 미리 영상을 
-현재 페이지에서 재생할 수 있습니다.
+One of the best user experiences on YouTube is the video preview feature. When hovering over a video thumbnail, users can see a preview of the video without entering the detailed video page, and even control the playback bar directly on the current page.
 
-다른 동영상 스트리밍 서비스도 동영상의 썸네일이 커서를 갖다대면 gif로 바뀌어 주요 씬을 미리
-볼 순 있었으나, 유튜브처럼 아예 재생바까지 조작할 수 있는 영상으로 바뀌는 서비스는 없었습니다.
+Other video streaming services provide previews in the form of GIFs when hovering over thumbnails, showing key scenes. However, unlike YouTube, they don’t allow the user to interact with the video’s playback bar directly during the preview.
 
-커서를 썸네일에 갖다대면 썸네일이 지워지고 그 자리에 썸네일에 해당하는 영상이 로드되어 자동재생되고, 
-커서를 떼면 다시 영상이 지워지고 썸네일이 로드되는 로직으로 예상할 수 있고, 그것이 맞지만, 조금 더 있습니다.
+In this functionality, when the cursor hovers over the thumbnail, the thumbnail is replaced by a loaded video that automatically starts playing. When the cursor moves away, the video stops, and the thumbnail reloads. However, there's more to this mechanism.
 
-이 로직의 경우, 문제는 커서가 너무 빨리 움직여 1초만에 여러 썸네일들에 커서가 지나갔다면, 해당 썸네일들은 순식간에
-그에 해당하는 영상을 로드하고 또 커서가 이탈하였으므로 다시 지우고 썸네일을 로드해야합니다. 이 과정에서 커서는 이탈
-했는데 여전히 프리뷰가 재생되는 문제가 발생합니다. 이를 막기 위해 아마도 유튜브도 취했을 제약을 추가합니다.
-그 제약은 바로, 커서가 1초간 썸네일에 enter된 이후 stay되어야 프리뷰가 실행되는 것입니다.
+A challenge arises when the cursor moves too quickly over multiple thumbnails within a second. In such a case, each thumbnail would need to load its corresponding video and, once the cursor leaves, unload the video and reload the thumbnail. This could result in a situation where previews continue playing even after the cursor has left.
 
-이것을 통해 여러 성능 이슈들을 해결하고 깔끔한 프리뷰 기능을 저의 프로젝트에 구현할 수 있었습니다.
+To avoid this issue, an additional constraint is likely applied by YouTube, which I also implemented: the preview only starts if the cursor stays on the thumbnail for at least one second.
+
+By adding this delay, I was able to address performance issues and successfully implement a clean, efficient video preview feature in my project.

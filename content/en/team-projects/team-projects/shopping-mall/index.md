@@ -1,5 +1,5 @@
 ---
-title: '쇼핑몰 프로젝트 (웹서비스설계 2인 팀프로젝트)'
+title: 'Shopping Mall Project (Web Service Design 2-person Team Project)'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -21,7 +21,7 @@ publication_types: ['article-journal']
 # Publication name and optional abbreviated publication name.
 #publication: IEEE ACCESS
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
-summary: '사용된 에셋 :'
+summary: 'Assets Used:'
 
 links:
   - name: "Shop Homepage"

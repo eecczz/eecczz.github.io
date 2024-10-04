@@ -3,9 +3,6 @@ title: AWS Lambda
 date: 2024-03-08
 ---
 
-유튜브와 같은 서비스를 만들기 위해선, 저장소에서 수많은 영상을 불러올 수 있어야할 뿐 아니라, 그 영상들 각각의
-화질을 사용자가 직접 조절할 수 있어야 하고, 대용량의 영상도 업로드하고 재생할 수 있어야 합니다. 이것은 html에서
-기본으로 제공하는 video태그로는 할 수 없기 때문에, AWS Lambda를 사용하여 이를 구현했습니다.
+To create a service like YouTube, not only must you be able to load numerous videos from storage, but users should also be able to adjust the quality of each video manually. Additionally, the service must be able to handle uploading and playing large videos. Since this cannot be achieved with the basic `video` tag in HTML, I used AWS Lambda to implement these features.
 
 <!--more-->
-

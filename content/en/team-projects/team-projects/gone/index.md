@@ -1,5 +1,5 @@
 ---
-title: 'Gone (Coala 동아리 4인 팀프로젝트)'
+title: 'Gone (Coala Club 4-member team project)'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -21,7 +21,7 @@ publication_types: ['article-journal']
 # Publication name and optional abbreviated publication name.
 #publication: IEEE ACCESS
 #publication_short: IEEE ACCESS (IEEE ACCESS)  [__SCI(E); IF=3.37, 34.25% (Q2)__]
-summary: '사용된 에셋 :'
+summary: 'Assets used:'
 
 links:
   - name: "Fungus"

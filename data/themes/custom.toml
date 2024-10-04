@@ -8,7 +8,7 @@ name = "Starter Blog"
   # Menu
   menu_primary = "rgb(247, 250, 252)"
   menu_text = "#ff5722"  # 라이트 모드에서 메뉴 텍스트를 진한 오렌지로 변경
-  menu_text_active = "#e64a19"  # 더 진한 주황색으로 메뉴 활성화 색상 설정 (#e64a19)
+  menu_text_active = "#ff5722"  # primary와 맞춘 메뉴 활성화 색상
   menu_title = "#2b2b2b"
 
   # Home sections
@@ -24,4 +24,3 @@ name = "Starter Blog"
   home_section_even = "rgb(33, 41, 52)"
   menu_primary = "rgb(26, 32, 44)"
   menu_text = "#ffffff"  # 다크 모드에서 메뉴 텍스트를 흰색으로 설정
-  menu_text_active = "#ff5722"  # 다크 모드에서 메뉴 활성화 색상을 주황색으로 설정 (#ff5722)

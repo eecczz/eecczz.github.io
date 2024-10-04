@@ -3,20 +3,19 @@ title: Wii-Style Shader
 date: 2024-03-29
 ---
 
-캐릭터와 건물에 적용된 심플하면서도 깔끔한 텍스쳐는 wii게임의 상징입니다. 이러한 텍스쳐가 구체적으로
-어떤 특징이 있는지 파악하고, 그것을 unity엔진으로 구현했습니다. 
+The simple yet clean textures applied to characters and buildings are a hallmark of Wii games. I identified the specific characteristics of these textures and implemented them using the Unity engine.
 
 <!--more-->
-wii 텍스쳐 특징
-- 단순한 색상 및 쉐이딩
-- 광택이 낮은 표면
-- 카툰풍의 굵은 외곽선
-- 부드러운 애니메이션 텍스처
+Characteristics of Wii textures:
+- Simple colors and shading
+- Low-gloss surfaces
+- Thick cartoon-style outlines
+- Smooth animated textures
 
-unity 엔진으로 구현
-- Lit 쉐이더를 사용
-- Smoothness를 0으로 설정
-- 금속성과 광택이 없도록 Metallic을 0으로 설정
-- wii 특유의 심플하지만 깔끔한 이펙트는 Emission 속성을 사용하여 재현
+Implemented in Unity:
+- Used the Lit shader
+- Set Smoothness to 0
+- Set Metallic to 0 to remove metallic properties and gloss
+- Recreated the Wii’s simple yet clean effects using the Emission property
 
-이 스타일은 간결하고 깔끔한 외형으로, 하드웨어 성능에 최적화된 단순한 텍스처와 쉐이딩을 사용합니다.
+This style uses straightforward and clean visuals, employing simple textures and shading that are optimized for hardware performance.
