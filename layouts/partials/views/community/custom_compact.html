@@ -35,16 +35,14 @@
 
     <div style="margin-bottom: 50px;"></div>
   </div>
-
-  <!-- 이미지가 우측에 배치되고 크기를 고정 -->
   <div class="ml-3">
     {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
     {{ with $resource }}
-      {{ $image := .Resize "150x150" }} <!-- 이미지 크기를 고정 -->
+      {{ $image := .Resize "150x" }}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" height="150" width="150"  <!-- 고정된 이미지 크기 -->
-            alt="{{ $item.Title }}" loading="lazy" style="object-fit: cover;">
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+            alt="{{ $item.Title }}" loading="lazy">
       </a>
     {{end}}
   </div>
