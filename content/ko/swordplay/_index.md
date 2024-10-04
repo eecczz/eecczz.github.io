@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: wii 검술대련 클론게임
+      title: Wii Swordplay 클론게임
       subtitle:
       text:
       count: 3
