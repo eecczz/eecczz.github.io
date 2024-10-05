@@ -10,3 +10,25 @@ languages:
     languageName: "한국어"
     weight: 2
     contentDir: "content/ko"
+params:
+  description: "전북대학교 컴퓨터인공지능학부 2학년 황선우의 포트폴리오 사이트입니다. 게임 및 웹 개발 프로젝트와 AI, 알고리즘, 기획 등을 다룹니다."
+  author: "황선우"
+  keywords: ["황선우", "전북대", "컴퓨터인공지능학부", "게임 개발", "웹 개발", "AI"]
+
+  seo:
+    og_title: "황선우 - 전북대 컴퓨터인공지능학부 포트폴리오"
+    og_description: "전북대 황선우의 게임 및 웹 개발 포트폴리오"
+    og_image: "/media/icon.png"  # 사이트 로고나 대표 이미지 경로
+    og_type: "website"
+
+  schema:
+    type: "Person"
+    name: "황선우"
+    description: "전북대학교 컴퓨터인공지능학부 학생이자 게임/웹 개발자"
+    jobTitle: "Student, Developer"
+    worksFor:
+      "@type": "Organization"
+      name: "전북대학교 컴퓨터인공지능학부"
+    url: "https://csai.jbnu.ac.kr/csai/index.do#:~:text=[54896]/"
+    sameAs:
+      - "https://github.com/eecczz"
