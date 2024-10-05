@@ -1,32 +1,54 @@
-# [Hugo Portfolio Theme](https://github.com/wowchemy/starter-hugo-portfolio-theme)
+# Hwang Seon-woo
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+**Role**: Computer AI Undergraduate  
+**Institution**: [Chonbuk National University, Department of Computer Artificial Intelligence](https://csai.jbnu.ac.kr/csai/index.do)  
+**Email**: [swh06084@jbnu.ac.kr](mailto:swh06084@jbnu.ac.kr)
 
-The **Hugo Portfolio Template** empowers you to easily create a portfolio website. Make it your own by choosing a color theme and grid layout!
+---
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## Bio
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+I am currently an undergraduate student majoring in Computer Artificial Intelligence at Chonbuk National University. My main field of expertise is game development, and I have worked on several projects in this area, including the release of the game *Gone* as part of the *Coala* team from the Department of IT Information Engineering. In addition, I participated in a team project during my *Creative Engineering Design* course to develop a *Soulslike* game. On the side, I am individually developing a clone of the *Wii Swordplay* game.
 
-[Check out the latest demo](https://hugo-portfolio-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+I am also honing my web development skills by working on projects such as an online shopping mall system and a YouTube clone web service, gaining proficiency in *React* and *Spring Boot*. I have experience with various frameworks including *Unity*, *React*, and *Spring*, allowing me to quickly learn and adapt to new frameworks as needed. I also excel at project planning, having developed the ability to plan and execute long-term individual projects from scratch.
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## Interests
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+- Artificial Intelligence (AI)
+- Algorithms
+- Project Planning
+- Networks
+- Game Development
+- Web Development
 
-## We ask you, humbly, to support this open source movement
+## Projects
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+### Gone (Team Project)
+*Developed as part of the Coala team from the Department of IT Information Engineering.*
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+### Soulslike Game (Team Project)
+*Created during the Creative Engineering Design course.*
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+### Wii Swordplay Clone
+*Individually developing a clone of the Wii Swordplay game.*
+
+### Online Shopping Mall Project
+*Developing a shopping mall web service using React and Spring Boot.*
+
+### YouTube Clone Web Service
+*Creating a YouTube-like web service to enhance web development skills.*
+
+## Skills
+
+- **Game Development**: Unity, Game design, Animation
+- **Web Development**: React, Spring Boot, RESTful API
+- **Planning & Design**: Project management, UX/UI design, Conceptualization
+
+## Education
+
+- **Bachelor's Degree** in Computer Artificial Intelligence (In Progress)  
+  Chonbuk National University, 2021 - Present
+
+---
+
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.
