@@ -35,9 +35,11 @@
     </div>
 
     {{ if $item.Params.video_url }}
-    <div class="pcard-video">
-        <a href="{{ $item.Params.video_url }}" target="_blank">Wii Swordplay</a>
-    </div>
+    <div class="pcard-video" style="text-align: left;">
+        <a href="{{ $item.Params.video_url }}" target="_blank">
+            <i class="fas fa-paperclip" style="margin-right: 5px;"></i>Wii Swordplay
+        </a>
+    </div>    
     {{ end }}
 
     {{ with $summary }}

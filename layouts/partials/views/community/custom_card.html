@@ -20,7 +20,7 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card">
+<div class="card" style="border: 1px solid #ff5722; background-color: #f9f9f9;">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
@@ -29,14 +29,13 @@
          alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
   </a>
   {{ end }}
-  <div class="card-text">
+  <div class="card-text" style="color: #34495e;">
     <div class="section-subheading article-title mb-1 mt-3">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
+        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="color: #ff5722;">{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
-    
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata">
+    <div class="article-metadata" style="color: #555;">
         <div>
             {{ partial "page_metadata_authors" $item }}
         </div>
@@ -50,7 +49,7 @@
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links">
+    <div class="btn-links" style="color: #ff5722;">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
