@@ -1,6 +1,7 @@
 ---
 title: Sword-motion
 date: 2024-03-29
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"
 ---
 
 저희 연구실에서 학부연구생을 모집하니, 혹시 아래의 내용 중 적어도 하나라도 관심있으신 분들은 메일로 연락주시거나 혹은 직접 찾아와주시면 감사드리겠습니다.

@@ -1,6 +1,7 @@
 ---
 title: Hit Reaction
 date: 2024-03-08
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"
 ---
 
 이경수 교수, 전북대학교 컴퓨터인공지능학부 임명

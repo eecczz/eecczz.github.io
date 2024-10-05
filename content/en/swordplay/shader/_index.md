@@ -2,7 +2,7 @@
 title: Shader
 
 # Listing view
-view: community/custom_card
+view: community/custom_pcard
 
 # Optional header image (relative to `assets/media/` folder).
 banner:
