@@ -18,15 +18,15 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item view-compact" style="border: 1px solid #ff5722; background-color: #1e1e1e; border-radius: 8px; padding: 10px;">
+<div class="media stream-item view-compact">
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0" style="justify-content: center; align-items: center; text-align: justify; text-justify: auto; font-size: 0.99em;">
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }} style="color: #ff8a65;">{{ $item.Title }}</a>
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </div>
 
     {{ with $summary }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link" style="text-decoration: none; color: #cccccc;">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
       <div class="article-style">
         {{.}}
       </div>
@@ -42,32 +42,8 @@
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy" style="border-radius: 8px;">
+            alt="{{ $item.Title }}" loading="lazy">
       </a>
     {{end}}
   </div>
 </div>
-
-<style>
-  .media.stream-item.view-compact {
-    background-color: #1e1e1e; /* 다크 모드 배경색 */
-    color: #ffffff; /* 다크 모드 텍스트 색상 */
-    border-color: #ff5722; /* 테두리 색상 */
-  }
-
-  .article-title a {
-    color: #ff8a65; /* 타이틀 색상 (밝은 오렌지 계열) */
-  }
-
-  .summary-link {
-    color: #cccccc; /* 요약 텍스트 색상 */
-  }
-
-  .summary-link:hover {
-    color: #ffccbc; /* 요약 텍스트 마우스 오버시 색상 */
-  }
-
-  .media img {
-    border-radius: 8px;
-  }
-</style>

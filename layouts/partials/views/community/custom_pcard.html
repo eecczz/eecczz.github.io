@@ -35,11 +35,11 @@
     </div>
 
     {{ if $item.Params.video_url }}
-    <div class="pcard-video" style="text-align: left;">
+    <div class="pcard-video">
         <a href="{{ $item.Params.video_url }}" target="_blank" style="color: #666666; font-size: 0.9rem;">
             <i class="fas fa-paperclip" style="margin-right: 5px; font-size: 0.9rem;"></i>Wii Swordplay
         </a>
-    </div>    
+    </div>
     {{ end }}
 
     {{ with $summary }}
@@ -58,11 +58,10 @@
 
 <style>
   .pcard {
-    border: 1px solid #ff5722;
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
   }
 
   .pcard-image {
@@ -81,7 +80,7 @@
   }
 
   .pcard-video a {
-    color: #666666; /* 어두운 회색으로 설정하여 타이틀과 구분 */
+    color: #666666; /* 타이틀과 구분되는 색상으로 설정 */
     text-decoration: none;
     font-size: 0.9rem; /* 텍스트 크기 조정 */
   }
@@ -91,35 +90,7 @@
   }
 
   .pcard-video i {
-    color: #666666; /* 아이콘 색상도 어두운 회색으로 변경 */
+    color: #666666; /* 아이콘 색상도 타이틀과 구분되는 어두운 회색 */
     font-size: 0.9rem; /* 아이콘 크기 조정 */
-  }
-
-  .article-title a {
-    color: #ff5722;
-  }
-
-  /* 다크 모드 스타일 */
-  @media (prefers-color-scheme: dark) {
-    .pcard {
-      background-color: #2a2a2a;
-      border-color: #ff8a65;
-    }
-
-    .pcard-text {
-      color: #ffffff;
-    }
-
-    .article-title a {
-      color: #ff8a65;
-    }
-
-    .pcard-video a {
-      color: #ff8a65;
-    }
-
-    .pcard-video i {
-      color: #ff8a65;
-    }
   }
 </style>

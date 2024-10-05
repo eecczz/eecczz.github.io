@@ -20,7 +20,7 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="card" style="border: 1px solid #ff5722; background-color: #f9f9f9;">
+<div class="card">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
@@ -33,9 +33,10 @@
     <div class="section-subheading article-title mb-1 mt-3">
         <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
+    
 
     {{ if $item.Params.authors }}
-    <div class="article-metadata" style="color: #555;">
+    <div class="article-metadata">
         <div>
             {{ partial "page_metadata_authors" $item }}
         </div>
@@ -55,45 +56,3 @@
     {{ end }}
   </div>
 </div>
-
-<style>
-  /* 기본 모드 스타일 */
-  .card {
-    border: 1px solid #ff5722;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-
-  .card-text {
-    color: #34495e;
-  }
-
-  .article-title a {
-    color: #ff5722;
-  }
-
-  .article-metadata {
-    color: #555;
-  }
-
-  /* 다크 모드 스타일 */
-  @media (prefers-color-scheme: dark) {
-    .card {
-      background-color: #2a2a2a;
-      border-color: #ff8a65;
-    }
-
-    .card-text {
-      color: #ffffff;
-    }
-
-    .article-title a {
-      color: #ff8a65;
-    }
-
-    .article-metadata {
-      color: #cccccc;
-    }
-  }
-</style>
