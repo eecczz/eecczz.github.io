@@ -18,8 +18,8 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="custom-media stream-item view-compact">
+  <div class="custom-media-body">
 
     <div class="section-subheading article-title mb-0 mt-0" style="justify-content: center; align-items: center; text-align: justify; text-justify: auto; font-size: 0.99em;">
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
@@ -42,14 +42,14 @@
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy" class="media-image">
+            alt="{{ $item.Title }}" loading="lazy" class="custom-media-image">
       </a>
     {{end}}
   </div>
 </div>
 
 <style>
-  .media {
+  .custom-media {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -57,25 +57,13 @@
     display: flex;
   }
 
-  .media-image {
+  .custom-media-image {
     display: block;
     margin-bottom: 10px;
     border-radius: 5px;
   }
 
-  .media-body {
+  .custom-media-body {
     text-align: left;
-  }
-
-  .article-title a {
-    color: #ff5722;
-  }
-
-  .article-style {
-    color: #333;
-  }
-
-  .summary-link {
-    text-decoration: none;
   }
 </style>
