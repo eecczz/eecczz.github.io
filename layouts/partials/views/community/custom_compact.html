@@ -42,8 +42,40 @@
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy">
+            alt="{{ $item.Title }}" loading="lazy" class="media-image">
       </a>
     {{end}}
   </div>
 </div>
+
+<style>
+  .media {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .media-image {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .media-body {
+    text-align: left;
+  }
+
+  .article-title a {
+    color: #ff5722;
+  }
+
+  .article-style {
+    color: #333;
+  }
+
+  .summary-link {
+    text-decoration: none;
+  }
+</style>

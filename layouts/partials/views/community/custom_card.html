@@ -34,7 +34,6 @@
         <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
     
-
     {{ if $item.Params.authors }}
     <div class="article-metadata">
         <div>
@@ -56,3 +55,21 @@
     {{ end }}
   </div>
 </div>
+
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card-image {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    text-align: left;
+  }
+</style>
