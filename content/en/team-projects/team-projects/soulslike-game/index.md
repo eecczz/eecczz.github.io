@@ -65,3 +65,4 @@ featured: true
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
+In the vast Colosseum of the ancient Roman Empire, the protagonist, captured as a prisoner of war and sold into slavery by the Roman army, fights his way through countless gladiatorial battles. After many victories, there is only one final battle left between him and his freedom. This game reimagines that climactic fight in a Soulslike style. Players must read the enemy's attack motions, dodge at the right moment, and unleash devastating combos to deal explosive damage and bring down the enemy.

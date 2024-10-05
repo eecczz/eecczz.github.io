@@ -61,3 +61,5 @@ featured: true
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
+
+We designed the database effortlessly using Spring Boot, JPA as the ORM, and MariaDB as the database. Initially, we implemented a simple view using server-side rendering with Thymeleaf in Spring Boot. However, we later switched to React, enabling client-side rendering, which made it easier to implement features such as payment modules and social login functionality.

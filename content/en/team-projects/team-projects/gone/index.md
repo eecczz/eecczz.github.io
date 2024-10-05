@@ -63,3 +63,4 @@ featured: true
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
+In a city devastated by a signal wave unleashed by the superintelligent AI "Curie," the protagonist, a former intelligence agent, embarks on a mission to stop the AI's onslaught. Throughout the journey, key moments of choice will arise, leading to various possible endings depending on the decisions made. As the story progresses, powerful monsters and new weapons are introduced, enhancing the challenge. The game features a unique vertical screen layout, with the top half displaying the game view and the bottom half serving as a control area, both arranged in a 1:1 ratio.
