@@ -194,7 +194,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./contact/" cta_text="Join Project →" %}}
+        {{% cta cta_link="./contact/" cta_text="프로젝트 참여 →" %}}
     design:
       columns: '1'
 ---
