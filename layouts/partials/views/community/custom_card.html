@@ -29,9 +29,9 @@
          alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
   </a>
   {{ end }}
-  <div class="card-text" style="color: #34495e;">
+  <div class="card-text">
     <div class="section-subheading article-title mb-1 mt-3">
-        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="color: #ff5722;">{{ $item.Title | markdownify | emojify }}</a></h4>
+        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
 
     {{ if $item.Params.authors }}
@@ -49,7 +49,7 @@
     {{ end }}
 
     {{ if $has_attachments }}
-    <div class="btn-links" style="color: #ff5722;">
+    <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
@@ -57,23 +57,43 @@
 </div>
 
 <style>
-  /* 다크 모드 설정 */
+  /* 기본 모드 스타일 */
+  .card {
+    border: 1px solid #ff5722;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .card-text {
+    color: #34495e;
+  }
+
+  .article-title a {
+    color: #ff5722;
+  }
+
+  .article-metadata {
+    color: #555;
+  }
+
+  /* 다크 모드 스타일 */
   @media (prefers-color-scheme: dark) {
     .card {
-      background-color: #1e1e1e;
+      background-color: #2a2a2a;
       border-color: #ff8a65;
     }
+
     .card-text {
       color: #ffffff;
     }
-    .section-subheading h4 a {
-      color: #ff8a65; /* 타이틀 색상 */
+
+    .article-title a {
+      color: #ff8a65;
     }
+
     .article-metadata {
       color: #cccccc;
-    }
-    .btn-links {
-      color: #ff8a65;
     }
   }
 </style>
