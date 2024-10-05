@@ -1,6 +1,7 @@
 ---
 title: Wii-Style Shader
 date: 2024-03-29
+video_url: "https://www.youtube.com/watch?v=example"  # 참고 영상 URL 추가
 ---
 
 캐릭터와 건물에 적용된 심플하면서도 깔끔한 텍스쳐는 wii게임의 상징입니다. 이러한 텍스쳐가 구체적으로

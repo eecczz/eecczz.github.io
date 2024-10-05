@@ -1,6 +1,7 @@
 ---
 title: Sword-motion
 date: 2024-03-29
+video_url: "https://www.youtube.com/watch?v=example"  # 참고 영상 URL 추가
 ---
 
 wii 검술대련의 재미에 가장 큰 기여를 했던 것은 인터랙티브한 검의 움직임입니다.

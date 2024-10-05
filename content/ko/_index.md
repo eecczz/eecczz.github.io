@@ -147,7 +147,7 @@ sections:
           - hit-reaction
           - shader
     design:
-      view: community/custom_card
+      view: community/custom_pcard
       columns: '2'
 
   - block: collection
