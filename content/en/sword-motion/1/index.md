@@ -1,6 +1,7 @@
 ---
 title: Sword-motion
 date: 2024-03-29
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"
 ---
 
 One of the biggest contributors to the fun of Wii swordplay is the interactive motion of the sword. When users hold the Wii remote as if swinging a sword, the in-game character moves in a way that closely mimics the player's actual stance, greatly enhancing immersion.

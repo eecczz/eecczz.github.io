@@ -1,6 +1,7 @@
 ---
 title: Wii-Style Shader
 date: 2024-03-29
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"
 ---
 
 The simple yet clean textures applied to characters and buildings are a hallmark of Wii games. I identified the specific characteristics of these textures and implemented them using the Unity engine.

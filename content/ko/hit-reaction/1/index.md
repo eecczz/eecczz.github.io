@@ -1,6 +1,7 @@
 ---
 title: Hit Reaction
 date: 2024-03-08
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"  # 참고 영상 URL 추가
 ---
 
 게임에 몰입감을 더하는 또 다른 것은 바로 타격감입니다. 타격감에 관여하는 것은 시원한 사운드

@@ -1,6 +1,7 @@
 ---
 title: Hit Reaction
 date: 2024-03-08
+video_url: "https://www.youtube.com/watch?v=Q5CfTyF3sOQ"
 ---
 
 Another aspect that enhances immersion in a game is the sense of impact. Aside from visual elements like crisp sound effects or visual effects, what truly makes an impact is the hit reaction. So, how does the hit reaction in this game create such a satisfying sense of impact?
