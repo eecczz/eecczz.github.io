@@ -1,54 +1,33 @@
-# Hwang Seon-woo
+# Hwang Seon-woo Portfolio
 
-**Role**: Computer AI Undergraduate  
-**Institution**: [Chonbuk National University, Department of Computer Artificial Intelligence](https://csai.jbnu.ac.kr/csai/index.do)  
-**Email**: [swh06084@jbnu.ac.kr](mailto:swh06084@jbnu.ac.kr)
+## 소개
 
----
+컴퓨터인공지능학부 재학 중인 개발자 지망생 황선우의 GitHub Pages 포트폴리오 저장소입니다. 게임 개발, 웹 백엔드/프론트엔드, AI 활용 프로젝트 경험을 정리하기 위한 공간입니다.
 
-## Bio
+## 관심 분야
 
-I am currently an undergraduate student majoring in Computer Artificial Intelligence at Chonbuk National University. My main field of expertise is game development, and I have worked on several projects in this area, including the release of the game *Gone* as part of the *Coala* team from the Department of IT Information Engineering. In addition, I participated in a team project during my *Creative Engineering Design* course to develop a *Soulslike* game. On the side, I am individually developing a clone of the *Wii Swordplay* game.
-
-I am also honing my web development skills by working on projects such as an online shopping mall system and a YouTube clone web service, gaining proficiency in *React* and *Spring Boot*. I have experience with various frameworks including *Unity*, *React*, and *Spring*, allowing me to quickly learn and adapt to new frameworks as needed. I also excel at project planning, having developed the ability to plan and execute long-term individual projects from scratch.
-
-## Interests
-
-- Artificial Intelligence (AI)
-- Algorithms
-- Project Planning
-- Networks
+- Web Backend
+- Frontend
+- AI/Data 활용 서비스
 - Game Development
-- Web Development
+- Project Planning
 
-## Projects
+## 대표 프로젝트
 
-### Gone (Team Project)
-*Developed as part of the Coala team from the Department of IT Information Engineering.*
+- 2026 Capstone Jeonbuk: AI 보조 캡스톤 프로젝트
+- ClipAnalyst: 스포츠 영상 구간 분석 AI 서비스
+- Shopping Mall Spring Boot: Spring Boot 기반 쇼핑몰 프로젝트
+- Bank Server: NestJS/PostgreSQL 기반 금융 백엔드 프로젝트
+- Unity Game Projects: 3D 공포 게임, Soulslike 프로토타입 등
 
-### Soulslike Game (Team Project)
-*Created during the Creative Engineering Design course.*
+## 기술 스택
 
-### Wii Swordplay Clone
-*Individually developing a clone of the Wii Swordplay game.*
+- Backend: Spring Boot, NestJS, FastAPI
+- Frontend: React, Next.js, SvelteKit
+- Database: MySQL, PostgreSQL, MariaDB, Redis, SQLite
+- AI/Data: OpenAI/Gemini API, 데이터 전처리, 영상 분석 파이프라인
+- Game: Unity
 
-### Online Shopping Mall Project
-*Developing a shopping mall web service using React and Spring Boot.*
+## 정리 방향
 
-### YouTube Clone Web Service
-*Creating a YouTube-like web service to enhance web development skills.*
-
-## Skills
-
-- **Game Development**: Unity, Game design, Animation
-- **Web Development**: React, Spring Boot, RESTful API
-- **Planning & Design**: Project management, UX/UI design, Conceptualization
-
-## Education
-
-- **Bachelor's Degree** in Computer Artificial Intelligence (In Progress)  
-  Chonbuk National University, 2021 - Present
-
----
-
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.
+이 저장소는 면접관이 주요 프로젝트와 기술 경험을 빠르게 확인할 수 있도록 지속적으로 갱신합니다. 각 프로젝트 README에는 개요, 주요 기능, 기술 스택, 실행 방법, 보안 설정 방식을 정리합니다.
