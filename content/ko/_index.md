@@ -222,12 +222,12 @@ sections:
 
   - block: markdown
     content:
-      title: AI-SW경진대회 - 동상
+      title: 경력사항 & 수상
       subtitle:
       text: |
         <div class="home-project-grid">
           <article class="home-project-card">
-            <a class="home-project-title" href="./contest-projects/speech-coach/">SpeakUp</a>
+            <a class="home-project-title" href="./contest-projects/speech-coach/">SpeakUp (교내 AI&SW경진대회 동상)</a>
             <p>발표·면접·협상 연습을 AI가 분석해 말하기 습관과 전달력을 개선하도록 돕는 코칭 서비스입니다. AI-SW경진대회 동상 수상 프로젝트로, 실시간 피드백과 세션 리포트를 중심 기능으로 설계했습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/speech-coach/featured.png" alt="실시간 코칭"><strong>실시간 코칭</strong><span>말 속도, 필러, 침묵 등 발표 중 드러나는 신호를 분석해 즉시 피드백합니다.</span></div>
@@ -235,18 +235,8 @@ sections:
               <div><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=720&q=80" alt="AI 리포트"><strong>AI 리포트</strong><span>전사와 주요 주의 구간을 바탕으로 다음 연습에서 고칠 포인트를 정리합니다.</span></div>
             </div>
           </article>
-        </div>
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: 전북도청 도지사 표창장
-      subtitle:
-      text: |
-        <div class="home-project-grid">
           <article class="home-project-card">
-            <a class="home-project-title" href="./contest-projects/jeonbuk-chatbot/">전북도청 대도민 음성 챗봇</a>
+            <a class="home-project-title" href="./contest-projects/jeonbuk-chatbot/">대도민 음성챗봇 (전북도청 도지사 표창상)</a>
             <p>도민이 정책·민원 정보를 더 쉽게 찾도록 음성 대화와 캐릭터 UI를 결합한 공공 서비스 프로젝트입니다. 전북도청 도지사 표창장으로 이어진 프로젝트라 홈에서도 성과가 드러나도록 분리했습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/jeonbuk-chatbot/featured.png" alt="캐릭터형 챗봇"><strong>캐릭터형 챗봇</strong><span>공공기관 안내를 덜 딱딱하게 만들기 위해 캐릭터 기반 대화 경험을 설계했습니다.</span></div>
