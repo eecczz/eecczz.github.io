@@ -149,7 +149,7 @@ sections:
       text: |
         <div class="home-project-grid">
           <article class="home-project-card">
-            <a class="home-project-title" href="./toy-projects/swordplay/">Wii Swordplay 클론</a>
+            <a class="home-project-title" href="./toy-projects/swordplay/">Wii Swordplay 모작</a>
             <p>마우스 입력으로 검을 휘두르는 감각, 피격 반응, Wii풍 셰이더를 하나의 Unity WebGL 프로젝트로 묶었습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/swordplay/featured.jpg" alt="검 조작"><strong>검 조작</strong><span>마우스 입력을 검의 회전과 위치로 변환해 직접 휘두르는 감각을 구현했습니다.</span></div>
@@ -198,8 +198,8 @@ sections:
           </article>
 
           <article class="home-project-card">
-            <a class="home-project-title" href="./toy-projects/youtube-clone/">유튜브 클론</a>
-            <p>영상 썸네일 hover preview와 업로드/재생 구조를 실험한 유튜브형 영상 서비스 클론입니다.</p>
+            <a class="home-project-title" href="./toy-projects/youtube-clone/">유튜브 모작</a>
+            <p>영상 썸네일 hover preview와 업로드/재생 구조를 실험한 유튜브형 영상 서비스 모작입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/youtube-clone/featured.png" alt="Video Preview"><strong>Video Preview</strong><span>hover 후 일정 시간 머물렀을 때만 영상을 로드해 불필요한 재생을 줄였습니다.</span></div>
               <div><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80" alt="미디어 UX"><strong>미디어 UX</strong><span>썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.</span></div>
