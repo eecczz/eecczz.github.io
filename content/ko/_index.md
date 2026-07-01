@@ -144,26 +144,8 @@ sections:
 
   - block: collection
     content:
-      id: section-swordplay
-      title: <br>Wii Swordplay 클론
-      subtitle:
-      text: <br><br><br><br>
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - sword-motion
-          - hit-reaction
-          - shader
-    design:
-      view: community/custom_pcard
-      columns: '2'
-
-  - block: collection
-    content:
       id: section-game-projects
-      title: <br>게임·XR 프로젝트
+      title: <br>게임 프로젝트
       subtitle:
       text: <br><br><br><br>
       count: 3
@@ -171,67 +153,31 @@ sections:
       order: desc
       filters:
         folders:
-          - game-projects
+          - swordplay
+          - soulslike-game
+          - metaxr-project
     design:
       view: community/custom_card
       columns: '2'
 
   - block: collection
     content:
-      id: section-ai-projects
-      title: <br>AI·에이전트 프로젝트
+      id: section-web-service-projects
+      title: <br>웹&앱 서비스
       subtitle:
       text: <br><br><br><br>
-      count: 3
+      count: 4
       offset: 0
       order: desc
       filters:
         folders:
-          - ai-agent-projects
+          - shopping-mall
+          - youtube-clone
+          - speech-coach
+          - jeonbuk-chatbot
     design:
       view: community/custom_card
       columns: '2'
-
-  - block: collection
-    content:
-      id: section-backend-projects
-      title: <br>백엔드·웹서비스 프로젝트
-      subtitle:
-      text: <br><br><br><br>
-      count: 8
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - backend-projects
-          - web-projects
-          - react&spring
-          - aws-lambda
-          - video-preview
-    design:
-      view: community/custom_card
-      columns: '2'
-
-  - block: collection
-    content:
-      title: <br>팀프로젝트
-      subtitle:
-      text: <br><br><br><br>
-      count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: team-projects
-    design:
-      view: community/custom_card
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
 
   - block: markdown
     content:

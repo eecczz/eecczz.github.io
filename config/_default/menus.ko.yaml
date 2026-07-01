@@ -1,11 +1,7 @@
 # Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
 
 main:
-  # 상위 메뉴 항목
-  - name: "홈"  # i18n 파일에서 'menu.home' 키를 사용
+  - name: "홈"
     url: "/"
     weight: 10
 
@@ -13,17 +9,18 @@ main:
     url: "/about/"
     weight: 20
 
-  - name: "개인프로젝트"
+  - name: "토이 프로젝트"
+    url: "/toy-projects/"
     weight: 30
 
-  - name: "팀프로젝트"
+  - name: "경진대회 프로젝트"
+    url: "/contest-projects/"
     weight: 40
 
   - name: "연락처"
     url: "/contact/"
     weight: 50
 
-  # 하위 메뉴 항목 (parent 속성을 사용)
   - name: "메인"
     url: "/"
     parent: "홈"
@@ -35,26 +32,86 @@ main:
     weight: 21
 
   - name: "검술대련"
-    url: "/swordplay/"
-    parent: "개인프로젝트"
+    url: "/toy-projects/swordplay/"
+    parent: "토이 프로젝트"
     weight: 31
 
-  - name: "유튜브클론웹"
-    url: "/youtube-clone/"
-    parent: "개인프로젝트"
+  - name: "MetaXR"
+    url: "/toy-projects/metaxr-project/"
+    parent: "토이 프로젝트"
     weight: 32
 
-  - name: "팀프로젝트들"
-    url: "/team-projects"
-    parent: "팀프로젝트"
+  - name: "3D Horror Game"
+    url: "/toy-projects/my3dhorrorgame/"
+    parent: "토이 프로젝트"
+    weight: 33
+
+  - name: "쇼핑몰 프로젝트"
+    url: "/toy-projects/shopping-mall/"
+    parent: "토이 프로젝트"
+    weight: 34
+
+  - name: "유튜브 클론"
+    url: "/toy-projects/youtube-clone/"
+    parent: "토이 프로젝트"
+    weight: 35
+
+  - name: "Streaming API"
+    url: "/toy-projects/streaming-api/"
+    parent: "토이 프로젝트"
+    weight: 36
+
+  - name: "Job API"
+    url: "/toy-projects/job-api/"
+    parent: "토이 프로젝트"
+    weight: 37
+
+  - name: "My Movie Web"
+    url: "/toy-projects/my-movie-web/"
+    parent: "토이 프로젝트"
+    weight: 38
+
+  - name: "ClipAnalyst"
+    url: "/toy-projects/sports-analyzer/"
+    parent: "토이 프로젝트"
+    weight: 39
+
+  - name: "맛집 ReAct Agent"
+    url: "/toy-projects/restaurant-agent/"
+    parent: "토이 프로젝트"
+    weight: 40
+
+  - name: "SpeakUp"
+    url: "/contest-projects/speech-coach/"
+    parent: "경진대회 프로젝트"
     weight: 41
 
-  - name: "프로젝트 참여하기"
+  - name: "대도민 음성 챗봇"
+    url: "/contest-projects/jeonbuk-chatbot/"
+    parent: "경진대회 프로젝트"
+    weight: 42
+
+  - name: "소울라이크 게임"
+    url: "/contest-projects/soulslike-game/"
+    parent: "경진대회 프로젝트"
+    weight: 43
+
+  - name: "Gone"
+    url: "/contest-projects/gone/"
+    parent: "경진대회 프로젝트"
+    weight: 44
+
+  - name: "TRIPICK"
+    url: "/contest-projects/tripick/"
+    parent: "경진대회 프로젝트"
+    weight: 45
+
+  - name: "프로젝트 문의"
     url: "/contact/"
     parent: "연락처"
     weight: 51
 
-  - name: "더 많은 프로젝트"
-    url: 'https://github.com/eecczz?tab=repositories'
+  - name: "GitHub"
+    url: "https://github.com/eecczz?tab=repositories"
     parent: "연락처"
     weight: 52
