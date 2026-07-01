@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: 재학생
+role: IT정보공학과 4학년
 
 # Organizations/Affiliations
 organizations:
@@ -22,7 +22,7 @@ organizations:
     url: 'https://csai.jbnu.ac.kr/csai/index.do'
 
 # Short bio (displayed in user profile at end of posts)
-bio: 게임/웹을 개발합니다.
+bio: Unity 게임, 백엔드 API, AI 서비스를 개발합니다.
 
 interests:
   - 인공지능 (AI)
@@ -66,6 +66,8 @@ user_groups:
 
 ---
 
-전북대학교 컴퓨터인공지능학부에 재학 중으로, 주력분야인 게임개발 경력은 IT정보공학과 동아리 Coala 팀에서 Gone 게임을 만들고 출시하였으며, 창의적공학설계입문 팀프로젝트로 소울라이크 게임을 만들고, 개인으로는 wii swordplay 클론게임을 개발 중에 있습니다. 그리고 현재 학습중인 웹개발은 쇼핑몰 프로젝트와 유튜브 클론웹서비스를 만들며 리액트, 스프링 부트에 숙련도를 더해가고 있습니다. 개인 프로젝트를 장기간 스스로 구상하며 개발하는 과정에서 기획 또한 잘할 수 있고, unity, react, spring 등 프레임워크들을 다양하게 써본 경험을 토대로, 처음 접한 프레임워크라도 금방 익힐 수 있는 유연성도 갖추고 있습니다.
+전북대학교 IT정보공학과 4학년에 재학 중이며, Unity 기반 게임 개발과 Spring Boot/FastAPI 기반 백엔드, AI 서비스 개발을 함께 학습하고 있습니다. 학점 4.0/4.5, 2021년 총장상(성적 우수, 전체 석차 1위), 2026년 캡스톤디자인 최우수상 및 전북도청 도지사 표창을 바탕으로 꾸준함과 실행력을 증명해 왔습니다.
+
+주식회사 건파워에서 Unity 기반 3D 게임 개발 외주에 참여했고, 전북대학교 시각지능 연구실에서 비전 논문을 학습·리뷰했으며, 하루솔루션에서는 정보 통신 및 관제 소프트웨어 개발 현장실습을 수행했습니다. 유저와 팀원의 반응을 상상하며 몰입하는 성향을 강점으로 삼아 아이디어를 빠르게 실험하고, 목표가 정해진 프로젝트에서는 요구사항을 이해하며 방향을 맞춰가는 개발자가 되고자 합니다.
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}다운로드{{< /staticref >}} 내 이력서를 PDF로 받기.
