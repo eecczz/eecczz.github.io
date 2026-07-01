@@ -9,10 +9,10 @@ highlights:
     image: featured.jpg
   - title: 피격 반응
     text: 충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
-    image: https://loremflickr.com/720/450/sword,duel?lock=1901
+    image: https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80
   - title: Wii풍 셰이더
     text: 낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.
-    image: https://loremflickr.com/720/450/videogame,cartoon?lock=1902
+    image: https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/swordplay
@@ -39,12 +39,12 @@ Wii Swordplay 클론은 모션 컨트롤러 대신 마우스 입력으로 검을
 
 ### 피격 반응
 
-![피격 반응](https://loremflickr.com/720/450/sword,duel?lock=1901)
+![피격 반응](https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80)
 
 충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
 
 ### Wii풍 셰이더
 
-![Wii풍 셰이더](https://loremflickr.com/720/450/videogame,cartoon?lock=1902)
+![Wii풍 셰이더](https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=720&q=80)
 
 낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.

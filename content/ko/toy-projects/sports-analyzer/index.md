@@ -9,10 +9,10 @@ highlights:
     image: featured.jpg
   - title: AI 분석 스트리밍
     text: FastAPI 서비스가 분석 결과를 SSE로 스트리밍하는 구조를 실험했습니다.
-    image: https://loremflickr.com/720/450/sports,coach?lock=1701
+    image: https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=720&q=80
   - title: Provider 전환
     text: Gemini/Kimi 등 모델 Provider를 교체할 수 있는 분석 파이프라인을 설계했습니다.
-    image: https://loremflickr.com/720/450/videoediting,sports?lock=1702
+    image: https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/sports-analyzer
@@ -37,12 +37,12 @@ YouTube 영상에서 분석할 구간을 고르고 서버에서 해당 부분만
 
 ### AI 분석 스트리밍
 
-![AI 분석 스트리밍](https://loremflickr.com/720/450/sports,coach?lock=1701)
+![AI 분석 스트리밍](https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=720&q=80)
 
 FastAPI 서비스가 분석 결과를 SSE로 스트리밍하는 구조를 실험했습니다.
 
 ### Provider 전환
 
-![Provider 전환](https://loremflickr.com/720/450/videoediting,sports?lock=1702)
+![Provider 전환](https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=720&q=80)
 
 Gemini/Kimi 등 모델 Provider를 교체할 수 있는 분석 파이프라인을 설계했습니다.

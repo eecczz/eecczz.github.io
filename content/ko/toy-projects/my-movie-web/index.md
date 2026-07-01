@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 검색과 필터링
     text: TMDb API 결과를 검색, 정렬, 필터링하며 원하는 영화를 찾는 흐름을 만들었습니다.
-    image: https://loremflickr.com/720/450/cinema,poster?lock=1301
+    image: https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=720&q=80
   - title: 위시리스트
     text: 사용자가 관심 영화를 저장하고 다시 확인할 수 있는 클라이언트 상태 흐름을 구현했습니다.
-    image: https://loremflickr.com/720/450/search,computer?lock=1302
+    image: https://commons.wikimedia.org/wiki/Special:FilePath/Search_Engine_Results_Page_%28SERP%29_Graphic_Illustration.png?width=960
 links:
   - name: GitHub
     url: https://github.com/eecczz/my-movie-web
@@ -37,12 +37,12 @@ React Router 기반 라우팅, 컴포넌트 분리, 알림 메시지, 반응형 
 
 ### 검색과 필터링
 
-![검색과 필터링](https://loremflickr.com/720/450/cinema,poster?lock=1301)
+![검색과 필터링](https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=720&q=80)
 
 TMDb API 결과를 검색, 정렬, 필터링하며 원하는 영화를 찾는 흐름을 만들었습니다.
 
 ### 위시리스트
 
-![위시리스트](https://loremflickr.com/720/450/search,computer?lock=1302)
+![위시리스트](https://commons.wikimedia.org/wiki/Special:FilePath/Search_Engine_Results_Page_%28SERP%29_Graphic_Illustration.png?width=960)
 
 사용자가 관심 영화를 저장하고 다시 확인할 수 있는 클라이언트 상태 흐름을 구현했습니다.

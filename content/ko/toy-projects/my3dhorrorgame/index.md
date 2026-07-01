@@ -9,10 +9,10 @@ highlights:
     image: featured.webp
   - title: 1인칭 탐험
     text: 플레이어 시야, 이동, 시점 전환으로 공간을 탐험하는 기본 흐름을 실험했습니다.
-    image: https://loremflickr.com/720/450/horror,hallway?lock=1401
+    image: https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80
   - title: 분위기 연출
     text: 어두운 장면, 타이밍, 상호작용 이벤트로 공포감을 만드는 프로토타입입니다.
-    image: https://loremflickr.com/720/450/abandoned,room?lock=1402
+    image: https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960
 links:
   - name: GitHub
     url: https://github.com/eecczz/my3dhorrorgame
@@ -37,12 +37,12 @@ My 3D Horror Game은 Unity 기반 3D 공포 게임 프로토타입입니다. 1�
 
 ### 1인칭 탐험
 
-![1인칭 탐험](https://loremflickr.com/720/450/horror,hallway?lock=1401)
+![1인칭 탐험](https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80)
 
 플레이어 시야, 이동, 시점 전환으로 공간을 탐험하는 기본 흐름을 실험했습니다.
 
 ### 분위기 연출
 
-![분위기 연출](https://loremflickr.com/720/450/abandoned,room?lock=1402)
+![분위기 연출](https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960)
 
 어두운 장면, 타이밍, 상호작용 이벤트로 공포감을 만드는 프로토타입입니다.

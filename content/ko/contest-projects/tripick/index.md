@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: Trust Score
     text: 단순 별점이 아니라 수행자 수와 완주율까지 반영한 점수 구조를 설계했습니다.
-    image: https://loremflickr.com/720/450/travel,map?lock=2501
+    image: https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=720&q=80
   - title: 관광 데이터 활용
     text: TourAPI와 사용자 참여 데이터를 연결해 추천이 다시 검증되는 흐름을 만들었습니다.
-    image: https://loremflickr.com/720/450/tourism,city?lock=2502
+    image: https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/tripick
@@ -37,12 +37,12 @@ GPS 수행 데이터, 리뷰, 완주율을 기반으로 관광 코스 신뢰도�
 
 ### Trust Score
 
-![Trust Score](https://loremflickr.com/720/450/travel,map?lock=2501)
+![Trust Score](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=720&q=80)
 
 단순 별점이 아니라 수행자 수와 완주율까지 반영한 점수 구조를 설계했습니다.
 
 ### 관광 데이터 활용
 
-![관광 데이터 활용](https://loremflickr.com/720/450/tourism,city?lock=2502)
+![관광 데이터 활용](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=720&q=80)
 
 TourAPI와 사용자 참여 데이터를 연결해 추천이 다시 검증되는 흐름을 만들었습니다.

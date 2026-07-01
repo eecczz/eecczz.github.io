@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 음성 대화
     text: 사용자가 필요한 민원·지원 정보를 음성 기반 대화로 찾도록 설계했습니다.
-    image: https://loremflickr.com/720/450/voiceassistant,chatbot?lock=2201
+    image: https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=720&q=80
   - title: 공공 서비스 UX
     text: 도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.
-    image: https://loremflickr.com/720/450/government,service?lock=2202
+    image: https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=720&q=80
 featured: true
 ---
 
@@ -34,12 +34,12 @@ featured: true
 
 ### 음성 대화
 
-![음성 대화](https://loremflickr.com/720/450/voiceassistant,chatbot?lock=2201)
+![음성 대화](https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=720&q=80)
 
 사용자가 필요한 민원·지원 정보를 음성 기반 대화로 찾도록 설계했습니다.
 
 ### 공공 서비스 UX
 
-![공공 서비스 UX](https://loremflickr.com/720/450/government,service?lock=2202)
+![공공 서비스 UX](https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=720&q=80)
 
 도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.

@@ -9,10 +9,10 @@ highlights:
     image: featured.jpg
   - title: AWS 변환 파이프라인
     text: S3, Lambda, MediaConvert를 활용해 비동기 영상 변환 흐름을 구상했습니다.
-    image: https://loremflickr.com/720/450/datacenter,server?lock=1803
+    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
   - title: HLS 재생
     text: 화질 조절과 브라우저 재생을 고려해 HLS 재생 URL 제공 구조를 정리했습니다.
-    image: https://loremflickr.com/720/450/streaming,video?lock=1802
+    image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/streamingAPI
@@ -37,12 +37,12 @@ Streaming API는 대용량 영상 업로드와 스트리밍 처리를 목표로 
 
 ### AWS 변환 파이프라인
 
-![AWS 변환 파이프라인](https://loremflickr.com/720/450/datacenter,server?lock=1803)
+![AWS 변환 파이프라인](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
 
 S3, Lambda, MediaConvert를 활용해 비동기 영상 변환 흐름을 구상했습니다.
 
 ### HLS 재생
 
-![HLS 재생](https://loremflickr.com/720/450/streaming,video?lock=1802)
+![HLS 재생](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80)
 
 화질 조절과 브라우저 재생을 고려해 HLS 재생 URL 제공 구조를 정리했습니다.

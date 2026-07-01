@@ -9,10 +9,10 @@ highlights:
     image: featured.jpg
   - title: JWT 인증
     text: 회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
-    image: https://loremflickr.com/720/450/office,work?lock=1103
+    image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=720&q=80
   - title: MariaDB 저장
     text: 채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.
-    image: https://loremflickr.com/720/450/server,code?lock=1102
+    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/jobAPI
@@ -37,12 +37,12 @@ JWT 기반 인증, 목록/상세 조회, 지원 생성·취소, 북마크 추가
 
 ### JWT 인증
 
-![JWT 인증](https://loremflickr.com/720/450/office,work?lock=1103)
+![JWT 인증](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=720&q=80)
 
 회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
 
 ### MariaDB 저장
 
-![MariaDB 저장](https://loremflickr.com/720/450/server,code?lock=1102)
+![MariaDB 저장](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
 
 채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.

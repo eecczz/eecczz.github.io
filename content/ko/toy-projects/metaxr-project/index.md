@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 근접 상호작용
     text: 플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
-    image: https://loremflickr.com/720/450/virtualreality,controller?lock=1201
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg/960px-HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg
   - title: Unity 프로토타입
     text: XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
-    image: https://loremflickr.com/720/450/gamedevelopment,computer?lock=1202
+    image: https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/MetaXR-Project
@@ -37,12 +37,12 @@ Wii Swordplay 클론에서 쌓은 조작감, 충돌, 피격 반응에 대한 관
 
 ### 근접 상호작용
 
-![근접 상호작용](https://loremflickr.com/720/450/virtualreality,controller?lock=1201)
+![근접 상호작용](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg/960px-HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg)
 
 플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
 
 ### Unity 프로토타입
 
-![Unity 프로토타입](https://loremflickr.com/720/450/gamedevelopment,computer?lock=1202)
+![Unity 프로토타입](https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=720&q=80)
 
 XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.

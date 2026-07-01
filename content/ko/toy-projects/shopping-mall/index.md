@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 결제 검증
     text: PortOne 테스트 결제를 붙여 결제 요청과 검증 흐름을 실험했습니다.
-    image: https://loremflickr.com/720/450/onlineshopping,checkout?lock=1601
+    image: https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=720&q=80
   - title: Spring 백엔드
     text: Spring Boot, JPA, Querydsl, MariaDB를 사용해 데이터 조회와 상태 변경을 처리했습니다.
-    image: https://loremflickr.com/720/450/server,database?lock=1602
+    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
 links:
   - name: GitHub
     url: https://github.com/eecczz/shoppingmall-springboot
@@ -37,12 +37,12 @@ featured: true
 
 ### 결제 검증
 
-![결제 검증](https://loremflickr.com/720/450/onlineshopping,checkout?lock=1601)
+![결제 검증](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=720&q=80)
 
 PortOne 테스트 결제를 붙여 결제 요청과 검증 흐름을 실험했습니다.
 
 ### Spring 백엔드
 
-![Spring 백엔드](https://loremflickr.com/720/450/server,database?lock=1602)
+![Spring 백엔드](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
 
 Spring Boot, JPA, Querydsl, MariaDB를 사용해 데이터 조회와 상태 변경을 처리했습니다.
