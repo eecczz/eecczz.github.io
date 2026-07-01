@@ -66,10 +66,12 @@
         <div class="project-highlight-mini">
           {{ if $highlightImageURL }}
             <img src="{{ $highlightImageURL }}" alt="{{ $highlight.title }}" loading="lazy">
-          {{ else with $highlightImage }}
-            {{ $thumb := .Fill "360x220 Center" }}
-            {{ if ne $thumb.MediaType.SubType "gif" }}{{ $thumb = $thumb.Process "webp" }}{{ end }}
-            <img src="{{ $thumb.RelPermalink }}" height="{{ $thumb.Height }}" width="{{ $thumb.Width }}" alt="{{ $highlight.title }}" loading="lazy">
+          {{ else }}
+            {{ with $highlightImage }}
+              {{ $thumb := .Fill "360x220 Center" }}
+              {{ if ne $thumb.MediaType.SubType "gif" }}{{ $thumb = $thumb.Process "webp" }}{{ end }}
+              <img src="{{ $thumb.RelPermalink }}" height="{{ $thumb.Height }}" width="{{ $thumb.Width }}" alt="{{ $highlight.title }}" loading="lazy">
+            {{ end }}
           {{ end }}
           <strong>{{ $highlight.title | markdownify }}</strong>
           <span>{{ $highlight.text | markdownify }}</span>
