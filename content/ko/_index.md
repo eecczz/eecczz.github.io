@@ -153,8 +153,8 @@ sections:
             <p>마우스 입력으로 검을 휘두르는 감각, 피격 반응, Wii풍 셰이더를 하나의 Unity WebGL 프로젝트로 묶었습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/swordplay/featured.jpg" alt="검 조작"><strong>검 조작</strong><span>마우스 입력을 검의 회전과 위치로 변환해 직접 휘두르는 감각을 구현했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80" alt="피격 반응"><strong>피격 반응</strong><span>충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=720&q=80" alt="Wii풍 셰이더"><strong>Wii풍 셰이더</strong><span>낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.</span></div>
+              <div><img src="./toy-projects/swordplay/detail-hit-reaction.jpg" alt="피격 반응"><strong>피격 반응</strong><span>충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.</span></div>
+              <div><img src="./toy-projects/swordplay/detail-shader.jpg" alt="Wii풍 셰이더"><strong>Wii풍 셰이더</strong><span>낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.</span></div>
             </div>
           </article>
 
@@ -208,22 +208,12 @@ sections:
           </article>
 
           <article class="home-project-card">
-            <a class="home-project-title" href="./contest-projects/speech-coach/">SpeakUp</a>
-            <p>발표·면접·협상 연습 중 음성, 시선, 자세, 침묵, 필러 표현을 분석하는 AI 에이전트 코칭 서비스입니다.</p>
+            <a class="home-project-title" href="./toy-projects/restaurant-agent/">맛집 추천 ReAct Agent</a>
+            <p>사용자의 지역·가격·상황 조건을 해석하고, 검색 도구와 필터링 도구를 호출해 설명 가능한 맛집 추천을 생성하는 FastAPI 기반 AI Agent입니다.</p>
             <div class="home-project-highlights">
-              <div><img src="./contest-projects/speech-coach/featured.png" alt="실시간 코칭"><strong>실시간 코칭</strong><span>말 속도, 필러, 침묵 등 신호를 분석해 연습 중 바로 피드백을 제공합니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=720&q=80" alt="세션 대시보드"><strong>세션 대시보드</strong><span>발표·면접·협상 등 상황별 세션을 만들고 연습 흐름을 저장합니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=720&q=80" alt="AI 리포트"><strong>AI 리포트</strong><span>세션 종료 후 전사와 주요 주의 구간을 바탕으로 개선 리포트를 생성합니다.</span></div>
-            </div>
-          </article>
-
-          <article class="home-project-card">
-            <a class="home-project-title" href="./contest-projects/jeonbuk-chatbot/">전북도청 대도민 음성 챗봇</a>
-            <p>전북도청 민원·정책 정보를 음성 대화형 챗봇으로 제공한 캡스톤디자인 최우수상 프로젝트입니다.</p>
-            <div class="home-project-highlights">
-              <div><img src="./contest-projects/jeonbuk-chatbot/featured.png" alt="캐릭터형 챗봇"><strong>캐릭터형 챗봇</strong><span>공공기관 안내를 딱딱하지 않게 전달하기 위해 캐릭터 UI를 결합했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=720&q=80" alt="음성 대화"><strong>음성 대화</strong><span>사용자가 필요한 민원·지원 정보를 음성 기반 대화로 찾도록 설계했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=720&q=80" alt="공공 서비스 UX"><strong>공공 서비스 UX</strong><span>도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.</span></div>
+              <div><img src="./toy-projects/restaurant-agent/featured.png" alt="맛집 추천 질문"><strong>맛집 추천 질문</strong><span>자연어 요청을 받아 지역과 조건을 추출하고 추천 흐름을 시작합니다.</span></div>
+              <div><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=720&q=80" alt="검색 도구"><strong>검색 도구</strong><span>Kakao Local API와 샘플 데이터셋을 함께 사용해 후보 맛집을 검색합니다.</span></div>
+              <div><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=720&q=80" alt="필터링과 추천"><strong>필터링과 추천</strong><span>가격, 상황, 리뷰 조건을 반영해 사용자에게 설명 가능한 추천 결과를 제공합니다.</span></div>
             </div>
           </article>
         </div>

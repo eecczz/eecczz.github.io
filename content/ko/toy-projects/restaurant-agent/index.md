@@ -6,7 +6,7 @@ summary: '사용자의 지역·가격·상황 조건을 분석하고 검색/필�
 highlights:
   - title: ReAct 루프
     text: 요청을 해석하고 도구를 호출한 뒤 Observation을 바탕으로 추천을 생성합니다.
-    image: featured.jpg
+    image: featured.png
   - title: 검색 도구
     text: Kakao Local API와 샘플 데이터셋을 함께 사용해 지역 맛집 검색을 처리합니다.
     image: https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=720&q=80
@@ -31,7 +31,7 @@ featured: true
 
 ### ReAct 루프
 
-![ReAct 루프](featured.jpg)
+![ReAct 루프](featured.png)
 
 요청을 해석하고 도구를 호출한 뒤 Observation을 바탕으로 추천을 생성합니다.
 
