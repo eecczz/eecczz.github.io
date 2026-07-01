@@ -1,4 +1,5 @@
-﻿---
+---
+
 title: Wii Swordplay 클론
 date: 2026-06-25
 summary: 'Wii Sports Resort 검술대련의 조작감과 타격감을 마우스 기반 PC/WebGL 환경으로 재해석한 Unity 프로젝트입니다.'
@@ -8,10 +9,10 @@ highlights:
     image: featured.jpg
   - title: 피격 반응
     text: 충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
-    image: detail-hit-reaction.jpg
+    image: https://loremflickr.com/720/450/sword,duel?lock=1901
   - title: Wii풍 셰이더
     text: 낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.
-    image: detail-shader.jpg
+    image: https://loremflickr.com/720/450/videogame,cartoon?lock=1902
 links:
   - name: GitHub
     url: https://github.com/eecczz/swordplay
@@ -19,7 +20,6 @@ links:
     url: https://eecczz.github.io/swordplay/
 featured: true
 ---
-
 
 Wii Swordplay 클론은 모션 컨트롤러 대신 마우스 입력으로 검을 휘두르고 공격하는 PC/WebGL 게임입니다. 단순한 공격 버튼보다, 검의 위치와 회전, 타격 타이밍, 피격 반응이 직접적으로 느껴지는 조작감을 만드는 데 초점을 두었습니다.
 
@@ -30,15 +30,21 @@ Wii Swordplay 클론은 모션 컨트롤러 대신 마우스 입력으로 검을
 - 저장소: [eecczz/swordplay](https://github.com/eecczz/swordplay)
 
 ## 주요 구현 포인트
+
 ### 검 조작
+
 ![검 조작](featured.jpg)
+
 마우스 입력을 검의 회전과 위치로 변환해 직접 휘두르는 감각을 만들었습니다.
 
 ### 피격 반응
-![피격 반응](detail-hit-reaction.jpg)
+
+![피격 반응](https://loremflickr.com/720/450/sword,duel?lock=1901)
+
 충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
 
 ### Wii풍 셰이더
-![Wii풍 셰이더](detail-shader.jpg)
-낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.
 
+![Wii풍 셰이더](https://loremflickr.com/720/450/videogame,cartoon?lock=1902)
+
+낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.

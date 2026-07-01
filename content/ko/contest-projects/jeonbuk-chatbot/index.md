@@ -1,4 +1,5 @@
-﻿---
+---
+
 title: 전북도청 대도민 음성 챗봇
 date: 2026-06-01
 summary: '전북도청 민원·정책 정보를 음성 대화형 챗봇으로 제공한 캡스톤디자인 프로젝트로, 최우수상과 도지사 표창을 받았습니다.'
@@ -8,13 +9,12 @@ highlights:
     image: featured.png
   - title: 음성 대화
     text: 사용자가 필요한 민원·지원 정보를 음성 기반 대화로 찾도록 설계했습니다.
-    image: detail-avatar.png
+    image: https://loremflickr.com/720/450/voiceassistant,chatbot?lock=2201
   - title: 공공 서비스 UX
     text: 도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.
-    image: detail-public.jpg
+    image: https://loremflickr.com/720/450/government,service?lock=2202
 featured: true
 ---
-
 
 전북도청 대도민 음성 챗봇은 도민이 필요한 정보를 대화형으로 찾을 수 있도록 만든 캡스톤디자인 프로젝트입니다. 음성 기반 인터페이스와 캐릭터형 챗봇 화면을 결합해, 공공기관 정보 접근을 더 친숙하게 만드는 데 초점을 두었습니다.
 
@@ -25,15 +25,21 @@ featured: true
 - 기간: 2026.03 - 2026.06
 
 ## 주요 구현 포인트
+
 ### 캐릭터형 챗봇
+
 ![캐릭터형 챗봇](featured.png)
+
 공공기관 안내를 딱딱하지 않게 전달하기 위해 캐릭터 UI를 결합했습니다.
 
 ### 음성 대화
-![음성 대화](detail-avatar.png)
+
+![음성 대화](https://loremflickr.com/720/450/voiceassistant,chatbot?lock=2201)
+
 사용자가 필요한 민원·지원 정보를 음성 기반 대화로 찾도록 설계했습니다.
 
 ### 공공 서비스 UX
-![공공 서비스 UX](detail-public.jpg)
-도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.
 
+![공공 서비스 UX](https://loremflickr.com/720/450/government,service?lock=2202)
+
+도민이 정책 정보를 더 쉽게 이해하도록 안내 흐름과 응답 톤을 정리했습니다.

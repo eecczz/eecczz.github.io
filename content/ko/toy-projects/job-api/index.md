@@ -1,4 +1,5 @@
-﻿---
+---
+
 title: Job API Project
 date: 2026-05-12
 summary: '채용 공고 조회, 지원 내역, 북마크, JWT 인증을 제공하는 Spring Boot 기반 REST API 프로젝트입니다.'
@@ -8,16 +9,15 @@ highlights:
     image: featured.jpg
   - title: JWT 인증
     text: 회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
-    image: detail-recruitment.jpg
+    image: https://loremflickr.com/720/450/office,work?lock=1103
   - title: MariaDB 저장
     text: 채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.
-    image: detail-api.jpg
+    image: https://loremflickr.com/720/450/server,code?lock=1102
 links:
   - name: GitHub
     url: https://github.com/eecczz/jobAPI
 featured: true
 ---
-
 
 Job API Project는 채용 공고, 지원 내역, 북마크 기능을 제공하는 Spring Boot 기반 REST API 프로젝트입니다. 회원 인증과 채용 공고 조회, 지원 관리 흐름을 백엔드 API 중심으로 구현했습니다.
 
@@ -28,15 +28,21 @@ JWT 기반 인증, 목록/상세 조회, 지원 생성·취소, 북마크 추가
 - 저장소: [eecczz/jobAPI](https://github.com/eecczz/jobAPI)
 
 ## 주요 구현 포인트
+
 ### 채용 공고 API
+
 ![채용 공고 API](featured.jpg)
+
 공고 목록, 상세 조회, 지원 내역 생성과 취소 흐름을 REST API로 구성했습니다.
 
 ### JWT 인증
-![JWT 인증](detail-recruitment.jpg)
+
+![JWT 인증](https://loremflickr.com/720/450/office,work?lock=1103)
+
 회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
 
 ### MariaDB 저장
-![MariaDB 저장](detail-api.jpg)
-채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.
 
+![MariaDB 저장](https://loremflickr.com/720/450/server,code?lock=1102)
+
+채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.

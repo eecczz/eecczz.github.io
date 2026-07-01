@@ -55,11 +55,18 @@
       {{ range first 3 . }}
         {{ $highlight := . }}
         {{ $highlightImage := "" }}
+        {{ $highlightImageURL := "" }}
         {{ with $highlight.image }}
-          {{ $highlightImage = $item.Resources.GetMatch . }}
+          {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
+            {{ $highlightImageURL = . }}
+          {{ else }}
+            {{ $highlightImage = $item.Resources.GetMatch . }}
+          {{ end }}
         {{ end }}
         <div class="project-highlight-mini">
-          {{ with $highlightImage }}
+          {{ if $highlightImageURL }}
+            <img src="{{ $highlightImageURL }}" alt="{{ $highlight.title }}" loading="lazy">
+          {{ else with $highlightImage }}
             {{ $thumb := .Fill "360x220 Center" }}
             {{ if ne $thumb.MediaType.SubType "gif" }}{{ $thumb = $thumb.Process "webp" }}{{ end }}
             <img src="{{ $thumb.RelPermalink }}" height="{{ $thumb.Height }}" width="{{ $thumb.Width }}" alt="{{ $highlight.title }}" loading="lazy">

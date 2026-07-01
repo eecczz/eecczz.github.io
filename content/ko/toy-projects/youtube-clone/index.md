@@ -1,4 +1,5 @@
-﻿---
+---
+
 title: 유튜브 클론
 date: 2026-05-12
 summary: 'React/Spring 구조, AWS Lambda 기반 영상 처리, 썸네일 hover preview를 실험한 유튜브형 영상 서비스 클론입니다.'
@@ -8,16 +9,15 @@ highlights:
     image: featured.png
   - title: 미디어 UX
     text: 썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.
-    image: detail-preview.png
+    image: https://loremflickr.com/720/450/videoplayer,streaming?lock=2001
   - title: 영상 처리 구조
     text: 업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.
-    image: detail-media.jpg
+    image: https://loremflickr.com/720/450/videoproduction,server?lock=2002
 links:
   - name: GitHub
     url: https://github.com/eecczz
 featured: true
 ---
-
 
 유튜브 클론은 영상 업로드, 재생, 미리보기 경험을 직접 구현해 보기 위한 웹서비스 프로젝트입니다. 기존에는 React & Spring, AWS Lambda, Video Preview를 각각 따로 소개했지만, 실제로는 하나의 유튜브형 서비스 구현 과정이므로 대표 프로젝트로 통합했습니다.
 
@@ -28,15 +28,21 @@ featured: true
 - 관련 구현: 기존 Video Preview, AWS Lambda, React & Spring 섹션을 하나의 프로젝트 소개로 통합
 
 ## 주요 구현 포인트
+
 ### Video Preview
+
 ![Video Preview](featured.png)
+
 썸네일 hover 후 일정 시간 머물렀을 때만 영상을 로드해 불필요한 재생을 줄였습니다.
 
 ### 미디어 UX
-![미디어 UX](detail-preview.png)
+
+![미디어 UX](https://loremflickr.com/720/450/videoplayer,streaming?lock=2001)
+
 썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.
 
 ### 영상 처리 구조
-![영상 처리 구조](detail-media.jpg)
-업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.
 
+![영상 처리 구조](https://loremflickr.com/720/450/videoproduction,server?lock=2002)
+
+업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.

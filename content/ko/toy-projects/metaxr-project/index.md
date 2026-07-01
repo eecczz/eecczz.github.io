@@ -1,4 +1,5 @@
-﻿---
+---
+
 title: MetaXR Project
 date: 2026-06-19
 summary: 'Meta/XR 기기를 활용해 실재감 있는 조작 경험, 몬스터 전투, 탈출 흐름을 구현한 Unity 액션 게임 프로젝트입니다.'
@@ -8,16 +9,15 @@ highlights:
     image: featured.png
   - title: 근접 상호작용
     text: 플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
-    image: detail-xr.png
+    image: https://loremflickr.com/720/450/virtualreality,controller?lock=1201
   - title: Unity 프로토타입
     text: XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
-    image: detail-unity.jpg
+    image: https://loremflickr.com/720/450/gamedevelopment,computer?lock=1202
 links:
   - name: GitHub
     url: https://github.com/eecczz/MetaXR-Project
 featured: true
 ---
-
 
 MetaXR Project는 Meta/XR 환경에서 플레이하는 액션 게임 프로젝트입니다. 실제 기기를 통한 입력과 상호작용을 바탕으로 몬스터를 처치하고 탈출하는 콘텐츠를 구현했습니다.
 
@@ -28,15 +28,21 @@ Wii Swordplay 클론에서 쌓은 조작감, 충돌, 피격 반응에 대한 관
 - 저장소: [eecczz/MetaXR-Project](https://github.com/eecczz/MetaXR-Project)
 
 ## 주요 구현 포인트
+
 ### XR 전투 입력
+
 ![XR 전투 입력](featured.png)
+
 컨트롤러 움직임을 공격과 방어 상호작용으로 연결했습니다.
 
 ### 근접 상호작용
-![근접 상호작용](detail-xr.png)
+
+![근접 상호작용](https://loremflickr.com/720/450/virtualreality,controller?lock=1201)
+
 플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
 
 ### Unity 프로토타입
-![Unity 프로토타입](detail-unity.jpg)
-XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
 
+![Unity 프로토타입](https://loremflickr.com/720/450/gamedevelopment,computer?lock=1202)
+
+XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
