@@ -13,7 +13,7 @@ main:
     url: "/toy-projects/"
     weight: 30
 
-  - name: "경진대회 프로젝트"
+  - name: "전공&대회 프로젝트"
     url: "/contest-projects/"
     weight: 40
 
@@ -83,27 +83,27 @@ main:
 
   - name: "SpeakUp"
     url: "/contest-projects/speech-coach/"
-    parent: "경진대회 프로젝트"
+    parent: "전공&대회 프로젝트"
     weight: 41
 
   - name: "대도민 음성 챗봇"
     url: "/contest-projects/jeonbuk-chatbot/"
-    parent: "경진대회 프로젝트"
+    parent: "전공&대회 프로젝트"
     weight: 42
 
   - name: "소울라이크 게임"
     url: "/contest-projects/soulslike-game/"
-    parent: "경진대회 프로젝트"
+    parent: "전공&대회 프로젝트"
     weight: 43
 
   - name: "Gone"
     url: "/contest-projects/gone/"
-    parent: "경진대회 프로젝트"
+    parent: "전공&대회 프로젝트"
     weight: 44
 
   - name: "TRIPICK"
     url: "/contest-projects/tripick/"
-    parent: "경진대회 프로젝트"
+    parent: "전공&대회 프로젝트"
     weight: 45
 
   - name: "프로젝트 문의"

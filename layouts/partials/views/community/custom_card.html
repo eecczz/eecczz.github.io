@@ -21,13 +21,15 @@
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
 <div class="custom-card">
-  {{ with $resource }}
-  {{ $image := .Resize "550x" }}
-  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-card-image hover-overlay">
-    <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-         alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
-  </a>
+  {{ if not $item.Params.highlights }}
+    {{ with $resource }}
+    {{ $image := .Resize "550x" }}
+    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-card-image hover-overlay">
+      <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+           alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+    </a>
+    {{ end }}
   {{ end }}
   <div class="custom-card-text">
     <div class="section-subheading article-title mb-1 mt-3">
@@ -45,6 +47,27 @@
     {{ with $summary }}
     <div class="article-style">
       <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ with $item.Params.highlights }}
+    <div class="project-highlight-strip">
+      {{ range first 3 . }}
+        {{ $highlight := . }}
+        {{ $highlightImage := "" }}
+        {{ with $highlight.image }}
+          {{ $highlightImage = $item.Resources.GetMatch . }}
+        {{ end }}
+        <div class="project-highlight-mini">
+          {{ with $highlightImage }}
+            {{ $thumb := .Fill "360x220 Center" }}
+            {{ if ne $thumb.MediaType.SubType "gif" }}{{ $thumb = $thumb.Process "webp" }}{{ end }}
+            <img src="{{ $thumb.RelPermalink }}" height="{{ $thumb.Height }}" width="{{ $thumb.Width }}" alt="{{ $highlight.title }}" loading="lazy">
+          {{ end }}
+          <strong>{{ $highlight.title | markdownify }}</strong>
+          <span>{{ $highlight.text | markdownify }}</span>
+        </div>
+      {{ end }}
     </div>
     {{ end }}
 
@@ -71,5 +94,48 @@
 
   .custom-card-text {
     text-align: left;
+  }
+
+  .project-highlight-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .project-highlight-mini {
+    min-width: 0;
+  }
+
+  .project-highlight-mini img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+
+  .project-highlight-mini strong {
+    display: block;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    margin-bottom: 3px;
+  }
+
+  .project-highlight-mini span {
+    display: block;
+    color: #5d5d5d;
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .dark .project-highlight-mini span {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  @media (max-width: 640px) {
+    .project-highlight-strip {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
