@@ -59,7 +59,7 @@ sections:
     content:
       slides:
 
-      - title: <span style="font-size:70%">가상현실 게임</span>
+      - title: <span style="font-size:70%">인터랙티브 게임</span>
         content: |
           <div style="position: relative; text-align: center; color: white;">
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
