@@ -36,7 +36,7 @@ sections:
       text: |
         <div class="portfolio-highlight-grid">
           <div class="portfolio-highlight">
-            <strong>4.0 / 4.5</strong>
+            <strong>교과종합성적 4.0/4.5</strong>
             <span>전공 학업과 프로젝트를 병행하며 유지한 학점</span>
           </div>
           <div class="portfolio-highlight">
