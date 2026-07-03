@@ -17,8 +17,7 @@
 - 2026 Capstone Jeonbuk: AI 보조 캡스톤 프로젝트
 - ClipAnalyst: 스포츠 영상 구간 분석 AI 서비스
 - Shopping Mall Spring Boot: Spring Boot 기반 쇼핑몰 프로젝트
-- Bank Server: NestJS/PostgreSQL 기반 금융 백엔드 프로젝트
-- Unity Game Projects: 3D 공포 게임, Soulslike 프로토타입 등
+- Unity Game Projects: 3D 공포 게임, Soulslike 프로토타입 
 
 ## 기술 스택
 
