@@ -70,6 +70,6 @@ user_groups:
 
 주식회사 건파워에서 Unity 기반 3D 게임 개발 외주에 참여했고, 전북대학교 시각지능 연구실에서 비전 논문을 학습·리뷰했으며, 하루솔루션에서는 정보 통신 및 관제 소프트웨어 개발 현장실습을 수행했습니다. 유저와 팀원의 반응을 상상하며 몰입하는 성향을 강점으로 삼아 아이디어를 빠르게 실험하고, 목표가 정해진 프로젝트에서는 요구사항을 이해하며 방향을 맞춰가는 개발자가 되고자 합니다.
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/황선우_포트폴리오_26.08수정.hwpx" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 HWPX로 받기.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/portfolio_2026_08.hwpx" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 HWPX로 받기.
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/황선우_포트폴리오_26.08수정.pdf" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 PDF로 받기.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/portfolio_2026_08.pdf" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 PDF로 받기.
