@@ -5,14 +5,14 @@ date: 2026-05-12
 summary: '채용 공고 조회, 지원 내역, 북마크, JWT 인증을 제공하는 Spring Boot 기반 REST API 프로젝트입니다.'
 highlights:
   - title: 채용 공고 API
-    text: 공고 목록, 상세 조회, 지원 내역 생성과 취소 흐름을 REST API로 구성했습니다.
-    image: featured.jpg
+    text: OpenAPI 명세를 기준으로 인증, 채용 공고 조회, 지원, 북마크 엔드포인트를 정리했습니다.
+    image: api-spec.png
   - title: JWT 인증
-    text: 회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
-    image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=720&q=80
-  - title: MariaDB 저장
-    text: 채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.
-    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
+    text: Auth, Jobs, Applications, Bookmarks 컨트롤러와 JWT 기반 인증 흐름을 분리했습니다.
+    image: backend-flow.png
+  - title: 빌드 검증
+    text: 로컬 클론에서 Gradle compileJava를 실행해 Spring Boot 백엔드 소스가 정상 컴파일됨을 확인했습니다.
+    image: command-result.png
 links:
   - name: GitHub
     url: https://github.com/eecczz/jobAPI
@@ -31,18 +31,18 @@ JWT 기반 인증, 목록/상세 조회, 지원 생성·취소, 북마크 추가
 
 ### 채용 공고 API
 
-![채용 공고 API](featured.jpg)
+![채용 공고 API](api-spec.png)
 
-공고 목록, 상세 조회, 지원 내역 생성과 취소 흐름을 REST API로 구성했습니다.
+OpenAPI 명세를 기준으로 인증, 채용 공고 조회, 지원, 북마크 엔드포인트를 정리했습니다.
 
 ### JWT 인증
 
-![JWT 인증](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=720&q=80)
+![JWT 인증](backend-flow.png)
 
-회원가입과 로그인 이후 권한이 필요한 기능을 토큰 기반으로 분리했습니다.
+Auth, Jobs, Applications, Bookmarks 컨트롤러와 JWT 기반 인증 흐름을 분리했습니다.
 
-### MariaDB 저장
+### 빌드 검증
 
-![MariaDB 저장](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
+![빌드 검증](command-result.png)
 
-채용 공고, 지원, 북마크 데이터를 관계형 모델로 다루는 연습을 했습니다.
+로컬 클론에서 Gradle compileJava를 실행해 Spring Boot 백엔드 소스가 정상 컴파일됨을 확인했습니다.

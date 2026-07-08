@@ -250,7 +250,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./contact/" cta_text="프로젝트 문의 →" %}}
+        {{% cta cta_link="./contact/" cta_text="문의 →" %}}
     design:
       columns: '1'
 ---

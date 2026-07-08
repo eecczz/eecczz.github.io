@@ -101,7 +101,7 @@ main:
     parent: "전공&대회 프로젝트"
     weight: 45
 
-  - name: "프로젝트 문의"
+  - name: "문의"
     url: "/contact/"
     parent: "연락처"
     weight: 51
