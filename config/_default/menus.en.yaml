@@ -1,60 +1,112 @@
 # Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
 
 main:
-  # 상위 메뉴 항목
-  - name: "home"  # i18n 파일에서 'menu.home' 키를 사용
+  - name: "Home"
     url: "/"
     weight: 10
 
-  - name: "about"
+  - name: "About"
     url: "/about/"
     weight: 20
 
-  - name: "personal projects"
+  - name: "Toy Projects"
+    url: "/toy-projects/"
     weight: 30
 
-  - name: "team projects"
+  - name: "Major & Competition Projects"
+    url: "/contest-projects/"
     weight: 40
 
-  - name: "contact"
+  - name: "Contact"
     url: "/contact/"
     weight: 50
 
-  # 하위 메뉴 항목 (parent 속성을 사용)
-  - name: "main"
+  - name: "Main"
     url: "/"
-    parent: "home"
+    parent: "Home"
     weight: 11
 
-  - name: "Hwang-seonwoo"
-    url: "/author/Hwang Seon-woo/"
-    parent: "about"
+  - name: "Hwang Seon-woo"
+    url: "/author/admin/"
+    parent: "About"
     weight: 21
 
-  - name: "swordplay"
-    url: "/swordplay/"
-    parent: "personal projects"
+  - name: "Swordplay"
+    url: "/toy-projects/swordplay/"
+    parent: "Toy Projects"
     weight: 31
 
-  - name: "youtube-clone"
-    url: "/youtube-clone/"
-    parent: "personal projects"
+  - name: "MetaXR"
+    url: "/toy-projects/metaxr-project/"
+    parent: "Toy Projects"
     weight: 32
 
-  - name: "see team projects"
-    url: "/team-projects/"
-    parent: "team projects"
+  - name: "3D Horror Game"
+    url: "/toy-projects/my3dhorrorgame/"
+    parent: "Toy Projects"
+    weight: 33
+
+  - name: "Shopping Mall"
+    url: "/toy-projects/shopping-mall/"
+    parent: "Toy Projects"
+    weight: 34
+
+  - name: "YouTube Remake"
+    url: "/toy-projects/youtube-clone/"
+    parent: "Toy Projects"
+    weight: 35
+
+  - name: "Job API"
+    url: "/toy-projects/job-api/"
+    parent: "Toy Projects"
+    weight: 37
+
+  - name: "My Movie Web"
+    url: "/toy-projects/my-movie-web/"
+    parent: "Toy Projects"
+    weight: 38
+
+  - name: "ClipAnalyst"
+    url: "/toy-projects/sports-analyzer/"
+    parent: "Toy Projects"
+    weight: 39
+
+  - name: "Restaurant ReAct Agent"
+    url: "/toy-projects/restaurant-agent/"
+    parent: "Toy Projects"
+    weight: 40
+
+  - name: "SpeakUp"
+    url: "/contest-projects/speech-coach/"
+    parent: "Major & Competition Projects"
     weight: 41
 
-  - name: "join project"
+  - name: "Jeonbuk Voice Chatbot"
+    url: "/contest-projects/jeonbuk-chatbot/"
+    parent: "Major & Competition Projects"
+    weight: 42
+
+  - name: "Soulslike Game"
+    url: "/contest-projects/soulslike-game/"
+    parent: "Major & Competition Projects"
+    weight: 43
+
+  - name: "Gone"
+    url: "/contest-projects/gone/"
+    parent: "Major & Competition Projects"
+    weight: 44
+
+  - name: "TRIPICK"
+    url: "/contest-projects/tripick/"
+    parent: "Major & Competition Projects"
+    weight: 45
+
+  - name: "Contact"
     url: "/contact/"
-    parent: "contact"
+    parent: "Contact"
     weight: 51
 
-  - name: "see more project"
-    url: 'https://github.com/eecczz?tab=repositories'
-    parent: "contact"
+  - name: "GitHub"
+    url: "https://github.com/eecczz?tab=repositories"
+    parent: "Contact"
     weight: 52

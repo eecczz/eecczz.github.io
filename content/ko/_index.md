@@ -51,6 +51,10 @@ sections:
             <strong>산학·연구 경험</strong>
             <span>Unity 외주, 시각지능 연구실, 관제 소프트웨어 현장실습</span>
           </div>
+          <div class="portfolio-highlight">
+            <strong>오픈소스 기여</strong>
+            <span>Pipecat PR #4455가 main 브랜치에 병합</span>
+          </div>
         </div>
     design:
       columns: '1'
