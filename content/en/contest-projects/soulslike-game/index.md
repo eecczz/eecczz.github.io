@@ -5,10 +5,10 @@ summary: 'A four-person Unity action game project set in a colosseum, built for 
 highlights:
   - title: Boss Sequence
     text: Built soulslike tension with wide-range attacks and strong effects.
-    image: featured.png
+    image: detail-arena.png
   - title: Dodge and Combo
     text: Designed a combat flow where players read attack motions, dodge, and counter.
-    image: detail-arena.png
+    image: featured.png
   - title: Colosseum Stage
     text: Created a final-battle space where the player and boss face each other.
     image: detail-combat.png
@@ -27,13 +27,13 @@ A four-person Unity action game project set in a colosseum, built for an introdu
 
 ### Boss Sequence
 
-![Boss Sequence](featured.png)
+![Boss Sequence](detail-arena.png)
 
 Built soulslike tension with wide-range attacks and strong effects.
 
 ### Dodge and Combo
 
-![Dodge and Combo](detail-arena.png)
+![Dodge and Combo](featured.png)
 
 Designed a combat flow where players read attack motions, dodge, and counter.
 

@@ -53,7 +53,7 @@ sections:
           </div>
           <div class="portfolio-highlight">
             <strong>오픈소스 기여</strong>
-            <span>Pipecat PR #4455가 main 브랜치에 병합</span>
+            <span>영상 재생 초기화 오류 해결 기여</span>
           </div>
         </div>
     design:
@@ -163,8 +163,8 @@ sections:
             <a class="home-project-title" href="./contest-projects/soulslike-game/">소울라이크 게임</a>
             <p>창의적공학설계입문 4인 팀프로젝트로 제작한 콜로세움 배경의 Unity 액션 게임입니다.</p>
             <div class="home-project-highlights">
-              <div><img src="./contest-projects/soulslike-game/featured.png" alt="보스전 연출"><strong>보스전 연출</strong><span>큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.</span></div>
-              <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
+              <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="보스전 연출"><strong>보스전 연출</strong><span>큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.</span></div>
+              <div><img src="./contest-projects/soulslike-game/featured.png" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
               <div><img src="./contest-projects/soulslike-game/detail-combat.png" alt="콜로세움 무대"><strong>콜로세움 무대</strong><span>마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.</span></div>
             </div>
           </article>

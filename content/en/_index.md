@@ -52,7 +52,7 @@ sections:
           </div>
           <div class="portfolio-highlight">
             <strong>Open Source Contribution</strong>
-            <span>Pipecat PR #4455 merged into the main branch</span>
+            <span>Contributed a fix for a video playback initialization error</span>
           </div>
         </div>
     design:
@@ -162,8 +162,8 @@ sections:
             <a class="home-project-title" href="./contest-projects/soulslike-game/">Soulslike Game</a>
             <p>A four-person Unity action game project set in a colosseum for an introductory creative engineering design course.</p>
             <div class="home-project-highlights">
-              <div><img src="./contest-projects/soulslike-game/featured.png" alt="Boss sequence"><strong>Boss Sequence</strong><span>Built tension with wide-range attacks and strong visual effects.</span></div>
-              <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="Dodge and combo"><strong>Dodge & Combo</strong><span>Designed a combat rhythm where the player reads attacks, dodges, and counters.</span></div>
+              <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="Boss sequence"><strong>Boss Sequence</strong><span>Built tension with wide-range attacks and strong visual effects.</span></div>
+              <div><img src="./contest-projects/soulslike-game/featured.png" alt="Dodge and combo"><strong>Dodge & Combo</strong><span>Designed a combat rhythm where the player reads attacks, dodges, and counters.</span></div>
               <div><img src="./contest-projects/soulslike-game/detail-combat.png" alt="Colosseum stage"><strong>Colosseum Stage</strong><span>Created a confrontation space for a final battle between the player and boss.</span></div>
             </div>
           </article>

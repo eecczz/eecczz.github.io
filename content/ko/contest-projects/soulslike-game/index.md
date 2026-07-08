@@ -6,10 +6,10 @@ summary: '창의적공학설계입문 4인 팀프로젝트로 제작한 콜로�
 highlights:
   - title: 보스전 연출
     text: 큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.
-    image: featured.png
+    image: detail-arena.png
   - title: 회피와 콤보
     text: 공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
-    image: detail-arena.png
+    image: featured.png
   - title: 콜로세움 무대
     text: 마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.
     image: detail-combat.png
@@ -35,13 +35,13 @@ featured: true
 
 ### 보스전 연출
 
-![보스전 연출](featured.png)
+![보스전 연출](detail-arena.png)
 
 큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.
 
 ### 회피와 콤보
 
-![회피와 콤보](detail-arena.png)
+![회피와 콤보](featured.png)
 
 공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
 
