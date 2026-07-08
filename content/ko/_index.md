@@ -163,8 +163,8 @@ sections:
             <p>창의적공학설계입문 4인 팀프로젝트로 제작한 콜로세움 배경의 Unity 액션 게임입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/soulslike-game/featured.png" alt="보스전 연출"><strong>보스전 연출</strong><span>큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.</span></div>
-              <div><img src="./contest-projects/soulslike-game/detail-combat.png" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
               <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="콜로세움 무대"><strong>콜로세움 무대</strong><span>마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.</span></div>
+              <div><img src="./contest-projects/soulslike-game/detail-combat.png" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
             </div>
           </article>
 
@@ -173,8 +173,8 @@ sections:
             <p>Meta/XR 기기를 활용해 손의 움직임과 공간감을 전투 상호작용으로 연결한 액션 프로토타입입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/metaxr-project/featured.png" alt="XR 전투 입력"><strong>XR 전투 입력</strong><span>컨트롤러 움직임을 공격과 방어 상호작용으로 연결했습니다.</span></div>
-              <div><img src="./toy-projects/metaxr-project/detail-xr.png" alt="근접 상호작용"><strong>근접 상호작용</strong><span>플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.</span></div>
               <div><img src="./toy-projects/metaxr-project/detail-unity.png" alt="Unity 프로토타입"><strong>Unity 프로토타입</strong><span>XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.</span></div>
+              <div><img src="./toy-projects/metaxr-project/detail-xr.png" alt="근접 상호작용"><strong>근접 상호작용</strong><span>플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.</span></div>
             </div>
           </article>
         </div>
@@ -202,8 +202,8 @@ sections:
             <p>영상 썸네일 hover preview와 업로드/재생 구조를 실험한 유튜브형 영상 서비스 모작입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/youtube-clone/featured.png" alt="Video Preview"><strong>Video Preview</strong><span>hover 후 일정 시간 머물렀을 때만 영상을 로드해 불필요한 재생을 줄였습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80" alt="미디어 UX"><strong>미디어 UX</strong><span>썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=720&q=80" alt="영상 처리 구조"><strong>영상 처리 구조</strong><span>업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.</span></div>
+              <div><img src="./toy-projects/youtube-clone/detail-player.png" alt="미디어 UX"><strong>미디어 UX</strong><span>썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.</span></div>
+              <div><img src="./toy-projects/youtube-clone/detail-upload.png" alt="영상 처리 구조"><strong>영상 처리 구조</strong><span>업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.</span></div>
             </div>
           </article>
 
@@ -212,8 +212,8 @@ sections:
             <p>사용자의 지역·가격·상황 조건을 해석하고, 검색 도구와 필터링 도구를 호출해 설명 가능한 맛집 추천을 생성하는 FastAPI 기반 AI Agent입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/restaurant-agent/featured.png" alt="맛집 추천 질문"><strong>맛집 추천 질문</strong><span>자연어 요청을 받아 지역과 조건을 추출하고 추천 흐름을 시작합니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=720&q=80" alt="검색 도구"><strong>검색 도구</strong><span>Kakao Local API와 샘플 데이터셋을 함께 사용해 후보 맛집을 검색합니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=720&q=80" alt="필터링과 추천"><strong>필터링과 추천</strong><span>가격, 상황, 리뷰 조건을 반영해 사용자에게 설명 가능한 추천 결과를 제공합니다.</span></div>
+              <div><img src="./toy-projects/restaurant-agent/detail-result.png" alt="검색 도구"><strong>검색 도구</strong><span>Kakao Local API와 샘플 데이터셋을 함께 사용해 후보 맛집을 검색합니다.</span></div>
+              <div><img src="./toy-projects/restaurant-agent/detail-trace.png" alt="필터링과 추천"><strong>필터링과 추천</strong><span>가격, 상황, 리뷰 조건을 반영해 사용자에게 설명 가능한 추천 결과를 제공합니다.</span></div>
             </div>
           </article>
         </div>

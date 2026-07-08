@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 검색 도구
     text: Kakao Local API와 샘플 데이터셋을 함께 사용해 지역 맛집 검색을 처리합니다.
-    image: https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=720&q=80
+    image: detail-result.png
   - title: 필터링과 추천
     text: 가격, 상황, 리뷰 조건을 반영해 사용자에게 설명 가능한 추천을 제공합니다.
-    image: https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=720&q=80
+    image: detail-trace.png
 links:
   - name: GitHub
     url: https://github.com/eecczz/restaurant_recommend_agentAI
@@ -37,12 +37,12 @@ featured: true
 
 ### 검색 도구
 
-![검색 도구](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=720&q=80)
+![검색 도구](detail-result.png)
 
 Kakao Local API와 샘플 데이터셋을 함께 사용해 지역 맛집 검색을 처리합니다.
 
 ### 필터링과 추천
 
-![필터링과 추천](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=720&q=80)
+![필터링과 추천](detail-trace.png)
 
 가격, 상황, 리뷰 조건을 반영해 사용자에게 설명 가능한 추천을 제공합니다.

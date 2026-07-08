@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 미디어 UX
     text: 썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.
-    image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80
+    image: detail-player.png
   - title: 영상 처리 구조
     text: 업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.
-    image: https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=720&q=80
+    image: detail-upload.png
 links:
   - name: GitHub
     url: https://github.com/eecczz
@@ -37,12 +37,12 @@ featured: true
 
 ### 미디어 UX
 
-![미디어 UX](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80)
+![미디어 UX](detail-player.png)
 
 썸네일, 영상, 재생바가 자연스럽게 전환되는 유튜브형 탐색 경험을 구현했습니다.
 
 ### 영상 처리 구조
 
-![영상 처리 구조](https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=720&q=80)
+![영상 처리 구조](detail-upload.png)
 
 업로드와 재생을 고려해 React 화면과 서버/클라우드 처리 흐름을 분리했습니다.

@@ -6,7 +6,7 @@ summary: 'YouTube 스포츠 영상 구간을 선택해 AI 모델로 자세와 �
 highlights:
   - title: 클립 구간 선택
     text: YouTube 영상에서 분석할 구간을 고르고 서버에서 해당 부분만 추출합니다.
-    image: featured.jpg
+    image: featured.png
   - title: AI 분석 스트리밍
     text: FastAPI 서비스가 분석 결과를 SSE로 스트리밍하는 구조를 실험했습니다.
     image: https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=720&q=80
@@ -31,7 +31,7 @@ yt-dlp와 ffmpeg로 클립 구간을 추출하고, SSE로 분석 결과를 스�
 
 ### 클립 구간 선택
 
-![클립 구간 선택](featured.jpg)
+![클립 구간 선택](featured.png)
 
 YouTube 영상에서 분석할 구간을 고르고 서버에서 해당 부분만 추출합니다.
 
