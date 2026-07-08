@@ -62,8 +62,7 @@ sections:
       - title: <span style="font-size:70%">인터랙티브 게임</span>
         content: |
           <div style="position: relative; text-align: center; color: white;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-            <span style="position: relative; font-size: 70%;">실제 움직임과 닮은 입력·피격·상호작용으로 몰입감을 만드는 게임 개발</span>
+            <span style="position: relative; font-size: 70%; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);">실제 움직임과 닮은 입력·피격·상호작용으로 몰입감을 만드는 게임 개발</span>
           </div>
         align: center
         background:
@@ -77,8 +76,7 @@ sections:
       - title: <span style="font-size:70%">AI 서비스</span>
         content: |
           <div style="position: relative; text-align: center; color: white;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-            <span style="position: relative; font-size: 70%;">음성, 영상, 추천 문제를 AI 에이전트와 웹서비스로 연결</span>
+            <span style="position: relative; font-size: 70%; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);">음성, 영상, 추천 문제를 AI 에이전트와 웹서비스로 연결</span>
           </div>
         align: center
         background:
@@ -92,8 +90,7 @@ sections:
       - title: <span style="font-size:70%">백엔드·클라우드</span>
         content: |
           <div style="position: relative; text-align: center; color: white;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-            <span style="position: relative; font-size: 70%;">Spring Boot, MariaDB, AWS 기반의 API와 미디어 처리 파이프라인 설계</span>
+            <span style="position: relative; font-size: 70%; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);">Spring Boot, MariaDB, AWS 기반의 API와 미디어 처리 파이프라인 설계</span>
           </div>
         align: center
         background:
