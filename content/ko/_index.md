@@ -163,8 +163,8 @@ sections:
             <p>창의적공학설계입문 4인 팀프로젝트로 제작한 콜로세움 배경의 Unity 액션 게임입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/soulslike-game/featured.png" alt="보스전 연출"><strong>보스전 연출</strong><span>큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
-              <div><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?width=960" alt="콜로세움 무대"><strong>콜로세움 무대</strong><span>마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.</span></div>
+              <div><img src="./contest-projects/soulslike-game/detail-combat.png" alt="회피와 콤보"><strong>회피와 콤보</strong><span>공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.</span></div>
+              <div><img src="./contest-projects/soulslike-game/detail-arena.png" alt="콜로세움 무대"><strong>콜로세움 무대</strong><span>마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.</span></div>
             </div>
           </article>
 
@@ -173,8 +173,8 @@ sections:
             <p>Meta/XR 기기를 활용해 손의 움직임과 공간감을 전투 상호작용으로 연결한 액션 프로토타입입니다.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/metaxr-project/featured.png" alt="XR 전투 입력"><strong>XR 전투 입력</strong><span>컨트롤러 움직임을 공격과 방어 상호작용으로 연결했습니다.</span></div>
-              <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg/960px-HTC_Vive_Virtual_Reality_Headset_and_Controllers.jpg" alt="근접 상호작용"><strong>근접 상호작용</strong><span>플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=720&q=80" alt="Unity 프로토타입"><strong>Unity 프로토타입</strong><span>XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.</span></div>
+              <div><img src="./toy-projects/metaxr-project/detail-xr.png" alt="근접 상호작용"><strong>근접 상호작용</strong><span>플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.</span></div>
+              <div><img src="./toy-projects/metaxr-project/detail-unity.png" alt="Unity 프로토타입"><strong>Unity 프로토타입</strong><span>XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.</span></div>
             </div>
           </article>
         </div>
@@ -191,9 +191,9 @@ sections:
             <a class="home-project-title" href="./toy-projects/shopping-mall/">쇼핑몰 프로젝트</a>
             <p>Spring Boot와 MariaDB 기반으로 상품 조회, 장바구니, 구매, 결제 검증 흐름을 구현한 쇼핑몰 데모입니다.</p>
             <div class="home-project-highlights">
-              <div><img src="./toy-projects/shopping-mall/featured.png" alt="쇼핑몰 화면"><strong>쇼핑몰 화면</strong><span>상품 목록, 상세, 장바구니, 구매 페이지로 이어지는 기본 쇼핑 흐름을 만들었습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=720&q=80" alt="결제 검증"><strong>결제 검증</strong><span>PortOne 테스트 결제를 붙여 결제 요청과 검증 흐름을 실험했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80" alt="Spring 백엔드"><strong>Spring 백엔드</strong><span>Spring Boot, JPA, Querydsl, MariaDB를 사용해 데이터 조회와 상태 변경을 처리했습니다.</span></div>
+              <div><img src="./toy-projects/shopping-mall/capture-list.png" alt="쇼핑몰 화면"><strong>쇼핑몰 화면</strong><span>상품 목록, 상세, 장바구니, 구매 페이지로 이어지는 기본 쇼핑 흐름을 만들었습니다.</span></div>
+              <div><img src="./toy-projects/shopping-mall/capture-cart.png" alt="장바구니 흐름"><strong>장바구니 흐름</strong><span>상품 수량, 합계 계산, 체크아웃 진입까지 구매 전 단계를 확인할 수 있게 구성했습니다.</span></div>
+              <div><img src="./toy-projects/shopping-mall/capture-signin.png" alt="로그인 화면"><strong>로그인 화면</strong><span>장바구니와 결제 흐름을 세션 기반 인증 화면으로 연결하는 구조를 실험했습니다.</span></div>
             </div>
           </article>
 
@@ -231,8 +231,8 @@ sections:
             <p>발표·면접·협상 연습을 AI가 분석해 말하기 습관과 전달력을 개선하도록 돕는 코칭 서비스입니다. AI-SW경진대회 동상 수상 프로젝트로, 실시간 피드백과 세션 리포트를 중심 기능으로 설계했습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/speech-coach/featured.png" alt="실시간 코칭"><strong>실시간 코칭</strong><span>말 속도, 필러, 침묵 등 발표 중 드러나는 신호를 분석해 즉시 피드백합니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=720&q=80" alt="세션 대시보드"><strong>세션 대시보드</strong><span>연습 기록과 지표를 대시보드로 모아 반복 훈련의 변화를 확인하게 했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=720&q=80" alt="AI 리포트"><strong>AI 리포트</strong><span>전사와 주요 주의 구간을 바탕으로 다음 연습에서 고칠 포인트를 정리합니다.</span></div>
+              <div><img src="./contest-projects/speech-coach/detail-dashboard.png" alt="세션 대시보드"><strong>세션 대시보드</strong><span>연습 기록과 지표를 대시보드로 모아 반복 훈련의 변화를 확인하게 했습니다.</span></div>
+              <div><img src="./contest-projects/speech-coach/detail-ai.png" alt="AI 리포트"><strong>AI 리포트</strong><span>전사와 주요 주의 구간을 바탕으로 다음 연습에서 고칠 포인트를 정리합니다.</span></div>
             </div>
           </article>
           <article class="home-project-card">
@@ -240,8 +240,8 @@ sections:
             <p>도민이 정책·민원 정보를 더 쉽게 찾도록 음성 대화와 캐릭터 UI를 결합한 공공 서비스 프로젝트입니다. 전북도청 도지사 표창장으로 이어진 프로젝트라 홈에서도 성과가 드러나도록 분리했습니다.</p>
             <div class="home-project-highlights">
               <div><img src="./contest-projects/jeonbuk-chatbot/featured.png" alt="캐릭터형 챗봇"><strong>캐릭터형 챗봇</strong><span>공공기관 안내를 덜 딱딱하게 만들기 위해 캐릭터 기반 대화 경험을 설계했습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=720&q=80" alt="음성 대화"><strong>음성 대화</strong><span>도민이 필요한 정보를 대화하듯 요청하고 확인하는 흐름에 초점을 맞췄습니다.</span></div>
-              <div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=720&q=80" alt="공공 서비스 UX"><strong>공공 서비스 UX</strong><span>정책·민원 정보를 이해하기 쉬운 말투와 단계로 안내하도록 응답 흐름을 정리했습니다.</span></div>
+              <div><img src="./contest-projects/jeonbuk-chatbot/detail-avatar.png" alt="음성 대화"><strong>음성 대화</strong><span>도민이 필요한 정보를 대화하듯 요청하고 확인하는 흐름에 초점을 맞췄습니다.</span></div>
+              <div><img src="./contest-projects/jeonbuk-chatbot/detail-public.png" alt="공공 서비스 UX"><strong>공공 서비스 UX</strong><span>정책·민원 정보를 이해하기 쉬운 말투와 단계로 안내하도록 응답 흐름을 정리했습니다.</span></div>
             </div>
           </article>
         </div>

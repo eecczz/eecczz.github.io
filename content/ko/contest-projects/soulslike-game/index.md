@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 회피와 콤보
     text: 공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
-    image: https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80
+    image: detail-combat.png
   - title: 콜로세움 무대
     text: 마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.
-    image: https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?width=960
+    image: detail-arena.png
 links:
   - name: Armored Barbarian
     url: https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/armored-barbarian-14821
@@ -41,12 +41,12 @@ featured: true
 
 ### 회피와 콤보
 
-![회피와 콤보](https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=720&q=80)
+![회피와 콤보](detail-combat.png)
 
 공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
 
 ### 콜로세움 무대
 
-![콜로세움 무대](https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?width=960)
+![콜로세움 무대](detail-arena.png)
 
 마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.

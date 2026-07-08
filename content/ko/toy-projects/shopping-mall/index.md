@@ -6,13 +6,13 @@ summary: '상품 조회, 장바구니, 구매 페이지, PortOne 테스트 결�
 highlights:
   - title: 쇼핑몰 화면
     text: 상품 목록, 상세, 장바구니, 구매 페이지로 이어지는 기본 쇼핑 흐름을 만들었습니다.
-    image: featured.png
-  - title: 결제 검증
-    text: PortOne 테스트 결제를 붙여 결제 요청과 검증 흐름을 실험했습니다.
-    image: https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=720&q=80
-  - title: Spring 백엔드
-    text: Spring Boot, JPA, Querydsl, MariaDB를 사용해 데이터 조회와 상태 변경을 처리했습니다.
-    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
+    image: capture-list.png
+  - title: 장바구니 흐름
+    text: 상품 수량, 합계 계산, 체크아웃 진입까지 쇼핑몰의 구매 전 단계를 확인할 수 있게 구성했습니다.
+    image: capture-cart.png
+  - title: 로그인 화면
+    text: 장바구니와 결제 흐름을 세션 기반 인증 화면으로 연결하는 구조를 실험했습니다.
+    image: capture-signin.png
 links:
   - name: GitHub
     url: https://github.com/eecczz/shoppingmall-springboot
@@ -31,18 +31,18 @@ featured: true
 
 ### 쇼핑몰 화면
 
-![쇼핑몰 화면](featured.png)
+![쇼핑몰 화면](capture-list.png)
 
 상품 목록, 상세, 장바구니, 구매 페이지로 이어지는 기본 쇼핑 흐름을 만들었습니다.
 
-### 결제 검증
+### 장바구니 흐름
 
-![결제 검증](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=720&q=80)
+![장바구니 흐름](capture-cart.png)
 
-PortOne 테스트 결제를 붙여 결제 요청과 검증 흐름을 실험했습니다.
+상품 수량, 합계 계산, 체크아웃 진입까지 쇼핑몰의 구매 전 단계를 확인할 수 있게 구성했습니다.
 
-### Spring 백엔드
+### 로그인 화면
 
-![Spring 백엔드](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
+![로그인 화면](capture-signin.png)
 
-Spring Boot, JPA, Querydsl, MariaDB를 사용해 데이터 조회와 상태 변경을 처리했습니다.
+장바구니와 결제 흐름을 세션 기반 인증 화면으로 연결하는 구조를 실험했습니다.

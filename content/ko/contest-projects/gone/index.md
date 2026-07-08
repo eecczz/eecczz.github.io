@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 세로형 플레이
     text: 상단 게임뷰와 하단 조작 영역을 1:1로 배치한 모바일 친화 구성을 실험했습니다.
-    image: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=720&q=80
+    image: detail-mobile.png
   - title: 동아리 팀 개발
     text: Fungus 기반 스토리 흐름과 액션 진행을 팀원들과 나눠 구현했습니다.
-    image: https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=720&q=80
+    image: detail-story.png
 links:
   - name: Fungus
     url: https://assetstore.unity.com/packages/tools/game-toolkits/fungus-34184
@@ -39,12 +39,12 @@ Gone은 초인공 지능 "큐리"가 발생시킨 전파로 초토화된 도시�
 
 ### 세로형 플레이
 
-![세로형 플레이](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=720&q=80)
+![세로형 플레이](detail-mobile.png)
 
 상단 게임뷰와 하단 조작 영역을 1:1로 배치한 모바일 친화 구성을 실험했습니다.
 
 ### 동아리 팀 개발
 
-![동아리 팀 개발](https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=720&q=80)
+![동아리 팀 개발](detail-story.png)
 
 Fungus 기반 스토리 흐름과 액션 진행을 팀원들과 나눠 구현했습니다.

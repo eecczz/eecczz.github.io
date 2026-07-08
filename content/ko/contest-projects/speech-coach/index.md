@@ -9,10 +9,10 @@ highlights:
     image: featured.png
   - title: 세션 대시보드
     text: 발표·면접·협상 등 상황별 세션을 만들고 연습 흐름을 저장합니다.
-    image: https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=720&q=80
+    image: detail-dashboard.png
   - title: AI 리포트
     text: 세션 종료 후 전사와 주요 주의 구간을 바탕으로 개선 리포트를 생성합니다.
-    image: https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=720&q=80
+    image: detail-ai.png
 links:
   - name: GitHub
     url: https://github.com/eecczz/speech-coach
@@ -37,12 +37,12 @@ SpeakUp은 발표, 면접, 협상처럼 말하기 부담이 큰 상황을 AI 에
 
 ### 세션 대시보드
 
-![세션 대시보드](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=720&q=80)
+![세션 대시보드](detail-dashboard.png)
 
 발표·면접·협상 등 상황별 세션을 만들고 연습 흐름을 저장합니다.
 
 ### AI 리포트
 
-![AI 리포트](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=720&q=80)
+![AI 리포트](detail-ai.png)
 
 세션 종료 후 전사와 주요 주의 구간을 바탕으로 개선 리포트를 생성합니다.

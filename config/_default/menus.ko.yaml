@@ -56,11 +56,6 @@ main:
     parent: "토이 프로젝트"
     weight: 35
 
-  - name: "Streaming API"
-    url: "/toy-projects/streaming-api/"
-    parent: "토이 프로젝트"
-    weight: 36
-
   - name: "Job API"
     url: "/toy-projects/job-api/"
     parent: "토이 프로젝트"
