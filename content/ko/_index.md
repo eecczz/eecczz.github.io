@@ -53,7 +53,7 @@ sections:
           </div>
           <div class="portfolio-highlight">
             <strong>오픈소스 기여</strong>
-            <span>영상 재생 초기화 오류 해결 기여</span>
+            <span>Pipecat PR #4455 merged - 영상 재생 초기화 오류 해결</span>
           </div>
         </div>
     design:

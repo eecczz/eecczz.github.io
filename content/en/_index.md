@@ -52,7 +52,7 @@ sections:
           </div>
           <div class="portfolio-highlight">
             <strong>Open Source Contribution</strong>
-            <span>Contributed a fix for a video playback initialization error</span>
+            <span>Pipecat PR #4455 merged - fixed a video playback initialization error</span>
           </div>
         </div>
     design:
