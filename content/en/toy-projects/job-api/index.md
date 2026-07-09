@@ -6,9 +6,9 @@ highlights:
   - title: Job Listing Screen
     text: Displays crawled Saramin job postings with filters for location, experience, salary, tech stack, and deadline.
     image: job-list.png
-  - title: API Test Response
-    text: Shows how the /jobs search API returns filtered job listings and pagination data as JSON.
-    image: postman-api.png
+  - title: Search API Implementation
+    text: Shows how the /jobs endpoint builds Specification filters and pageable response data from query parameters.
+    image: api-source.png
   - title: Saramin Crawl Dump
     text: Summarizes the Jsoup crawler flow that extracts posting fields, skips duplicate URLs, and saves new rows.
     image: crawl-dump.png
@@ -34,11 +34,11 @@ The crawler extracts company name, posting title, location, experience, educatio
 
 The listing screen shows crawled job postings with searchable filters for location, experience, salary, tech stack, and deadline. Each row presents company, location, experience, salary, stack, and an apply action.
 
-### API Test Response
+### Search API Implementation
 
-![API Test Response](postman-api.png)
+![Search API Implementation](api-source.png)
 
-The `GET /jobs` endpoint accepts query parameters such as keyword, location, sector, and sort order, then returns `jobPostings`, `sortOrder`, and `pagenum` as JSON. This makes the backend behavior visible even without a fully running frontend.
+The `GET /jobs` endpoint accepts query parameters such as keyword, location, sector, and sort order, builds Specification-based filters, and returns a response map with `jobPostings`, `sortOrder`, and `pagenum`. This image is based on the actual controller implementation rather than a Postman mock.
 
 ### Saramin Crawl Dump
 
