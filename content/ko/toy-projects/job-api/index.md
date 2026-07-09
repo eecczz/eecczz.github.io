@@ -1,48 +1,47 @@
 ---
-
 title: Job API Project
 date: 2026-05-12
-summary: '채용 공고 조회, 지원 내역, 북마크, JWT 인증을 제공하는 Spring Boot 기반 REST API 프로젝트입니다.'
+summary: '사람인 채용공고 크롤링, 검색/필터링, 지원 내역, 북마크, JWT 인증을 제공하는 Spring Boot 기반 REST API 프로젝트입니다.'
 highlights:
-  - title: 채용 공고 API
-    text: OpenAPI 명세를 기준으로 인증, 채용 공고 조회, 지원, 북마크 엔드포인트를 정리했습니다.
-    image: api-spec.png
-  - title: JWT 인증
-    text: Auth, Jobs, Applications, Bookmarks 컨트롤러와 JWT 기반 인증 흐름을 분리했습니다.
-    image: backend-flow.png
-  - title: 빌드 검증
-    text: 로컬 클론에서 Gradle compileJava를 실행해 Spring Boot 백엔드 소스가 정상 컴파일됨을 확인했습니다.
-    image: command-result.png
+  - title: 채용공고 목록 화면
+    text: 사람인에서 수집한 공고를 지역, 경력, 급여, 기술스택, 마감일 기준으로 조회하는 목록 화면입니다.
+    image: job-list.png
+  - title: API 테스트 응답
+    text: /jobs 검색 API가 필터 조건을 받아 공고 목록과 페이지 정보를 JSON으로 반환하는 흐름을 보여줍니다.
+    image: postman-api.png
+  - title: 사람인 크롤링 덤프
+    text: Jsoup 기반 크롤러가 사람인 공고를 페이지 단위로 수집하고 중복 URL을 제외해 저장하는 과정을 정리했습니다.
+    image: crawl-dump.png
 links:
   - name: GitHub
     url: https://github.com/eecczz/jobAPI
 featured: true
 ---
 
-Job API Project는 채용 공고, 지원 내역, 북마크 기능을 제공하는 Spring Boot 기반 REST API 프로젝트입니다. 회원 인증과 채용 공고 조회, 지원 관리 흐름을 백엔드 API 중심으로 구현했습니다.
+Job API Project는 사람인 채용공고를 크롤링해 MariaDB에 저장하고, 저장된 공고를 검색/필터링할 수 있도록 만든 Spring Boot 기반 REST API 프로젝트입니다. 단순 CRUD에 그치지 않고 실제 채용공고 데이터 수집, 조건 검색, 지원/북마크 흐름, JWT 인증 구조를 함께 다뤘습니다.
 
-JWT 기반 인증, 목록/상세 조회, 지원 생성·취소, 북마크 추가·삭제처럼 실제 서비스에서 반복적으로 필요한 CRUD와 권한 흐름을 연습한 프로젝트입니다. MariaDB 기반 데이터 저장과 Gradle 빌드 흐름도 함께 다루었습니다.
+사람인 검색 결과의 `.item_recruit` 영역에서 회사명, 공고 제목, 지역, 경력, 학력, 고용형태, 마감일, 기술스택, 급여, URL을 추출하고, 이미 저장된 URL은 제외해 중복 저장을 막았습니다. 이후 `/jobs` API에서 키워드, 회사명, 직무, 기술스택, 지역, 경력, 급여 조건과 정렬 기준을 받아 페이지 단위로 응답하도록 구성했습니다.
 
-- 기술 스택: Java, Spring Boot, Spring Web, MariaDB, JWT, Gradle
-- 구현 포인트: 인증, 채용 공고 API, 지원 내역 관리, 북마크
+- 기술 스택: Java, Spring Boot, Spring Web, Spring Data JPA, Querydsl, MariaDB, JWT, Gradle, Jsoup
+- 구현 포인트: 사람인 크롤링, 공고 검색/필터링, 지원 내역, 북마크, 인증/권한 흐름
 - 저장소: [eecczz/jobAPI](https://github.com/eecczz/jobAPI)
 
 ## 주요 구현 포인트
 
-### 채용 공고 API
+### 채용공고 목록 화면
 
-![채용 공고 API](api-spec.png)
+![채용공고 목록 화면](job-list.png)
 
-OpenAPI 명세를 기준으로 인증, 채용 공고 조회, 지원, 북마크 엔드포인트를 정리했습니다.
+크롤링으로 저장된 공고를 목록 형태로 조회하고, 지역/경력/급여/기술스택/마감일 기준으로 탐색하는 화면입니다. 공고별 회사명, 위치, 경력 조건, 급여, 기술스택, 지원 액션이 한 번에 보이도록 구성했습니다.
 
-### JWT 인증
+### API 테스트 응답
 
-![JWT 인증](backend-flow.png)
+![API 테스트 응답](postman-api.png)
 
-Auth, Jobs, Applications, Bookmarks 컨트롤러와 JWT 기반 인증 흐름을 분리했습니다.
+`GET /jobs` 요청에 검색어, 지역, 기술스택, 정렬 기준을 전달하면 `jobPostings`, `sortOrder`, `pagenum`을 포함한 JSON 응답을 반환합니다. 프론트엔드 없이도 채용공고 검색 API의 입력과 출력 구조를 확인할 수 있습니다.
 
-### 빌드 검증
+### 사람인 크롤링 덤프
 
-![빌드 검증](command-result.png)
+![사람인 크롤링 덤프](crawl-dump.png)
 
-로컬 클론에서 Gradle compileJava를 실행해 Spring Boot 백엔드 소스가 정상 컴파일됨을 확인했습니다.
+`POST /jobs/crawl` 요청으로 사람인 검색 결과를 페이지 단위로 수집하고, Jsoup selector로 공고 필드를 추출합니다. URL 기준 중복 제거 후 MariaDB에 저장하는 흐름을 로그와 테이블 형태로 정리했습니다.
