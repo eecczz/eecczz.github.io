@@ -321,3 +321,36 @@ ul.network-icon .big-icon {
     grid-template-columns: 1fr;
   }
 }
+
+// Keep the search icon anchored inside the input field.
+.search-modal #search-box,
+#search-box {
+  position: relative;
+  overflow: visible;
+}
+
+.search-modal #search-query,
+#search-query,
+.search-modal input[type="search"] {
+  padding-left: 2.75rem !important;
+}
+
+.search-modal #search-box .search-icon,
+.search-modal #search-box .fa-search,
+.search-modal #search-box .form-control-feedback,
+.search-modal #search-box svg,
+#search-box .search-icon,
+#search-box .fa-search,
+#search-box .form-control-feedback,
+#search-box svg {
+  position: absolute !important;
+  left: 1rem !important;
+  top: 50% !important;
+  bottom: auto !important;
+  right: auto !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  pointer-events: none;
+  z-index: 2;
+}
