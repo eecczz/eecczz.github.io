@@ -1,48 +1,84 @@
 ---
-
-title: TRIPICK - 관광 코스 검증 플랫폼
-date: 2026-06-25
-summary: 'TourAPI, GPS 수행 데이터, 리뷰, 완주율을 결합해 신뢰할 수 있는 관광 코스를 제공하는 사용자 참여형 관광 플랫폼입니다.'
-highlights:
-  - title: 검증된 코스 랭킹
-    text: GPS 수행 데이터, 리뷰, 완주율을 기반으로 관광 코스 신뢰도를 계산했습니다.
-    image: featured.png
-  - title: Trust Score
-    text: 단순 별점이 아니라 수행자 수와 완주율까지 반영한 점수 구조를 설계했습니다.
-    image: https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=720&q=80
-  - title: 관광 데이터 활용
-    text: TourAPI와 사용자 참여 데이터를 연결해 추천이 다시 검증되는 흐름을 만들었습니다.
-    image: https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=720&q=80
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/tripick
+title: TRIPICK — 관광 코스 검증
+date: 2026-07-08
+summary: 'TourAPI 관광지와 GPS 수행·리뷰·완주율을 결합해 검증된 코스를 다시 추천하는 참여형 플랫폼입니다.'
 featured: true
 ---
 
-TRIPICK은 한국관광공사 TourAPI와 사용자의 실제 수행 데이터(GPS, 리뷰, 완주율)를 결합해 신뢰할 수 있는 관광 코스를 제공하는 참여형 관광 플랫폼입니다. 단순 추천이 아니라, 사용자가 코스를 만들고 다른 사용자가 실제로 수행하며 검증된 코스가 다시 추천되는 데이터 선순환 구조를 목표로 합니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>TourAPI 관광지와 GPS 수행·리뷰·완주율을 결합해 검증된 코스를 다시 추천하는 참여형 플랫폼입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> Backend 역할 · TourAPI proxy/데이터 흐름/Trust Score/GPS 검증</span><span><b>검증</b> Web→React Native 확장 프로토타입</span></div>
+</div>
 
-프로젝트에서 황선우는 Backend 역할을 맡았습니다. 관광 코스 랭킹, Trust Score, GPS Check-in, 리뷰 시스템, 추천 사유 제공처럼 서비스의 핵심 데이터 흐름을 백엔드 관점에서 설계하고 확장 가능한 구조를 고민했습니다.
+## 30초 요약
 
-- 기술 스택: React, Vite, TourAPI, Kakao Map JavaScript SDK, Browser Geolocation API
-- 구현 포인트: 관광 코스 생성, GPS 검증, 리뷰, Trust Score, 랭킹 흐름
-- 저장소: [eecczz/tripick](https://github.com/eecczz/tripick)
+- **무엇을 만들었나** — TourAPI 관광지와 GPS 수행·리뷰·완주율을 결합해 검증된 코스를 다시 추천하는 참여형 플랫폼입니다.
+- **내 기여 범위** — Backend 역할 · TourAPI proxy/데이터 흐름/Trust Score/GPS 검증
+- **현재 수준** — Web→React Native 확장 프로토타입
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/tripick)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 검증된 코스 랭킹
+## 실제 구현 과정과 트러블슈팅
 
-![검증된 코스 랭킹](featured.png)
+### 1. TourAPI CORS·키 형식·실패가 웹과 앱에서 다르게 발생
 
-GPS 수행 데이터, 리뷰, 완주율을 기반으로 관광 코스 신뢰도를 계산했습니다.
+**판단과 수정** — proxy와 직접 호출 계약을 맞추고 mock fallback과 데이터 source 배지를 두었습니다.
 
-### Trust Score
+### 2. 별점만으로는 실제 수행 가능한 코스인지 판단하기 어려움
 
-![Trust Score](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=720&q=80)
+**판단과 수정** — 수행자 수·완주율·리뷰를 분리해 Trust Score와 설명 항목을 만들었습니다.
 
-단순 별점이 아니라 수행자 수와 완주율까지 반영한 점수 구조를 설계했습니다.
+### 3. Web 프로토타입과 React Native 코드가 갈라짐
 
-### 관광 데이터 활용
+**판단과 수정** — 공통 category와 trust 계산 규칙을 TypeScript로 이식하고 monorepo로 정리했습니다.
 
-![관광 데이터 활용](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=720&q=80)
+## 기술 선택과 이유
 
-TourAPI와 사용자 참여 데이터를 연결해 추천이 다시 검증되는 흐름을 만들었습니다.
+| 기술 | 선택 이유 |
+|---|---|
+| **TourAPI proxy** | 브라우저 CORS와 인증키 노출을 줄이고 응답을 캐시하기 위해 |
+| **React Native · Expo** | GPS check-in을 실제 모바일 사용 흐름에서 검증하기 위해 |
+| **Browser Geolocation** | 단순 작성자 추천이 아니라 실제 방문·완주 근거를 남기기 위해 |
+| **Trust Score** | 별점만이 아니라 수행자 수·완주율·리뷰를 조합하기 위해 |
+
+## 검증 결과
+
+- TourAPI→코스 생성→GPS 수행→리뷰/Trust→랭킹의 데이터 선순환을 구현했습니다.
+- Web에서 React Native로 확장하며 지도 preview·check-in·trace persistence를 커밋 단위로 추가했습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![TRIPICK — 관광 코스 검증 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. TourAPI에서 전주 관광지 데이터를 정규화합니다.
+2. 사용자가 후보를 조합해 코스를 만듭니다.
+3. 모바일 GPS check-in이 방문·완주 흔적을 저장합니다.
+4. 리뷰와 수행자 수·완주율을 Trust Score에 반영합니다.
+5. 점수와 추천 사유를 카드·상세 화면에 표시합니다.
+6. 검증된 코스가 랭킹에서 다시 노출됩니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Tour` | `GET /spots` | TourAPI proxy·cache |
+| `Course` | `create/detail/trace` | 코스·수행 기록 |
+| `GPS` | `check-in` | 방문 검증 |
+| `Trust` | `score + reason` | 랭킹 근거 |
+
+## 한계와 다음 실험
+
+- 서버 영속 DB와 사용자 인증 연결
+- GPS spoofing·중복 check-in 방지
+- Trust Score 가중치 A/B 테스트와 운영 지표
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/tripick)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
