@@ -1,48 +1,80 @@
 ---
-
-title: My 3D Horror Game
+title: 3D 공포 게임 프로토타입
 date: 2026-05-12
-summary: '1인칭 탐험, 공포 분위기 연출, 씬 흐름, 기본 상호작용을 실험한 Unity 기반 3D 공포 게임 프로토타입입니다.'
-highlights:
-  - title: 공포 캐릭터
-    text: 가까운 거리에서 마주치는 캐릭터 이미지로 긴장감을 만드는 방향을 잡았습니다.
-    image: featured.webp
-  - title: 1인칭 탐험
-    text: 플레이어 시야, 이동, 시점 전환으로 공간을 탐험하는 기본 흐름을 실험했습니다.
-    image: https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80
-  - title: 분위기 연출
-    text: 어두운 장면, 타이밍, 상호작용 이벤트로 공포감을 만드는 프로토타입입니다.
-    image: https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/my3dhorrorgame
+summary: '1인칭 이동·raycast 상호작용·인벤토리·목표·오디오 타이밍을 연결한 Unity 공포 게임 프로토타입입니다.'
 featured: true
 ---
 
-My 3D Horror Game은 Unity 기반 3D 공포 게임 프로토타입입니다. 1인칭 탐험, 공포 분위기 연출, 씬 흐름, 기본 상호작용 시스템을 구현하고 실험하는 데 초점을 둔 프로젝트입니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>1인칭 이동·raycast 상호작용·인벤토리·목표·오디오 타이밍을 연결한 Unity 공포 게임 프로토타입입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 플레이어/상호작용/인벤토리/연출</span><span><b>검증</b> 기능 프로토타입</span></div>
+</div>
 
-게임 플레이의 재미가 전투뿐 아니라 시야, 이동, 타이밍, 장면 전환에서도 만들어진다는 점을 확인하며 제작했습니다. 플레이어 컨트롤러와 레벨 구성, 상호작용 타이밍을 직접 다루며 Unity 프로토타이핑 역량을 넓혔습니다.
+## 30초 요약
 
-- 기술 스택: Unity, C#
-- 구현 포인트: 1인칭 컨트롤러, 씬 구성, 공포 분위기 연출, 상호작용 타이밍
-- 저장소: [eecczz/my3dhorrorgame](https://github.com/eecczz/my3dhorrorgame)
+- **무엇을 만들었나** — 1인칭 이동·raycast 상호작용·인벤토리·목표·오디오 타이밍을 연결한 Unity 공포 게임 프로토타입입니다.
+- **내 기여 범위** — 개인 프로젝트 · 플레이어/상호작용/인벤토리/연출
+- **현재 수준** — 기능 프로토타입
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/my3dhorrorgame)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 공포 캐릭터
+## 실제 구현 과정과 트러블슈팅
 
-![공포 캐릭터](featured.webp)
+### 1. Asset 기반 FPS 코드와 직접 구현한 gameplay 코드의 경계가 불명확
 
-가까운 거리에서 마주치는 캐릭터 이미지로 긴장감을 만드는 방향을 잡았습니다.
+**판단과 수정** — 생성 Library 파일을 제거하고 직접 작성한 Equip/Input/Interaction/Inventory 스크립트를 저장소 전면에 정리했습니다.
 
-### 1인칭 탐험
+### 2. 공포 연출이 단순 어두운 조명에 의존
 
-![1인칭 탐험](https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80)
+**판단과 수정** — 목표·아이템·event·audio timing을 분리해 플레이 흐름에서 긴장감을 만들었습니다.
 
-플레이어 시야, 이동, 시점 전환으로 공간을 탐험하는 기본 흐름을 실험했습니다.
+## 기술 선택과 이유
 
-### 분위기 연출
+| 기술 | 선택 이유 |
+|---|---|
+| **FPS controller** | 시야와 이동이 공포 공간 탐색의 핵심이기 때문에 |
+| **Raycast interaction** | 플레이어가 바라보는 문·아이템을 일관된 방식으로 선택하기 위해 |
+| **Inventory state** | 획득한 도구가 다음 상호작용 조건을 바꾸게 하기 위해 |
+| **Event/Audio manager** | 공포감을 모델보다 타이밍과 정보 노출로 제어하기 위해 |
 
-![분위기 연출](https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960)
+## 검증 결과
 
-어두운 장면, 타이밍, 상호작용 이벤트로 공포감을 만드는 프로토타입입니다.
+- 플레이어→상호작용→인벤토리→목표→연출의 기능 흐름을 프로토타입으로 완성했습니다.
+- Unity 생성 파일을 제거하고 재현 가능한 저장소 구조와 README를 정리했습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![3D 공포 게임 프로토타입 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. 입력이 FPS controller의 이동·시점을 갱신합니다.
+2. 화면 중심 ray가 상호작용 가능한 객체를 탐색합니다.
+3. 아이템을 획득하면 inventory와 장착 상태가 바뀝니다.
+4. Objective manager가 다음 목표를 활성화합니다.
+5. Game flow event가 적·문·장면을 전환합니다.
+6. Audio·HUD가 시점에 맞춰 긴장감을 전달합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Player` | `move/look` | 1인칭 탐색 |
+| `Interaction` | `raycast + interface` | 문·아이템 |
+| `Inventory` | `collect/equip` | 조건 상태 |
+| `Flow` | `objective/event/audio` | 연출 진행 |
+
+## 한계와 다음 실험
+
+- 상호작용 interface와 save/load contract 정리
+- 공간 audio와 적 AI perception 고도화
+- Profiler로 scene loading·GC spike 점검
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/my3dhorrorgame)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
