@@ -228,6 +228,312 @@ ul.network-icon .big-icon {
   }
 }
 
+// 2026 backend/AI portfolio case-study system
+:root {
+  --portfolio-navy: #102a43;
+  --portfolio-cyan: #00a7c4;
+  --portfolio-ink: #243b53;
+  --portfolio-slate: #627d98;
+  --portfolio-ice: #eaf6f8;
+  --portfolio-line: #c6d7e2;
+}
+
+body {
+  background: #f7fafc;
+  color: var(--portfolio-ink);
+}
+
+.page-footer {
+  background: #f7fafc;
+}
+
+.article-container {
+  border-radius: 18px;
+  box-shadow: 0 18px 55px rgba(16, 42, 67, 0.07);
+}
+
+.portfolio-hero-v2 {
+  max-width: 920px;
+  margin: 2rem auto 1rem;
+  padding: 4rem 3.5rem;
+  border-radius: 24px;
+  color: white;
+  background: linear-gradient(135deg, #102a43 0%, #163d5c 64%, #006f86 100%);
+  box-shadow: 0 22px 64px rgba(16, 42, 67, 0.22);
+}
+
+.portfolio-hero-v2 .portfolio-kicker {
+  margin: 0 0 1rem;
+  color: #72e2f0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.portfolio-hero-v2 h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.portfolio-hero-copy {
+  max-width: 720px;
+  margin: 1.35rem 0 1.5rem;
+  color: #d9e8f2;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.portfolio-proof-line,
+.portfolio-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.portfolio-proof-line span {
+  padding-right: 0.75rem;
+  color: #b9d4e3;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.portfolio-cta-row {
+  margin-top: 1.6rem;
+}
+
+.portfolio-cta-row a {
+  padding: 0.72rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  color: white;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.portfolio-cta-row a:first-child {
+  border-color: var(--portfolio-cyan);
+  background: var(--portfolio-cyan);
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.case-study-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 18px;
+  background: white;
+  color: var(--portfolio-ink);
+  text-decoration: none;
+  box-shadow: 0 12px 34px rgba(16, 42, 67, 0.07);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-4px);
+  color: var(--portfolio-ink);
+  text-decoration: none;
+  box-shadow: 0 18px 42px rgba(16, 42, 67, 0.13);
+}
+
+.case-study-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--portfolio-line);
+}
+
+.case-study-card h3,
+.case-study-card p,
+.case-study-card .case-study-label {
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.case-study-card .case-study-label {
+  display: block;
+  margin-top: 1rem;
+  color: var(--portfolio-cyan);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.case-study-card h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.45rem;
+  color: var(--portfolio-navy);
+  font-size: 1.2rem;
+}
+
+.case-study-card p {
+  margin-bottom: 1.25rem;
+  color: #486581;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.engineering-evidence {
+  border-top: 1px solid var(--portfolio-line);
+}
+
+.engineering-evidence > div {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--portfolio-line);
+}
+
+.engineering-evidence b {
+  color: var(--portfolio-cyan);
+}
+
+.engineering-evidence p {
+  margin: 0;
+}
+
+.portfolio-link-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.portfolio-link-list a {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 12px;
+  background: white;
+  color: var(--portfolio-navy);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.case-study-lead {
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem 1.6rem;
+  border-left: 5px solid var(--portfolio-cyan);
+  border-radius: 0 14px 14px 0;
+  background: var(--portfolio-ice);
+}
+
+.case-study-lead p {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+.case-study-kicker {
+  margin-bottom: 0.55rem !important;
+  color: var(--portfolio-cyan);
+  font-size: 0.75rem !important;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.case-study-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.case-study-meta span {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #b9dbe2;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #486581;
+  font-size: 0.8rem;
+}
+
+.article-style img[src$="architecture.png"],
+.article-style img[src$="architecture.svg"] {
+  width: 100%;
+  margin: 1.15rem auto 0.35rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(16, 42, 67, 0.08);
+}
+
+.diagram-caption {
+  margin-top: 0.4rem;
+  color: var(--portfolio-slate);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.article-style h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--portfolio-ice);
+  color: var(--portfolio-navy);
+}
+
+.article-style h3 {
+  color: #0f6d82;
+}
+
+.article-style table {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 10px;
+  font-size: 0.88rem;
+}
+
+.article-style thead {
+  background: var(--portfolio-navy);
+  color: white;
+}
+
+.dark body,
+.dark .page-footer {
+  background: #0b1f33;
+}
+
+.dark .case-study-card,
+.dark .portfolio-link-list a {
+  border-color: #31536c;
+  background: #102a43;
+  color: #edf7fa;
+}
+
+.dark .case-study-card h3,
+.dark .case-study-card p {
+  color: #edf7fa;
+}
+
+@media (max-width: 760px) {
+  .portfolio-hero-v2 {
+    padding: 2.5rem 1.4rem;
+  }
+
+  .case-study-grid,
+  .portfolio-link-list {
+    grid-template-columns: 1fr;
+  }
+
+  .engineering-evidence > div {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .article-style table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 .home-project-grid {
   display: grid;
   grid-template-columns: 1fr;
