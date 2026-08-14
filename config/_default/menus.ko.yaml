@@ -13,7 +13,7 @@ main:
     url: "/toy-projects/"
     weight: 30
 
-  - name: "전공&대회 프로젝트"
+  - name: "팀·수상·현장 프로젝트"
     url: "/contest-projects/"
     weight: 40
 
@@ -78,27 +78,37 @@ main:
 
   - name: "SpeakUp"
     url: "/contest-projects/speech-coach/"
-    parent: "전공&대회 프로젝트"
+    parent: "팀·수상·현장 프로젝트"
     weight: 41
+
+  - name: "Smart CCTV 낙상 감지"
+    url: "/contest-projects/smartcctv-fall/"
+    parent: "팀·수상·현장 프로젝트"
+    weight: 39
+
+  - name: "Smart CCTV 차종 분류"
+    url: "/contest-projects/smartcctv-car/"
+    parent: "팀·수상·현장 프로젝트"
+    weight: 40
 
   - name: "대도민 음성 챗봇"
     url: "/contest-projects/jeonbuk-chatbot/"
-    parent: "전공&대회 프로젝트"
+    parent: "팀·수상·현장 프로젝트"
     weight: 42
 
   - name: "소울라이크 게임"
     url: "/contest-projects/soulslike-game/"
-    parent: "전공&대회 프로젝트"
+    parent: "팀·수상·현장 프로젝트"
     weight: 43
 
   - name: "Gone"
     url: "/contest-projects/gone/"
-    parent: "전공&대회 프로젝트"
+    parent: "팀·수상·현장 프로젝트"
     weight: 44
 
   - name: "TRIPICK"
     url: "/contest-projects/tripick/"
-    parent: "전공&대회 프로젝트"
+    parent: "팀·수상·현장 프로젝트"
     weight: 45
 
   - name: "문의"
