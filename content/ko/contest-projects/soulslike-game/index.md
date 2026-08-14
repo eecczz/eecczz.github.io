@@ -1,52 +1,84 @@
 ---
-
-title: 소울라이크 게임
-date: 2024-04-06
-summary: '창의적공학설계입문 4인 팀프로젝트로 제작한 콜로세움 배경의 Unity 액션 게임입니다.'
-highlights:
-  - title: 보스전 연출
-    text: 큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.
-    image: detail-arena.png
-  - title: 회피와 콤보
-    text: 공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
-    image: featured.png
-  - title: 콜로세움 무대
-    text: 마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.
-    image: detail-combat.png
-links:
-  - name: Armored Barbarian
-    url: https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/armored-barbarian-14821
-  - name: Awesome Fantasy Character
-    url: https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/awesome-fantasy-characters-glory-armor-132786
-  - name: The Red Prison
-    url: https://assetstore.unity.com/packages/3d/environments/dungeons/the-red-prison-40198
+title: 소울라이크 전투 시스템
+date: 2026-07-15
+summary: '회피·스태미나·콤보·hitbox timing·보스 AI를 상태 기반으로 구성한 4인 Unity 팀 프로젝트입니다.'
 featured: true
 ---
 
-옛 로마제국의 거대한 콜로세움에서, 전쟁에 패해 포로로 끌려온 주인공이 마지막 경기에서 자유를 얻기 위해 싸우는 설정의 소울라이크풍 액션 게임입니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>회피·스태미나·콤보·hitbox timing·보스 AI를 상태 기반으로 구성한 4인 Unity 팀 프로젝트입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 4인 팀 · 전투 조작감/피격/스태미나/연출</span><span><b>검증</b> 교과 팀 프로젝트</span></div>
+</div>
 
-적의 공격 모션을 보고 회피한 뒤, 콤보를 섞어 큰 피해를 입히는 전투 흐름을 구현했습니다. 팀 프로젝트 안에서 전투 조작감과 이펙트, 보스전 분위기를 만드는 데 집중했습니다.
+## 30초 요약
 
-- 기술 스택: Unity, C#
-- 구현 포인트: 보스전, 회피와 콤보, 액션 이펙트, 모바일 조작 UI
-- 구분: 창의적공학설계입문 4인 팀프로젝트
+- **무엇을 만들었나** — 회피·스태미나·콤보·hitbox timing·보스 AI를 상태 기반으로 구성한 4인 Unity 팀 프로젝트입니다.
+- **내 기여 범위** — 4인 팀 · 전투 조작감/피격/스태미나/연출
+- **현재 수준** — 교과 팀 프로젝트
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/my-soulslike-game)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 보스전 연출
+## 실제 구현 과정과 트러블슈팅
 
-![보스전 연출](detail-arena.png)
+### 1. 공격 판정과 animation timing이 어긋나 유효 타격이 불분명
 
-큰 범위 공격과 강한 이펙트로 소울라이크풍 긴장감을 만들었습니다.
+**판단과 수정** — hitbox lifecycle을 animation event와 연결했습니다.
 
-### 회피와 콤보
+### 2. 피격·스태미나 처리가 여러 스크립트에서 중복
 
-![회피와 콤보](featured.png)
+**판단과 수정** — 최근 커밋에서 combat hit와 stamina 흐름을 정리했습니다.
 
-공격 모션을 보고 피한 뒤 콤보로 반격하는 전투 흐름을 구현했습니다.
+### 3. 대형 Unity Library가 저장소에 포함
 
-### 콜로세움 무대
+**판단과 수정** — 외부 asset과 생성 파일 범위를 문서화하고 metadata를 정리했습니다.
 
-![콜로세움 무대](detail-combat.png)
+## 기술 선택과 이유
 
-마지막 경기라는 설정에 맞춰 보스와 플레이어가 대치하는 공간감을 구성했습니다.
+| 기술 | 선택 이유 |
+|---|---|
+| **Combat state** | 공격·회피·피격 중 허용되는 입력을 명확히 제한하기 위해 |
+| **Stamina** | 무한 회피·공격을 막고 위험/보상의 리듬을 만들기 위해 |
+| **Animation hitbox timing** | 보이는 무기 궤적과 실제 damage 판정을 맞추기 위해 |
+| **Cinemachine · VFX** | 보스 공격 범위와 피격 결과를 즉시 읽게 하기 위해 |
+
+## 검증 결과
+
+- 회피 후 반격·콤보·보스 범위 공격의 핵심 전투 loop를 구현했습니다.
+- 2022 초기 구현에서 2026 전투 hit/stamina 리팩터링까지 개선 이력이 남아 있습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![소울라이크 전투 시스템 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. 입력을 attack/dodge 명령으로 변환합니다.
+2. combat state와 stamina가 실행 가능 여부를 결정합니다.
+3. animation event가 hitbox 활성 시간을 엽니다.
+4. Enemy AI가 거리와 상태에 따라 공격을 선택합니다.
+5. collision이 damage·stagger를 계산합니다.
+6. camera·sound·VFX가 결과를 피드백합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Input` | `attack/dodge` | 명령 |
+| `State` | `stamina/combo` | 전투 규칙 |
+| `Hit` | `animation event + collider` | 판정 |
+| `Feedback` | `camera/VFX/sound` | 결과 전달 |
+
+## 한계와 다음 실험
+
+- state machine과 animation graph의 테스트 가능한 경계 분리
+- damage frame·input latency 계측
+- 보스 패턴별 playtest telemetry
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/my-soulslike-game)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.

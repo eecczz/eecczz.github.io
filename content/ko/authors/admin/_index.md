@@ -1,75 +1,56 @@
 ---
-# Display name
 title: 황선우
-
-# Full Name (for SEO)
 first_name: Seonwoo
 last_name: Hwang
-
-# Username (this should match the folder name)
 authors:
   - admin
-
-# Is this the primary user of the site?
 superuser: true
-
-# Role/position
-role: IT정보공학과 4학년
-
-# Organizations/Affiliations
+role: Backend · AI Service · Edge-AI Engineer
 organizations:
   - name: 전북대학교 컴퓨터인공지능학부
     url: 'https://csai.jbnu.ac.kr/csai/index.do'
-
-# Short bio (displayed in user profile at end of posts)
-bio: Unity 게임, 백엔드 API, AI 서비스를 개발합니다.
-
+bio: 모델과 데이터를 실제 사용자가 이용하는 API·클라우드·현장 시스템으로 연결합니다.
 interests:
-  - 인공지능 (AI)
-  - 알고리즘
-  - 기획
-  - 네트워크
-  - 게임 개발
-  - 웹 개발
-
+  - 백엔드 API와 데이터 흐름
+  - AI 서비스와 실시간 영상처리
+  - Edge-AI·스마트관제
+  - Unity·XR·로보틱스 시뮬레이션
 education:
   courses:
-    - course: 컴퓨터인공지능학부 (재학중)
+    - course: IT정보공학과 학사과정
       institution: 전북대학교
-      year: 2021
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+      year: 2026년 졸업 예정
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:swh06084@jbnu.ac.kr'
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'swh06084@jbnu.ac.kr'
-
-# Highlight the author in author lists? (true/false)
+    link: 'mailto:swh06084@gmail.com'
+  - icon: github
+    icon_pack: fab
+    link: 'https://github.com/eecczz'
+email: 'swh06084@gmail.com'
 highlight_name: true
-
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - admin
-
-
 ---
 
-전북대학교 IT정보공학과 4학년에 재학 중이며, Unity 기반 게임 개발과 Spring Boot/FastAPI 기반 백엔드, AI 서비스 개발을 함께 학습하고 있습니다. 학점 4.0/4.5, 2021년 총장상(성적 우수, 전체 석차 1위), 2026년 캡스톤디자인 최우수상 및 전북도청 도지사 표창을 바탕으로 꾸준함과 실행력을 증명해 왔습니다.
+Spring Boot·FastAPI 기반 서비스, AWS 이벤트 기반 영상 처리, GraphRAG 음성 서비스와 RTSP/NPU 기반 Edge-AI 관제를 구현해 왔습니다. 학점 4.0/4.5, 2021학년도 전체 석차 1위 총장상, 캡스톤디자인 최우수상과 전북도지사 표창으로 학업과 실행력을 증명했습니다.
 
-주식회사 건파워에서 Unity 기반 3D 게임 개발 외주에 참여했고, 전북대학교 시각지능 연구실에서 비전 논문을 학습·리뷰했으며, 하루솔루션에서는 정보 통신 및 관제 소프트웨어 개발 현장실습을 수행했습니다. 유저와 팀원의 반응을 상상하며 몰입하는 성향을 강점으로 삼아 아이디어를 빠르게 실험하고, 목표가 정해진 프로젝트에서는 요구사항을 이해하며 방향을 맞춰가는 개발자가 되고자 합니다.
+하루솔루션 현장실습에서는 컴퓨터비전 모델을 NPU 환경에 맞게 변환하고 Linux 관제 소프트웨어에 적용해 요양원 낙상 감지와 폐차장 차종 분류를 RTSP 카메라에서 검증했습니다. 전북대학교 시각지능 연구실에서는 비전 논문을 분석했고, 건파워 Unity 외주와 개인 프로젝트를 통해 실시간 상호작용 구현 경험도 쌓았습니다.
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/portfolio_2026_08.hwpx" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 HWPX로 받기.
+## Recruiter shortcuts
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/portfolio_2026_08.pdf" "newtab" >}}다운로드{{< /staticref >}} 내 포트폴리오 문서를 PDF로 받기.
+- [Smart CCTV 낙상 감지](/ko/contest-projects/smartcctv-fall/) — 현장 오탐, bbox 후처리, threshold, NPU 적용
+- [Smart CCTV 차종 분류](/ko/contest-projects/smartcctv-car/) — detector→crop→classifier→Edge 관제
+- [SpeakUp AI 발표 코칭](/ko/contest-projects/speech-coach/) — FastAPI microservices, WebSocket, STT, LLM report
+- [전북도청 대도민 음성 챗봇](/ko/contest-projects/jeonbuk-chatbot/) — GraphRAG, STT/TTS, 공공 데이터 crawler
+- [Streaming API](/ko/toy-projects/streaming-api/) — Spring Boot, S3, Lambda, MediaConvert, HLS
+- [Job API](/ko/toy-projects/job-api/) — Jsoup, retry/dedup, Querydsl, JWT
+- [Wii Swordplay 모작](/ko/toy-projects/swordplay/) — Quaternion, Vector, two-hand IK, damping
+
+## Open source
+
+[Pipecat PR #4455](https://github.com/pipecat-ai/pipecat/pull/4455)에서 `PipelineTask.cancel()` 조기 호출 시 발생하던 hang을 분석하고 취소·종료 로직과 테스트 수정에 기여했습니다.
+
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/portfolio_2026_08.pdf" "newtab" >}}이력서 PDF 다운로드{{< /staticref >}}
+
+{{< icon name="github" pack="fab" >}} [전체 GitHub 저장소](https://github.com/eecczz?tab=repositories)
