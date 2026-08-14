@@ -30,7 +30,13 @@ featured: true
 
 **판단과 수정** — 최근 구간 window와 최소 2초 코칭 간격을 두고 practice 화면 스크롤 영역을 분리했습니다.
 
-### 3. 녹화와 아바타 캔버스를 함께 남겨야 함
+### 3. 1분 이상 녹화 후 제출하면 리포트 화면으로 넘어가지 않음
+
+**진단** — MediaRecorder 중지 자체보다, 커진 WebM Blob을 IndexedDB에 저장하는 비동기 작업과 페이지 이동 사이의 경쟁 조건을 의심했습니다. 기존 helper는 object store의 `put()` 성공 시 resolve해 실제 transaction commit 완료 전에 다음 화면으로 이동할 수 있었습니다.
+
+**판단과 수정** — 영상 Blob은 용량 제한이 작은 localStorage가 아닌 IndexedDB에 저장하고, `request.onsuccess`가 아니라 transaction의 `oncomplete`에서 Promise를 끝내도록 수정했습니다. 그 뒤에만 pending metadata를 localStorage에 기록하고 loading 화면으로 이동하게 순서를 고정했습니다. 분석 완료 후 media key도 지우지 않아 리포트에서 원본 영상을 다시 불러오도록 했습니다.
+
+### 4. 녹화와 아바타 캔버스를 함께 남겨야 함
 
 **판단과 수정** — 브라우저 녹화 경로를 조정하고 MP4 변환 및 리포트 토글까지 연결했습니다.
 
@@ -60,7 +66,7 @@ featured: true
 3. aggregator가 5초 window를 만들고 live coach 규칙을 호출합니다.
 4. 완료 문장 단위로 LLM 피드백을 요청하며 최소 2초 간격으로 반복을 억제합니다.
 5. 종료 후 faster-whisper·librosa·ffmpeg가 전사/운율/영상 산출물을 만듭니다.
-6. coach가 종합 리포트를 만들고 PostgreSQL 및 리포트 UI에 저장합니다.
+6. IndexedDB transaction 완료 뒤 분석 화면으로 이동하고, coach 결과와 보존된 media key를 리포트 UI가 함께 사용합니다.
 
 ## API · 시스템 경계
 
