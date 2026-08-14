@@ -1,50 +1,84 @@
 ---
-
 title: Wii Swordplay 모작
-date: 2026-06-25
-summary: 'Wii Sports Resort 검술대련의 조작감과 타격감을 마우스 기반 PC/WebGL 환경으로 재해석한 Unity 프로젝트입니다.'
-highlights:
-  - title: 검 조작
-    text: 마우스 입력을 검의 회전과 위치로 변환해 직접 휘두르는 감각을 만들었습니다.
-    image: featured.jpg
-  - title: 피격 반응
-    text: 충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
-    image: detail-hit-reaction.jpg
-  - title: Wii풍 셰이더
-    text: 낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.
-    image: detail-shader.jpg
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/swordplay
-  - name: WebGL
-    url: https://eecczz.github.io/swordplay/
+date: 2026-08-12
+summary: '마우스 입력을 쿼터니언·벡터 목표 자세로 변환하고 독립 무기·양손 IK·댐핑·피격 회복을 결합한 Unity WebGL 프로젝트입니다.'
 featured: true
 ---
 
-Wii Swordplay 모작은 모션 컨트롤러 대신 마우스 입력으로 검을 휘두르고 공격하는 PC/WebGL 게임입니다. 단순한 공격 버튼보다, 검의 위치와 회전, 타격 타이밍, 피격 반응이 직접적으로 느껴지는 조작감을 만드는 데 초점을 두었습니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>마우스 입력을 쿼터니언·벡터 목표 자세로 변환하고 독립 무기·양손 IK·댐핑·피격 회복을 결합한 Unity WebGL 프로젝트입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 입력/수학적 회전/IK/물리 반응/WebGL</span><span><b>검증</b> WebGL 배포</span></div>
+</div>
 
-기존에 정리해 둔 Sword-motion, Hit Reaction, Wii-Style Shader 구현 내용을 하나의 대표 프로젝트로 묶었습니다. 검의 자세를 실제 플레이 영상과 비교하며 조정했고, 절차적 애니메이션과 셰이더를 활용해 원작의 몰입감과 간결한 비주얼을 재현했습니다.
+## 30초 요약
 
-- 기술 스택: Unity, C#, WebGL
-- 구현 포인트: 마우스 기반 검 조작, 타격 판정, 피격 반응, Wii풍 셰이더
-- 저장소: [eecczz/swordplay](https://github.com/eecczz/swordplay)
+- **무엇을 만들었나** — 마우스 입력을 쿼터니언·벡터 목표 자세로 변환하고 독립 무기·양손 IK·댐핑·피격 회복을 결합한 Unity WebGL 프로젝트입니다.
+- **내 기여 범위** — 개인 프로젝트 · 입력/수학적 회전/IK/물리 반응/WebGL
+- **현재 수준** — WebGL 배포
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/swordplay-clone)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 검 조작
+## 실제 구현 과정과 트러블슈팅
 
-![검 조작](featured.jpg)
+### 1. 검을 팔 animation의 child로 두면 입력과 무기 궤적을 독립 제어하기 어려움
 
-마우스 입력을 검의 회전과 위치로 변환해 직접 휘두르는 감각을 만들었습니다.
+**판단과 수정** — 무기 transform을 주체로 두고 팔이 IK로 따라오도록 의존 방향을 뒤집었습니다.
 
-### 피격 반응
+### 2. 목표 자세로 즉시 대입하면 검이 순간이동해 질량감이 사라짐
 
-![피격 반응](detail-hit-reaction.jpg)
+**판단과 수정** — 프레임별 선형/구면 보간과 물리적 회전·위치 이동에 damping을 적용했습니다.
 
-충격 후 균형을 회복하는 self-balancing 흐름으로 타격감을 강화했습니다.
+### 3. WebGL 시작 시 메모리 crash와 material/lighting 문제가 발생
 
-### Wii풍 셰이더
+**판단과 수정** — 메모리 설정과 material·sky·camera를 커밋 단위로 수정하고 다시 배포했습니다.
 
-![Wii풍 셰이더](detail-shader.jpg)
+## 기술 선택과 이유
 
-낮은 광택, 단순한 색, 외곽선 느낌으로 원작의 간결한 비주얼을 재현했습니다.
+| 기술 | 선택 이유 |
+|---|---|
+| **Quaternion · Vector math** | Euler 각 누적보다 안정적으로 검의 방향·위치 목표를 합성하기 위해 |
+| **Independent weapon transform** | 팔 애니메이션에 검을 종속하지 않고 입력에 즉각 반응시키기 위해 |
+| **Two-hand IK** | 독립적으로 움직이는 검의 두 handle에 양손을 계속 정렬하기 위해 |
+| **Interpolation · physics damping** | 프레임마다 순간이동하지 않고 질량감과 부드러운 추종을 만들기 위해 |
+
+## 검증 결과
+
+- 쿼터니언·벡터 복합연산, 독립 무기 제어, 양손 IK, damping, hit reaction을 하나의 실시간 제어 루프로 구현했습니다.
+- WebGL 빌드를 공개하고 시각 스타일·카메라·메모리 오류를 지속 수정했습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![Wii Swordplay 모작 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. 마우스의 화면 이동량을 입력 벡터로 읽습니다.
+2. 입력으로 검의 위치와 quaternion 회전 목표를 계산합니다.
+3. Lerp/Slerp 또는 물리 회전으로 목표를 damping하며 추종합니다.
+4. 검 transform은 캐릭터 팔과 독립적으로 움직입니다.
+5. 양손 IK target을 검의 handle transform에 맞춥니다.
+6. 충돌 시 hit reaction과 self-balancing으로 타격 후 자세를 회복합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Input` | `mouse delta` | 검 위치·회전 명령 |
+| `Motion` | `Quaternion + Vector + damping` | 프레임별 추종 |
+| `Rig` | `two-hand IK` | 손-손잡이 정렬 |
+| `Combat` | `collision + recovery` | 타격·균형 회복 |
+
+## 한계와 다음 실험
+
+- 검 target과 실제 rigidbody 오차·latency 계측
+- 입력 속도 기반 angular velocity/충격량 모델 개선
+- Unity Robotics 시뮬레이션에서 end-effector tracking으로 전이 실험
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/swordplay-clone)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
