@@ -1,48 +1,80 @@
 ---
-
-title: MetaXR Project
+title: MetaXR 액션 프로토타입
 date: 2026-06-19
-summary: 'Meta/XR 기기를 활용해 실재감 있는 조작 경험, 몬스터 전투, 탈출 흐름을 구현한 Unity 액션 게임 프로젝트입니다.'
-highlights:
-  - title: XR 전투 입력
-    text: 컨트롤러 움직임을 공격과 방어 상호작용으로 연결했습니다.
-    image: featured.png
-  - title: 근접 상호작용
-    text: 플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
-    image: detail-unity.png
-  - title: Unity 프로토타입
-    text: XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
-    image: detail-xr.png
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/MetaXR-Project
+summary: 'XR 컨트롤러의 위치·회전을 무기 충돌, 몬스터 반응, 탈출 조건으로 연결한 Unity 공간 상호작용 프로젝트입니다.'
 featured: true
 ---
 
-MetaXR Project는 Meta/XR 환경에서 플레이하는 액션 게임 프로젝트입니다. 실제 기기를 통한 입력과 상호작용을 바탕으로 몬스터를 처치하고 탈출하는 콘텐츠를 구현했습니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>XR 컨트롤러의 위치·회전을 무기 충돌, 몬스터 반응, 탈출 조건으로 연결한 Unity 공간 상호작용 프로젝트입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · XR 입력/전투/씬 로직</span><span><b>검증</b> Meta XR 기기 프로토타입</span></div>
+</div>
 
-Wii Swordplay 모작에서 쌓은 조작감, 충돌, 피격 반응에 대한 관심을 XR 입력 환경으로 확장한 프로젝트입니다. 단순 화면 조작보다 몸의 움직임과 공간감을 활용하는 경험을 중심에 두고, Unity 기반 액션 프로토타입을 구성했습니다.
+## 30초 요약
 
-- 기술 스택: Unity, C#, ShaderLab, Meta/XR
-- 구현 포인트: XR 입력, 액션 상호작용, 몬스터 전투, 탈출 콘텐츠
-- 저장소: [eecczz/MetaXR-Project](https://github.com/eecczz/MetaXR-Project)
+- **무엇을 만들었나** — XR 컨트롤러의 위치·회전을 무기 충돌, 몬스터 반응, 탈출 조건으로 연결한 Unity 공간 상호작용 프로젝트입니다.
+- **내 기여 범위** — 개인 프로젝트 · XR 입력/전투/씬 로직
+- **현재 수준** — Meta XR 기기 프로토타입
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/MetaXR-Project)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### XR 전투 입력
+## 실제 구현 과정과 트러블슈팅
 
-![XR 전투 입력](featured.png)
+### 1. 화면 입력과 달리 XR pose는 매 프레임 위치·회전 노이즈를 포함
 
-컨트롤러 움직임을 공격과 방어 상호작용으로 연결했습니다.
+**판단과 수정** — 입력·무기·피격 상태를 분리해 상호작용 경계를 명확히 했습니다.
 
-### 근접 상호작용
+### 2. 외부 Asset Store 패키지와 직접 작성 코드의 범위가 섞임
 
-![근접 상호작용](detail-unity.png)
+**판단과 수정** — README에 제외 패키지와 담당 스크립트를 명시하고 저장소 이력을 정리했습니다.
 
-플레이어와 몬스터가 가까운 거리에서 맞붙는 XR 액션 장면을 구성했습니다.
+## 기술 선택과 이유
 
-### Unity 프로토타입
+| 기술 | 선택 이유 |
+|---|---|
+| **Meta XR** | 6DoF controller pose를 직접 게임 상호작용으로 사용하기 위해 |
+| **Unity physics** | 검·방패·몬스터 접촉을 공간 충돌로 처리하기 위해 |
+| **Stateful enemy controller** | 추적·공격·피격·사망 상태를 분리하기 위해 |
+| **Scene interaction** | 레버·탈출 조건을 전투 진행과 연결하기 위해 |
 
-![Unity 프로토타입](detail-xr.png)
+## 검증 결과
 
-XR 입력, 충돌, 몬스터 반응을 빠르게 검증하는 액션 프로토타입입니다.
+- 검술 조작감에 대한 관심을 실제 XR controller 기반 상호작용으로 확장했습니다.
+- EnemyController·LeverController·UI/Sound 관리 코드로 전투→탈출 흐름을 구성했습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![MetaXR 액션 프로토타입 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. XR controller pose를 Unity 좌표로 받습니다.
+2. 입력 mapping이 공격·방어 상태를 결정합니다.
+3. 무기 collider와 trail이 공간 궤적을 표현합니다.
+4. Enemy controller가 탐지·추적·피격 상태를 갱신합니다.
+5. 레버와 탈출 조건이 scene progression을 바꿉니다.
+6. UI·sound manager가 체력과 결과를 피드백합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Input` | `controller pose/buttons` | 공격·방어 |
+| `Combat` | `weapon collider` | 타격 판정 |
+| `Enemy` | `detect/chase/hit` | 상태 전환 |
+| `Scene` | `lever/exit` | 진행 조건 |
+
+## 한계와 다음 실험
+
+- controller jitter smoothing·물리 timestep 계측
+- 충돌 속도 기반 damage와 haptic feedback
+- Quest 실기기 FPS·GC profiling
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/MetaXR-Project)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
