@@ -1,47 +1,84 @@
 ---
 title: Job API Project
 date: 2026-05-12
-summary: '사람인 채용공고 크롤링, 검색/필터링, 지원 내역, 북마크, JWT 인증을 제공하는 Spring Boot 기반 REST API 프로젝트입니다.'
-highlights:
-  - title: 채용공고 목록 화면
-    text: 사람인에서 수집한 공고를 지역, 경력, 급여, 기술스택, 마감일 기준으로 조회하는 목록 화면입니다.
-    image: job-list.png
-  - title: 검색 API 구현
-    text: /jobs 검색 API가 필터 조건을 받아 Specification 검색과 페이지 응답을 구성하는 흐름을 보여줍니다.
-    image: api-source.png
-  - title: 사람인 크롤링 덤프
-    text: Jsoup 기반 크롤러가 사람인 공고를 페이지 단위로 수집하고 중복 URL을 제외해 저장하는 과정을 정리했습니다.
-    image: crawl-dump.png
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/jobAPI
+summary: '사람인 채용공고를 수집·중복 제거하고 Querydsl 다중 조건 검색과 JWT 기반 지원·북마크를 제공하는 REST API입니다.'
 featured: true
 ---
 
-Job API Project는 사람인 채용공고를 크롤링해 MariaDB에 저장하고, 저장된 공고를 검색/필터링할 수 있도록 만든 Spring Boot 기반 REST API 프로젝트입니다. 단순 CRUD에 그치지 않고 실제 채용공고 데이터 수집, 조건 검색, 지원/북마크 흐름, JWT 인증 구조를 함께 다뤘습니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>사람인 채용공고를 수집·중복 제거하고 Querydsl 다중 조건 검색과 JWT 기반 지원·북마크를 제공하는 REST API입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 크롤러/검색 API/인증/배포</span><span><b>검증</b> jcloud 배포 및 실제 데이터 수집 검증</span></div>
+</div>
 
-사람인 검색 결과의 `.item_recruit` 영역에서 회사명, 공고 제목, 지역, 경력, 학력, 고용형태, 마감일, 기술스택, 급여, URL을 추출하고, 이미 저장된 URL은 제외해 중복 저장을 막았습니다. 이후 `/jobs` API에서 키워드, 회사명, 직무, 기술스택, 지역, 경력, 급여 조건과 정렬 기준을 받아 페이지 단위로 응답하도록 구성했습니다.
+## 30초 요약
 
-- 기술 스택: Java, Spring Boot, Spring Web, Spring Data JPA, Querydsl, MariaDB, JWT, Gradle, Jsoup
-- 구현 포인트: 사람인 크롤링, 공고 검색/필터링, 지원 내역, 북마크, 인증/권한 흐름
-- 저장소: [eecczz/jobAPI](https://github.com/eecczz/jobAPI)
+- **무엇을 만들었나** — 사람인 채용공고를 수집·중복 제거하고 Querydsl 다중 조건 검색과 JWT 기반 지원·북마크를 제공하는 REST API입니다.
+- **내 기여 범위** — 개인 프로젝트 · 크롤러/검색 API/인증/배포
+- **현재 수준** — jcloud 배포 및 실제 데이터 수집 검증
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/jobAPI)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 채용공고 목록 화면
+## 실제 구현 과정과 트러블슈팅
 
-![채용공고 목록 화면](job-list.png)
+### 1. 페이지 응답 지연과 일시 실패로 크롤링 전체가 중단
 
-크롤링으로 저장된 공고를 목록 형태로 조회하고, 지역/경력/급여/기술스택/마감일 기준으로 탐색하는 화면입니다. 공고별 회사명, 위치, 경력 조건, 급여, 기술스택, 지원 액션이 한 번에 보이도록 구성했습니다.
+**판단과 수정** — 30초 timeout·3회 retry·페이지 사이 5초 지연·페이지별 오류 로그를 적용했습니다.
 
-### 검색 API 구현
+### 2. 같은 공고가 반복 수집되어 데이터가 누적
 
-![검색 API 구현](api-source.png)
+**판단과 수정** — 공고 URL을 식별자로 확인한 뒤 새 항목만 saveAll하도록 바꿨습니다.
 
-`GET /jobs` 요청에 검색어, 지역, 기술스택, 정렬 기준을 전달하면 Specification 기반 조건 검색을 만들고, `jobPostings`, `sortOrder`, `pagenum`을 포함한 응답 맵을 반환합니다. 실제 컨트롤러 구현 흐름이 보이도록 소스 기반 캡처로 정리했습니다.
+### 3. 로컬 MySQL과 jcloud 환경 차이
 
-### 사람인 크롤링 덤프
+**판단과 수정** — DB schema와 jar 배포 경로를 분리하고 환경변수 기반 접속 정보로 정리했습니다.
 
-![사람인 크롤링 덤프](crawl-dump.png)
+## 기술 선택과 이유
 
-`POST /jobs/crawl` 요청으로 사람인 검색 결과를 페이지 단위로 수집하고, Jsoup selector로 공고 필드를 추출합니다. URL 기준 중복 제거 후 MariaDB에 저장하는 흐름을 로그와 테이블 형태로 정리했습니다.
+| 기술 | 선택 이유 |
+|---|---|
+| **Jsoup** | 사람인 HTML에서 공고 필드를 직접 파싱하고 페이지 단위 수집을 통제하기 위해 |
+| **Querydsl** | 키워드·회사·직무·기술·지역·경력·급여 조건을 조합하기 위해 |
+| **JWT access/refresh** | REST client의 인증 상태를 서버 세션과 분리하기 위해 |
+| **MariaDB** | 공고·회원·지원·북마크 관계를 영속화하기 위해 |
+
+## 검증 결과
+
+- 공고 수집·동적 검색·인증·지원·북마크의 전체 API 흐름을 구현했습니다.
+- 실제 jcloud Ubuntu에 jar와 DB dump를 배포해 서버 환경에서 검증했습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![Job API Project 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. POST /jobs/crawl이 수집 작업을 시작합니다.
+2. Jsoup이 회사·제목·지역·경력·마감·기술·URL을 파싱합니다.
+3. URL 존재 여부를 확인해 중복 공고를 제외합니다.
+4. 30초 timeout, 최대 3회 retry, 페이지 간 5초 지연으로 수집 실패를 격리합니다.
+5. GET /jobs가 Querydsl 조건과 정렬·페이지 값을 조합합니다.
+6. 인증 사용자는 지원·북마크 상태를 생성하거나 취소합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `Auth` | `POST /auth/register, /login, /refresh` | JWT lifecycle |
+| `Jobs` | `GET /jobs, /jobs/{id}` | 검색·상세 |
+| `Crawler` | `POST /jobs/crawl` | 사람인 수집 |
+| `Activity` | `POST/DELETE /applications/{id}, /bookmarks/{id}` | 지원·저장 |
+
+## 한계와 다음 실험
+
+- 크롤러를 scheduler/queue로 분리하고 실행 상태 endpoint 추가
+- 검색 query 실행계획·index·응답시간 계측
+- 외부 사이트 정책 변경을 감지하는 parser contract test
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/jobAPI)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
