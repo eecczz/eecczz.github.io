@@ -1,48 +1,85 @@
 ---
-
-title: SpeakUp - AI Agent Communication Coach
+title: SpeakUp — AI 발표 코칭
 date: 2026-06-01
-summary: '음성, 시선, 자세, 표정, 침묵, 필러 표현을 실시간으로 분석해 발표·면접 연습을 돕는 AI 에이전트 코칭 서비스입니다.'
-highlights:
-  - title: 실시간 코칭
-    text: 말 속도, 필러, 침묵 등 신호를 분석해 연습 중 바로 피드백을 제공합니다.
-    image: featured.png
-  - title: 세션 대시보드
-    text: 발표·면접·협상 등 상황별 세션을 만들고 연습 흐름을 저장합니다.
-    image: detail-dashboard.png
-  - title: AI 리포트
-    text: 세션 종료 후 전사와 주요 주의 구간을 바탕으로 개선 리포트를 생성합니다.
-    image: detail-ai.png
-links:
-  - name: GitHub
-    url: https://github.com/eecczz/speech-coach
+summary: '음성·시선·자세·표정 신호를 실시간 집계하고 세션 종료 후 종합 리포트를 만드는 AI 코칭 서비스입니다.'
 featured: true
 ---
 
-SpeakUp은 발표, 면접, 협상처럼 말하기 부담이 큰 상황을 AI 에이전트와 함께 반복 연습하는 커뮤니케이션 코칭 서비스입니다. 사용자가 세션명과 집중 포커스를 정하고 카메라 앞에서 말하면, 서비스는 음성·시선·자세·표정·침묵·필러 표현을 분석해 실시간 피드백을 제공합니다.
+<div class="case-study-lead">
+  <p class="case-study-kicker">BACKEND · AI · SYSTEM CASE STUDY</p>
+  <p>음성·시선·자세·표정 신호를 실시간 집계하고 세션 종료 후 종합 리포트를 만드는 AI 코칭 서비스입니다.</p>
+  <div class="case-study-meta"><span><b>역할</b> 3인 팀 팀장 · 주제/서비스 구조/실시간 코칭 및 리포트 구현</span><span><b>검증</b> 교내 AI-SW 경진대회 동상</span></div>
+</div>
 
-프로젝트의 핵심은 단순 녹화 분석이 아니라, 연습 중 짧은 코칭을 띄우고 사용자의 질문형 발화에는 에이전트가 대화형으로 답하며, 세션 종료 후에는 전사와 종합 리포트로 다시 복기할 수 있게 만드는 흐름입니다.
+## 30초 요약
 
-- 기술 스택: TypeScript, 웹 프론트엔드, FastAPI 계열 서비스, PostgreSQL
-- 구현 포인트: 실시간 코칭 트리거, 세션 저장, AI agent 대화, 리포트 생성 흐름
-- 저장소: [eecczz/speech-coach](https://github.com/eecczz/speech-coach)
+- **무엇을 만들었나** — 음성·시선·자세·표정 신호를 실시간 집계하고 세션 종료 후 종합 리포트를 만드는 AI 코칭 서비스입니다.
+- **내 기여 범위** — 3인 팀 팀장 · 주제/서비스 구조/실시간 코칭 및 리포트 구현
+- **현재 수준** — 교내 AI-SW 경진대회 동상
+- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/speech-coach)
 
-## 주요 구현 포인트
+> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
 
-### 실시간 코칭
+## 실제 구현 과정과 트러블슈팅
 
-![실시간 코칭](featured.png)
+### 1. 프레임마다 LLM을 호출하면 지연·비용·반복 피드백이 커짐
 
-말 속도, 필러, 침묵 등 신호를 분석해 연습 중 바로 피드백을 제공합니다.
+**판단과 수정** — MediaPipe는 5 FPS로 처리하고 isFinal 문장 경계에서만 LLM을 호출했습니다.
 
-### 세션 대시보드
+### 2. 긴 세션에서 payload와 피드백이 누적되어 UI가 불안정
 
-![세션 대시보드](detail-dashboard.png)
+**판단과 수정** — 최근 구간 window와 최소 2초 코칭 간격을 두고 practice 화면 스크롤 영역을 분리했습니다.
 
-발표·면접·협상 등 상황별 세션을 만들고 연습 흐름을 저장합니다.
+### 3. 녹화와 아바타 캔버스를 함께 남겨야 함
 
-### AI 리포트
+**판단과 수정** — 브라우저 녹화 경로를 조정하고 MP4 변환 및 리포트 토글까지 연결했습니다.
 
-![AI 리포트](detail-ai.png)
+## 기술 선택과 이유
 
-세션 종료 후 전사와 주요 주의 구간을 바탕으로 개선 리포트를 생성합니다.
+| 기술 | 선택 이유 |
+|---|---|
+| **MediaPipe 5 FPS** | 브라우저에서 시선·자세·표정 신호를 실시간 처리하되 연산 부하를 통제하기 위해 |
+| **Web Speech API** | 문장 완료 시점을 빠르게 감지해 코칭 트리거와 전사 맥락에 사용하기 위해 |
+| **FastAPI microservices** | audio·aggregator·coach의 서로 다른 실시간/배치 책임을 분리하기 위해 |
+| **PostgreSQL · Docker Compose** | 세션·대화 기록을 보존하고 여러 서비스를 같은 실행 환경으로 묶기 위해 |
+
+## 검증 결과
+
+- 실시간 언어적·비언어적 피드백과 종료 후 복기 흐름을 하나의 서비스로 완성했습니다.
+- 3인 팀을 이끌어 교내 AI-SW 경진대회 동상을 수상했습니다.
+- 저장소에는 서비스별 코드, Docker Compose, API endpoint, 수정 커밋이 남아 있습니다.
+
+## 시스템 흐름 — 이해 보조
+
+![SpeakUp — AI 발표 코칭 시스템 흐름](architecture.svg)
+
+<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
+
+1. 브라우저가 카메라·마이크를 받고 MediaPipe 신호를 계산합니다.
+2. WebSocket으로 vision/prosody/STT frame을 aggregator에 전달합니다.
+3. aggregator가 5초 window를 만들고 live coach 규칙을 호출합니다.
+4. 완료 문장 단위로 LLM 피드백을 요청하며 최소 2초 간격으로 반복을 억제합니다.
+5. 종료 후 faster-whisper·librosa·ffmpeg가 전사/운율/영상 산출물을 만듭니다.
+6. coach가 종합 리포트를 만들고 PostgreSQL 및 리포트 UI에 저장합니다.
+
+## API · 시스템 경계
+
+| 영역 | API/계약 | 책임 |
+|---|---|---|
+| `WS` | `/ws/signals, /ws/hud` | 실시간 신호·HUD |
+| `Session` | `POST /session/start, /end` | 분석 window lifecycle |
+| `Audio` | `POST /transcribe, /convert/mp4, /analyze` | STT·운율·미디어 |
+| `Coach` | `POST /live, /comprehensive, /agent-feedback` | 실시간/종합 코칭 |
+
+## 한계와 다음 실험
+
+- 실사용자 세션으로 코칭 정확도·유용성 평가
+- signal/LLM 장애 시 fallback과 재처리 queue 강화
+- 세션 간 지표 비교와 운영 모니터링 추가
+
+## 구현 근거
+
+- [GitHub 저장소](https://github.com/eecczz/speech-coach)
+- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
+- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
+- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
