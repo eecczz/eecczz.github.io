@@ -26,11 +26,21 @@ featured: true
 
 **판단과 수정** — S3 direct multipart와 이벤트 기반 변환으로 책임을 분리했습니다.
 
-### 2. 영상 원본과 HLS 결과·메타데이터의 상태가 서로 어긋날 수 있음
+### 2. AWS 설정을 마친 뒤에도 브라우저의 대용량 업로드 요청이 차단됨
+
+**진단** — 업로드는 `initiate-upload → presigned URL 발급 → S3 PUT → complete-upload` 순서였습니다. IAM·버킷·MediaConvert 설정을 먼저 의심했지만, 실제로는 React와 Spring 서버의 origin이 달라 업로드 orchestration API 요청이 CORS 정책에 막히고 있었습니다. AWS 구간과 애플리케이션 서버 구간을 나눠 요청별 응답과 브라우저 콘솔을 확인해 원인을 좁혔습니다.
+
+**판단과 수정** — `WebConfig.addCorsMappings()`에서 API 경로의 CORS를 허용해 React→Spring 요청을 통과시켰습니다. 런타임에 생성되는 썸네일은 빌드 시점의 classpath에 없으므로, 같은 설정 파일에 `/files/**` resource handler를 추가해 실제 업로드 디렉터리에서 제공했습니다. 브라우저가 presigned URL로 S3에 직접 `PUT`하는 요청은 Spring CORS가 아니라 S3 버킷 CORS와 `ETag` 노출 설정이 담당하도록 경계를 구분했습니다.
+
+### 3. 영상 원본을 게시물 DB에 넣지 않고 조회 가능한 게시물로 구성해야 함
+
+**판단과 수정** — 원본과 HLS 결과는 S3에 저장하고, 게시물 테이블에는 제목·작성자·썸네일 등 메타데이터와 `videoUrl`만 문자열로 저장했습니다. 조회 API가 게시물 정보와 재생 URL을 반환하면 클라이언트가 해당 URL을 player에 연결하도록 해, 관계형 DB는 게시물 도메인을 관리하고 객체 스토리지는 대용량 바이너리를 담당하게 분리했습니다.
+
+### 4. 영상 원본과 HLS 결과·메타데이터의 상태가 서로 어긋날 수 있음
 
 **판단과 수정** — 업로드 lifecycle endpoint와 변환 후 재생 URL 단계를 분리해 상태 경계를 명확히 했습니다.
 
-### 3. AWS/DB 비밀 값이 저장소에 노출될 위험
+### 5. AWS/DB 비밀 값이 저장소에 노출될 위험
 
 **판단과 수정** — 키를 환경변수로 이동하고 예시 값만 추적하도록 정리했습니다.
 
