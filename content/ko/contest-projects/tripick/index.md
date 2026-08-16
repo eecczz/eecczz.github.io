@@ -80,5 +80,4 @@ featured: true
 
 - [GitHub 저장소](https://github.com/eecczz/tripick)
 - README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
-- 개발 중 남긴 Codex 대화에서는 문제 진단·가설·수정 순서를 확인했습니다.
 - 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.
