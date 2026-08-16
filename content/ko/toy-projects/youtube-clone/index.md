@@ -22,25 +22,15 @@ featured: true
 
 ## 실제 구현 과정과 트러블슈팅
 
-### 1. AWS 설정 후에도 대용량 업로드 요청이 브라우저에서 차단됨
-
-**진단** — 업로드는 `initiate-upload → presigned URL 발급 → S3 PUT → complete-upload` 순서였습니다. 이때 React에서 Spring API로 보내는 요청이 origin 경계를 넘으며 막혀, AWS 권한 문제와 서버 CORS 문제를 분리해 확인했습니다.
-
-**판단과 수정** — `WebConfig.addCorsMappings()`에 전역 API CORS 허용을 추가해 프론트→Spring 업로드 orchestration 요청을 통과시켰습니다. 새 썸네일이 classpath가 아니라 실행 중 파일 디렉터리에 저장되는 문제는 `/files/**` resource handler로 별도 해결했습니다. 단, 브라우저가 presigned URL로 S3에 직접 `PUT`하는 구간은 Spring 설정이 아니라 S3 bucket CORS와 `ETag` 노출 설정의 책임이라는 경계도 확인했습니다.
-
-### 2. 영상 원본을 게시물 DB에 넣지 않고도 조회 화면을 구성해야 함
-
-**판단과 수정** — 원본·변환 영상은 S3가 담당하고, 게시물 테이블에는 제목·작성자·썸네일과 `videoUrl`만 저장했습니다. 조회 API가 메타데이터를 반환하면 player는 URL을 `<video src>`에 연결해 DB와 대용량 바이너리 저장 책임을 분리했습니다.
-
-### 3. 모든 카드에서 preview를 즉시 로드하면 네트워크·디코딩 낭비
+### 1. 모든 카드에서 preview를 즉시 로드하면 네트워크·디코딩 낭비
 
 **판단과 수정** — hover 유지 시간을 조건으로 두고 thumbnail→video 전환을 지연했습니다.
 
-### 4. overlay play icon이 점처럼 렌더링되는 UI 오류
+### 2. overlay play icon이 점처럼 렌더링되는 UI 오류
 
 **판단과 수정** — player 상태별 icon 렌더링을 분리해 수정한 커밋을 남겼습니다.
 
-### 5. 프론트와 백엔드 소개가 중복됨
+### 3. 프론트와 백엔드 소개가 중복됨
 
 **판단과 수정** — 이 페이지는 탐색·player UX, Streaming API 페이지는 업로드·변환 백엔드로 역할을 분리했습니다.
 
