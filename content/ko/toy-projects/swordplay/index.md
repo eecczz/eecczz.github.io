@@ -11,28 +11,19 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 입력/수학적 회전/IK/물리 반응/WebGL</span><span><b>검증</b> WebGL 배포</span></div>
 </div>
 
-## 30초 요약
-
-- **무엇을 만들었나** — 마우스 입력을 쿼터니언·벡터 목표 자세로 변환하고 독립 무기·양손 IK·댐핑·피격 회복을 결합한 Unity WebGL 프로젝트입니다.
-- **내 기여 범위** — 개인 프로젝트 · 입력/수학적 회전/IK/물리 반응/WebGL
-- **현재 수준** — WebGL 배포
-- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/swordplay-clone)
-
-> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
-
-## 실제 구현 과정과 트러블슈팅
+## 트러블 슈팅
 
 ### 1. 검을 팔 animation의 child로 두면 입력과 무기 궤적을 독립 제어하기 어려움
 
-**판단과 수정** — 무기 transform을 주체로 두고 팔이 IK로 따라오도록 의존 방향을 뒤집었습니다.
+무기 transform을 주체로 두고 팔이 IK로 따라오도록 의존 방향을 뒤집었습니다.
 
 ### 2. 목표 자세로 즉시 대입하면 검이 순간이동해 질량감이 사라짐
 
-**판단과 수정** — 프레임별 선형/구면 보간과 물리적 회전·위치 이동에 damping을 적용했습니다.
+프레임별 선형/구면 보간과 물리적 회전·위치 이동에 damping을 적용했습니다.
 
 ### 3. WebGL 시작 시 메모리 crash와 material/lighting 문제가 발생
 
-**판단과 수정** — 메모리 설정과 material·sky·camera를 커밋 단위로 수정하고 다시 배포했습니다.
+메모리 설정과 material·sky·camera를 커밋 단위로 수정하고 다시 배포했습니다.
 
 ## 기술 선택과 이유
 
@@ -48,11 +39,9 @@ featured: true
 - 쿼터니언·벡터 복합연산, 독립 무기 제어, 양손 IK, damping, hit reaction을 하나의 실시간 제어 루프로 구현했습니다.
 - WebGL 빌드를 공개하고 시각 스타일·카메라·메모리 오류를 지속 수정했습니다.
 
-## 시스템 흐름 — 이해 보조
+## 시스템 흐름
 
 ![Wii Swordplay 모작 시스템 흐름](architecture.svg)
-
-<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
 
 1. 마우스의 화면 이동량을 입력 벡터로 읽습니다.
 2. 입력으로 검의 위치와 quaternion 회전 목표를 계산합니다.
@@ -70,14 +59,8 @@ featured: true
 | `Rig` | `two-hand IK` | 손-손잡이 정렬 |
 | `Combat` | `collision + recovery` | 타격·균형 회복 |
 
-## 한계와 다음 실험
+## 다음 구현 계획
 
 - 검 target과 실제 rigidbody 오차·latency 계측
 - 입력 속도 기반 angular velocity/충격량 모델 개선
 - Unity Robotics 시뮬레이션에서 end-effector tracking으로 전이 실험
-
-## 구현 근거
-
-- [GitHub 저장소](https://github.com/eecczz/swordplay-clone)
-- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
-- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.

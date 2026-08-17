@@ -51,8 +51,8 @@ main:
     parent: "토이 프로젝트"
     weight: 34
 
-  - name: "유튜브 클론"
-    url: "/toy-projects/youtube-clone/"
+  - name: "Streaming API"
+    url: "/toy-projects/streaming-api/"
     parent: "토이 프로젝트"
     weight: 35
 

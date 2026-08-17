@@ -198,12 +198,12 @@ sections:
           </article>
 
           <article class="home-project-card">
-            <a class="home-project-title" href="./toy-projects/youtube-clone/">YouTube Remake</a>
-            <p>A YouTube-style video service remake exploring hover preview, upload, and playback architecture.</p>
+            <a class="home-project-title" href="./toy-projects/streaming-api/">Streaming API</a>
+            <p>A React and Spring Boot video service with delayed hover previews, direct S3 uploads, asynchronous HLS conversion, and playback APIs.</p>
             <div class="home-project-highlights">
               <div><img src="./toy-projects/youtube-clone/featured.png" alt="Video Preview"><strong>Video Preview</strong><span>Reduced unnecessary loading by previewing only after a hover dwell time.</span></div>
-              <div><img src="./toy-projects/youtube-clone/detail-player.png" alt="Media UX"><strong>Media UX</strong><span>Built a YouTube-like exploration experience with thumbnails, video, and playback controls.</span></div>
-              <div><img src="./toy-projects/youtube-clone/detail-upload.png" alt="Upload flow"><strong>Upload Flow</strong><span>Separated the React screen and backend/cloud processing for upload and playback.</span></div>
+              <div><img src="./toy-projects/youtube-clone/detail-player.png" alt="Media UX"><strong>Media UX</strong><span>Built a video exploration experience with thumbnails, preview, and playback controls.</span></div>
+              <div><img src="./toy-projects/youtube-clone/detail-upload.png" alt="Upload flow"><strong>Upload Flow</strong><span>Connected the React screen to Spring APIs and asynchronous AWS media processing.</span></div>
             </div>
           </article>
 

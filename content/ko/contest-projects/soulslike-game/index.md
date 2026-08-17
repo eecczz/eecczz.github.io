@@ -11,28 +11,19 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 4인 팀 · 전투 조작감/피격/스태미나/연출</span><span><b>검증</b> 교과 팀 프로젝트</span></div>
 </div>
 
-## 30초 요약
-
-- **무엇을 만들었나** — 회피·스태미나·콤보·hitbox timing·보스 AI를 상태 기반으로 구성한 4인 Unity 팀 프로젝트입니다.
-- **내 기여 범위** — 4인 팀 · 전투 조작감/피격/스태미나/연출
-- **현재 수준** — 교과 팀 프로젝트
-- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/my-soulslike-game)
-
-> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
-
-## 실제 구현 과정과 트러블슈팅
+## 트러블 슈팅
 
 ### 1. 공격 판정과 animation timing이 어긋나 유효 타격이 불분명
 
-**판단과 수정** — hitbox lifecycle을 animation event와 연결했습니다.
+hitbox lifecycle을 animation event와 연결했습니다.
 
 ### 2. 피격·스태미나 처리가 여러 스크립트에서 중복
 
-**판단과 수정** — 최근 커밋에서 combat hit와 stamina 흐름을 정리했습니다.
+최근 커밋에서 combat hit와 stamina 흐름을 정리했습니다.
 
 ### 3. 대형 Unity Library가 저장소에 포함
 
-**판단과 수정** — 외부 asset과 생성 파일 범위를 문서화하고 metadata를 정리했습니다.
+외부 asset과 생성 파일 범위를 문서화하고 metadata를 정리했습니다.
 
 ## 기술 선택과 이유
 
@@ -48,11 +39,9 @@ featured: true
 - 회피 후 반격·콤보·보스 범위 공격의 핵심 전투 loop를 구현했습니다.
 - 2022 초기 구현에서 2026 전투 hit/stamina 리팩터링까지 개선 이력이 남아 있습니다.
 
-## 시스템 흐름 — 이해 보조
+## 시스템 흐름
 
 ![소울라이크 전투 시스템 시스템 흐름](architecture.svg)
-
-<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
 
 1. 입력을 attack/dodge 명령으로 변환합니다.
 2. combat state와 stamina가 실행 가능 여부를 결정합니다.
@@ -70,14 +59,8 @@ featured: true
 | `Hit` | `animation event + collider` | 판정 |
 | `Feedback` | `camera/VFX/sound` | 결과 전달 |
 
-## 한계와 다음 실험
+## 다음 구현 계획
 
 - state machine과 animation graph의 테스트 가능한 경계 분리
 - damage frame·input latency 계측
 - 보스 패턴별 playtest telemetry
-
-## 구현 근거
-
-- [GitHub 저장소](https://github.com/eecczz/my-soulslike-game)
-- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
-- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.

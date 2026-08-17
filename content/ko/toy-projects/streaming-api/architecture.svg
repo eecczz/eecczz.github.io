@@ -3,7 +3,7 @@
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 
-<svg role="img" aria-label="프로젝트 시스템 흐름" width="924pt" height="171pt"
+<svg role="img" aria-label="Streaming API 시스템 흐름" width="924pt" height="171pt"
  viewBox="0.00 0.00 924.00 171.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(20.16 151)">
 <title>G</title>
@@ -27,8 +27,8 @@
 </g>
 
 <g id="edge5" class="edge">
-<title>n2&#45;&gt;support</title>
-<path fill="none" stroke="#6d9bb1" stroke-width="2" stroke-dasharray="5,2" d="M473.7,-78.17C473.7,-55.26 473.7,-25.92 473.7,-25.92 473.7,-25.92 282.5,-25.92 167.85,-25.92"/>
+<title>n1&#45;&gt;support</title>
+<path fill="none" stroke="#6d9bb1" stroke-width="2" stroke-dasharray="5,2" d="M292.43,-78.17C292.43,-55.26 292.43,-25.92 292.43,-25.92 292.43,-25.92 233.8,-25.92 167.85,-25.92"/>
 </g>
 
 <g id="edge4" class="edge">
@@ -40,13 +40,13 @@
 <g id="node1" class="node">
 <title>n0</title>
 <path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M117.55,-130.84C117.55,-130.84 49.87,-130.84 49.87,-130.84 43.87,-130.84 37.87,-124.84 37.87,-118.84 37.87,-118.84 37.87,-91 37.87,-91 37.87,-85 43.87,-79 49.87,-79 49.87,-79 117.55,-79 117.55,-79 123.55,-79 129.55,-85 129.55,-91 129.55,-91 129.55,-118.84 129.55,-118.84 129.55,-124.84 123.55,-130.84 117.55,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="83.71" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">대용량 영상</text>
+<text xml:space="preserve" text-anchor="middle" x="83.71" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">React UI</text>
 </g>
 
 <g id="node2" class="node">
 <title>n1</title>
 <path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M360.44,-130.84C360.44,-130.84 224.42,-130.84 224.42,-130.84 218.42,-130.84 212.42,-124.84 212.42,-118.84 212.42,-118.84 212.42,-91 212.42,-91 212.42,-85 218.42,-79 224.42,-79 224.42,-79 360.44,-79 360.44,-79 366.44,-79 372.44,-85 372.44,-91 372.44,-91 372.44,-118.84 372.44,-118.84 372.44,-124.84 366.44,-130.84 360.44,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="292.43" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Spring Multipart API</text>
+<text xml:space="preserve" text-anchor="middle" x="292.43" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Spring · Presigned API</text>
 </g>
 
 <g id="node3" class="node">
@@ -64,13 +64,13 @@
 <g id="node5" class="node">
 <title>n4</title>
 <path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M871.7,-130.84C871.7,-130.84 792.77,-130.84 792.77,-130.84 786.77,-130.84 780.77,-124.84 780.77,-118.84 780.77,-118.84 780.77,-91 780.77,-91 780.77,-85 786.77,-79 792.77,-79 792.77,-79 871.7,-79 871.7,-79 877.7,-79 883.7,-85 883.7,-91 883.7,-91 883.7,-118.84 883.7,-118.84 883.7,-124.84 877.7,-130.84 871.7,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="832.24" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">스트리밍 재생</text>
+<text xml:space="preserve" text-anchor="middle" x="832.24" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Preview·Player</text>
 </g>
 
 <g id="node6" class="node">
 <title>support</title>
 <path fill="#eef6f8" stroke="#6d9bb1" stroke-width="1.7" stroke-dasharray="5,2" d="M155.42,-51.84C155.42,-51.84 12,-51.84 12,-51.84 6,-51.84 0,-45.84 0,-39.84 0,-39.84 0,-12 0,-12 0,-6 6,0 12,0 12,0 155.42,0 155.42,0 161.42,0 167.42,-6 167.42,-12 167.42,-12 167.42,-39.84 167.42,-39.84 167.42,-45.84 161.42,-51.84 155.42,-51.84"/>
-<text xml:space="preserve" text-anchor="middle" x="83.71" y="-22.02" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="13.00" fill="#486581">Metadata DB · Event 로그</text>
+<text xml:space="preserve" text-anchor="middle" x="83.71" y="-22.02" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="13.00" fill="#486581">MariaDB · Post · videoUrl</text>
 </g>
 </g>
 </svg>

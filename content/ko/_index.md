@@ -30,7 +30,7 @@ sections:
   - block: markdown
     content:
       title: 핵심 프로젝트 3선
-      subtitle: 전체 기능이 아니라 제가 직접 맡은 범위의 문제·판단·수정·검증을 먼저 보여줍니다.
+      subtitle: 제가 직접 맡은 범위의 문제와 해결 과정, 검증 결과를 먼저 보여줍니다.
       text: |
         <div class="case-study-grid">
           <a class="case-study-card" href="./contest-projects/jeonbuk-chatbot/">
@@ -49,7 +49,7 @@ sections:
             <img src="./toy-projects/streaming-api/architecture.svg" alt="Streaming API 시스템 흐름">
             <span class="case-study-label">SPRING BOOT · AWS</span>
             <h3>Streaming API</h3>
-            <p><b>문제</b> 대용량 업로드·변환이 API 요청을 점유하지 않게 했습니다. <b>기여</b> S3 multipart와 Lambda·MediaConvert HLS 파이프라인을 구현했습니다. <b>검증</b> 업로드부터 재생까지 연결.</p>
+            <p><b>문제</b> 대용량 업로드·변환과 목록 preview가 서버·브라우저 자원을 낭비하지 않게 했습니다. <b>기여</b> React 미디어 UX, Spring API, S3 multipart와 Lambda·MediaConvert HLS 파이프라인을 구현했습니다. <b>검증</b> 탐색·업로드·변환·재생 흐름 연결.</p>
           </a>
         </div>
     design:

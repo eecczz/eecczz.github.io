@@ -11,24 +11,15 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 플레이어/상호작용/인벤토리/연출</span><span><b>검증</b> 기능 프로토타입</span></div>
 </div>
 
-## 30초 요약
-
-- **무엇을 만들었나** — 1인칭 이동·raycast 상호작용·인벤토리·목표·오디오 타이밍을 연결한 Unity 공포 게임 프로토타입입니다.
-- **내 기여 범위** — 개인 프로젝트 · 플레이어/상호작용/인벤토리/연출
-- **현재 수준** — 기능 프로토타입
-- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/my3dhorrorgame)
-
-> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
-
-## 실제 구현 과정과 트러블슈팅
+## 트러블 슈팅
 
 ### 1. Asset 기반 FPS 코드와 직접 구현한 gameplay 코드의 경계가 불명확
 
-**판단과 수정** — 생성 Library 파일을 제거하고 직접 작성한 Equip/Input/Interaction/Inventory 스크립트를 저장소 전면에 정리했습니다.
+생성 Library 파일을 제거하고 직접 작성한 Equip/Input/Interaction/Inventory 스크립트를 저장소 전면에 정리했습니다.
 
 ### 2. 공포 연출이 단순 어두운 조명에 의존
 
-**판단과 수정** — 목표·아이템·event·audio timing을 분리해 플레이 흐름에서 긴장감을 만들었습니다.
+목표·아이템·event·audio timing을 분리해 플레이 흐름에서 긴장감을 만들었습니다.
 
 ## 기술 선택과 이유
 
@@ -44,11 +35,9 @@ featured: true
 - 플레이어→상호작용→인벤토리→목표→연출의 기능 흐름을 프로토타입으로 완성했습니다.
 - Unity 생성 파일을 제거하고 재현 가능한 저장소 구조와 README를 정리했습니다.
 
-## 시스템 흐름 — 이해 보조
+## 시스템 흐름
 
 ![3D 공포 게임 프로토타입 시스템 흐름](architecture.svg)
-
-<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
 
 1. 입력이 FPS controller의 이동·시점을 갱신합니다.
 2. 화면 중심 ray가 상호작용 가능한 객체를 탐색합니다.
@@ -66,14 +55,8 @@ featured: true
 | `Inventory` | `collect/equip` | 조건 상태 |
 | `Flow` | `objective/event/audio` | 연출 진행 |
 
-## 한계와 다음 실험
+## 다음 구현 계획
 
 - 상호작용 interface와 save/load contract 정리
 - 공간 audio와 적 AI perception 고도화
 - Profiler로 scene loading·GC spike 점검
-
-## 구현 근거
-
-- [GitHub 저장소](https://github.com/eecczz/my3dhorrorgame)
-- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
-- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.

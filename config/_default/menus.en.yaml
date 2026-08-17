@@ -51,8 +51,8 @@ main:
     parent: "Toy Projects"
     weight: 34
 
-  - name: "YouTube Remake"
-    url: "/toy-projects/youtube-clone/"
+  - name: "Streaming API"
+    url: "/toy-projects/streaming-api/"
     parent: "Toy Projects"
     weight: 35
 

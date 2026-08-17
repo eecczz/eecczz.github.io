@@ -1,48 +1,59 @@
 ---
-
 title: Streaming API
 date: 2026-06-13
-summary: '대용량 영상 업로드와 HLS 변환·재생 URL 제공을 목표로 한 Spring Boot + AWS 미디어 백엔드 프로젝트입니다.'
+summary: 'A React and Spring Boot video service that combines delayed previews, direct S3 uploads, asynchronous HLS conversion, and playback APIs.'
 highlights:
-  - title: 영상 업로드 API
-    text: 대용량 영상과 메타데이터를 분리해 저장하고 조회하는 API 구조를 설계했습니다.
+  - title: Video Preview
+    text: Loads a preview only after the pointer remains on a thumbnail, avoiding unnecessary network and decoding work.
+    image: detail-hls.jpg
+  - title: AWS Media Pipeline
+    text: Uses S3, Lambda, and MediaConvert to separate large-file upload and HLS conversion from the application request cycle.
     image: featured.jpg
-  - title: AWS 변환 파이프라인
-    text: S3, Lambda, MediaConvert를 활용해 비동기 영상 변환 흐름을 구상했습니다.
-    image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80
-  - title: HLS 재생
-    text: 화질 조절과 브라우저 재생을 고려해 HLS 재생 URL 제공 구조를 정리했습니다.
-    image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80
+  - title: Player and Social APIs
+    text: Connects the playback URL with video metadata, comments, likes, and subscriptions.
+    image: detail-cloud.jpg
 links:
   - name: GitHub
     url: https://github.com/eecczz/streamingAPI
 featured: true
 ---
 
-Streaming API는 대용량 영상 업로드와 스트리밍 처리를 목표로 한 Spring Boot 기반 백엔드 프로젝트입니다. AWS S3, Lambda, MediaConvert를 활용해 업로드된 영상을 HLS 형식으로 변환하고 재생 URL을 제공하는 구조를 설계했습니다.
+Streaming API is a video service project that connects a React browsing and playback interface to Spring Boot APIs and an AWS media pipeline. Video binaries and HLS outputs are stored in S3, while the relational database keeps post metadata and the `videoUrl` required for playback.
 
-유튜브 모작 프로젝트에서 고민했던 미디어 처리 문제를 백엔드와 클라우드 파이프라인 관점으로 확장한 작업입니다. 영상 메타데이터 저장, 업로드 API, 비동기 변환, 재생 URL 제공을 나누어 설계하며 미디어 서비스의 기본 구조를 학습했습니다.
+- Tech stack: React, Java, Spring Boot, MariaDB, AWS S3, Lambda, MediaConvert, HLS
+- Scope: browse and preview UI, multipart upload orchestration, metadata APIs, asynchronous conversion, playback and social APIs
+- Repository: [eecczz/streamingAPI](https://github.com/eecczz/streamingAPI)
 
-- 기술 스택: Java, Spring Boot, MariaDB, AWS S3, Lambda, MediaConvert, HLS
-- 구현 포인트: 영상 업로드 API, 메타데이터 저장, 비동기 변환 파이프라인
-- 저장소: [eecczz/streamingAPI](https://github.com/eecczz/streamingAPI)
+## Troubleshooting
 
-## 주요 구현 포인트
+### Large video processing occupied the Spring request lifecycle
 
-### 영상 업로드 API
+Direct multipart upload to S3 and event-driven conversion separated binary transfer and transcoding from the application server request.
 
-![영상 업로드 API](featured.jpg)
+### Upload requests failed even after the AWS resources were configured
 
-대용량 영상과 메타데이터를 분리해 저장하고 조회하는 API 구조를 설계했습니다.
+The request path was split into React-to-Spring orchestration and browser-to-S3 upload. Spring CORS was configured for the API calls, runtime files were mapped through `/files/**`, and S3 bucket CORS remained responsible for presigned `PUT` requests and exposing `ETag`.
 
-### AWS 변환 파이프라인
+### Video binaries and post data required different storage responsibilities
 
-![AWS 변환 파이프라인](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=720&q=80)
+Original and converted media stay in object storage. The post table stores title, author, thumbnail, and `videoUrl`, allowing the player to load the media through the URL returned by the read API.
 
-S3, Lambda, MediaConvert를 활용해 비동기 영상 변환 흐름을 구상했습니다.
+### Loading every thumbnail preview wasted network and decoding resources
 
-### HLS 재생
+The list renders thumbnails first and creates the video element only after a hover dwell time, so passing over a card does not immediately download its preview.
 
-![HLS 재생](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80)
+## System Flow
 
-화질 조절과 브라우저 재생을 고려해 HLS 재생 URL 제공 구조를 정리했습니다.
+1. React requests multipart upload initialization and signed URLs.
+2. The browser uploads each part directly to S3 and completes the upload.
+3. An S3 event invokes Lambda, which creates a MediaConvert job.
+4. MediaConvert produces the HLS manifest and segments.
+5. Spring Boot stores and serves post metadata and the playback URL.
+6. The list delays preview loading until hover intent is confirmed.
+7. The watch page plays HLS and calls comment, like, and subscription APIs.
+
+## Next Implementation Plan
+
+- Add job-status callbacks with retry and explicit failure states.
+- Apply CloudFront signed URLs and cache policies.
+- Measure upload and conversion latency, preview request volume, and cloud cost.

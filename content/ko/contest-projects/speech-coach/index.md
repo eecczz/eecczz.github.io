@@ -11,34 +11,27 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 3인 팀 팀장 · 주제/서비스 구조/실시간 코칭 및 리포트 구현</span><span><b>검증</b> 교내 AI-SW 경진대회 동상</span></div>
 </div>
 
-## 30초 요약
-
-- **무엇을 만들었나** — 음성·시선·자세·표정 신호를 실시간 집계하고 세션 종료 후 종합 리포트를 만드는 AI 코칭 서비스입니다.
-- **내 기여 범위** — 3인 팀 팀장 · 주제/서비스 구조/실시간 코칭 및 리포트 구현
-- **현재 수준** — 교내 AI-SW 경진대회 동상
-- **코드 근거** — [GitHub 저장소](https://github.com/eecczz/speech-coach)
-
-> 팀 프로젝트는 전체 결과가 아니라 위에 적은 직접 기여 범위와, 면접에서 구현 이유를 설명할 수 있는 내용만 서술했습니다.
-
-## 실제 구현 과정과 트러블슈팅
+## 트러블 슈팅
 
 ### 1. 프레임마다 LLM을 호출하면 지연·비용·반복 피드백이 커짐
 
-**판단과 수정** — MediaPipe는 5 FPS로 처리하고 isFinal 문장 경계에서만 LLM을 호출했습니다.
+MediaPipe는 5 FPS로 처리하고 isFinal 문장 경계에서만 LLM을 호출했습니다.
 
 ### 2. 긴 세션에서 payload와 피드백이 누적되어 UI가 불안정
 
-**판단과 수정** — 최근 구간 window와 최소 2초 코칭 간격을 두고 practice 화면 스크롤 영역을 분리했습니다.
+최근 구간 window와 최소 2초 코칭 간격을 두고 practice 화면 스크롤 영역을 분리했습니다.
 
 ### 3. 1분 이상 녹화 후 제출하면 리포트 화면으로 넘어가지 않음
 
-**진단** — MediaRecorder 중지 자체보다, 커진 WebM Blob을 IndexedDB에 저장하는 비동기 작업과 페이지 이동 사이의 경쟁 조건을 의심했습니다. 기존 helper는 object store의 `put()` 성공 시 resolve해 실제 transaction commit 완료 전에 다음 화면으로 이동할 수 있었습니다.
+MediaRecorder 중지 자체보다, 커진 WebM Blob을 IndexedDB에 저장하는 비동기 작업과 페이지 이동 사이의 경쟁 조건을 의심했습니다. 기존 helper는 object store의 `put()` 성공 시 resolve해 실제 transaction commit 완료 전에 다음 화면으로 이동할 수 있었습니다.
 
-**판단과 수정** — 영상 Blob은 용량 제한이 작은 localStorage가 아닌 IndexedDB에 저장하고, `request.onsuccess`가 아니라 transaction의 `oncomplete`에서 Promise를 끝내도록 수정했습니다. 그 뒤에만 pending metadata를 localStorage에 기록하고 loading 화면으로 이동하게 순서를 고정했습니다. 분석 완료 후 media key도 지우지 않아 리포트에서 원본 영상을 다시 불러오도록 했습니다.
+영상 Blob은 용량 제한이 작은 localStorage가 아닌 IndexedDB에 저장하고, `request.onsuccess`가 아니라 transaction의 `oncomplete`에서 Promise를 끝내도록 수정했습니다. 그 뒤에만 pending metadata를 localStorage에 기록하고 loading 화면으로 이동하게 순서를 고정했습니다. 분석 완료 후 media key도 지우지 않아 리포트에서 원본 영상을 다시 불러오도록 했습니다.
+
+![SpeakUp 녹화 종료와 IndexedDB 저장 순서](code-recording-handoff.svg)
 
 ### 4. 녹화와 아바타 캔버스를 함께 남겨야 함
 
-**판단과 수정** — 브라우저 녹화 경로를 조정하고 MP4 변환 및 리포트 토글까지 연결했습니다.
+브라우저 녹화 경로를 조정하고 MP4 변환 및 리포트 토글까지 연결했습니다.
 
 ## 기술 선택과 이유
 
@@ -55,11 +48,9 @@ featured: true
 - 3인 팀을 이끌어 교내 AI-SW 경진대회 동상을 수상했습니다.
 - 저장소에는 서비스별 코드, Docker Compose, API endpoint, 수정 커밋이 남아 있습니다.
 
-## 시스템 흐름 — 이해 보조
+## 시스템 흐름
 
 ![SpeakUp — AI 발표 코칭 시스템 흐름](architecture.svg)
-
-<p class="diagram-caption">이 그림은 구현 역량의 증거를 대신하지 않습니다. 실제 코드·README·커밋과 문제 해결 기록을 읽기 쉽게 연결한 보조 자료입니다.</p>
 
 1. 브라우저가 카메라·마이크를 받고 MediaPipe 신호를 계산합니다.
 2. WebSocket으로 vision/prosody/STT frame을 aggregator에 전달합니다.
@@ -77,14 +68,8 @@ featured: true
 | `Audio` | `POST /transcribe, /convert/mp4, /analyze` | STT·운율·미디어 |
 | `Coach` | `POST /live, /comprehensive, /agent-feedback` | 실시간/종합 코칭 |
 
-## 한계와 다음 실험
+## 다음 구현 계획
 
 - 실사용자 세션으로 코칭 정확도·유용성 평가
 - signal/LLM 장애 시 fallback과 재처리 queue 강화
 - 세션 간 지표 비교와 운영 모니터링 추가
-
-## 구현 근거
-
-- [GitHub 저장소](https://github.com/eecczz/speech-coach)
-- README의 기능 목록만 옮기지 않고 controller/service/source tree와 주요 commit 흐름을 함께 확인했습니다.
-- 저장소·실행 기록·수상 결과로 확인되지 않는 성과 수치는 만들지 않았습니다.

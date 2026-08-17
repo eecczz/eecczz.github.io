@@ -465,11 +465,13 @@ body {
   box-shadow: 0 12px 34px rgba(16, 42, 67, 0.08);
 }
 
-.diagram-caption {
-  margin-top: 0.4rem;
-  color: var(--portfolio-slate);
-  font-size: 0.8rem;
-  text-align: center;
+.article-style img[src*="code-"] {
+  width: 100%;
+  margin: 1.15rem auto 1.4rem;
+  border: 1px solid #30363d;
+  border-radius: 14px;
+  background: #181818;
+  box-shadow: 0 14px 38px rgba(16, 42, 67, 0.16);
 }
 
 .article-style h2 {
