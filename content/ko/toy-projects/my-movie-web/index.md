@@ -11,6 +11,12 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 외부 API/React 상태/정적 배포</span><span><b>검증</b> GitHub Pages 자동 배포</span></div>
 </div>
 
+## 주요 화면
+
+인기 영화와 장르별 콘텐츠를 한 화면에서 탐색하고 검색·상세·위시리스트로 이동하는 구조입니다. 메인 화면에서 콘텐츠 분류와 검색 결과를 확인하고 관심 영화를 별도 목록에 저장할 수 있습니다.
+
+![TMDb 영화 콘텐츠를 탐색하는 메인 화면](detail-explore.png)
+
 ## 트러블 슈팅
 
 ### 1. 정적 Pages에서 SPA route 새로고침이 깨질 수 있음
