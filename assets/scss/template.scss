@@ -2,7 +2,7 @@
 // https://hugoblox.com/hugo-themes/
 
 body {
-  background-color: rgb(255, 245, 230); // 밝고 따뜻한 베이지 톤 (light 모드)
+  background-color: #f7fafc;
 }
 
 .article-container {
@@ -11,16 +11,16 @@ body {
 }
 
 .dark .article-container {
-  background-color: rgb(90, 45, 20);  // 다크 오렌지 계열 (dark 모드)
+  background-color: #102a43;
 }
 
 // custom footer color
 .page-footer {
-  background-color: rgb(255, 245, 230);  // 밝은 베이지 톤으로 일관성 유지
+  background-color: #f7fafc;
 }
 
 .dark .page-footer {
-  background-color: rgb(90, 45, 20);  // 다크 오렌지로 설정
+  background-color: #0b1f33;
 }
 
 // more rounded cards and larger gap between cards
@@ -30,7 +30,7 @@ body {
 }
 
 .dark .card-simple {
-  background: rgb(90, 45, 20);  // 다크 모드에서 카드 배경색도 다크 오렌지로 변경
+  background: #102a43;
 }
 
 // no navbar shadow
@@ -125,7 +125,7 @@ ul.network-icon .big-icon {
   max-width: 760px;
   margin: 0 auto;
   text-align: center;
-  color: #2a1a12;
+  color: #243b53;
 }
 
 .portfolio-avatar {
@@ -138,7 +138,7 @@ ul.network-icon .big-icon {
 }
 
 .portfolio-kicker {
-  color: #a64a1d;
+  color: #0f6d82;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -166,7 +166,7 @@ ul.network-icon .big-icon {
 }
 
 .portfolio-links a {
-  color: #ff5722;
+  color: #0f6d82;
   font-size: 1.85rem;
   text-decoration: none;
 }
@@ -178,7 +178,7 @@ ul.network-icon .big-icon {
 }
 
 .portfolio-highlight {
-  border: 1px solid rgba(120, 79, 52, 0.24);
+  border: 1px solid rgba(16, 42, 67, 0.18);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.52);
   padding: 1rem;
@@ -187,7 +187,7 @@ ul.network-icon .big-icon {
 
 .portfolio-highlight strong {
   display: block;
-  color: #8c3d18;
+  color: #0f6d82;
   font-size: 1.05rem;
   margin-bottom: 0.45rem;
 }
@@ -204,7 +204,7 @@ ul.network-icon .big-icon {
 
 .dark .portfolio-kicker,
 .dark .portfolio-highlight strong {
-  color: #ffb076;
+  color: #72e2f0;
 }
 
 .dark .portfolio-highlight {
@@ -256,10 +256,11 @@ body {
   max-width: 920px;
   margin: 2rem auto 1rem;
   padding: 4rem 3.5rem;
-  border-radius: 24px;
+  border: 1px solid #31536c;
+  border-radius: 3px;
   color: white;
-  background: linear-gradient(135deg, #102a43 0%, #163d5c 64%, #006f86 100%);
-  box-shadow: 0 22px 64px rgba(16, 42, 67, 0.22);
+  background: #123a56;
+  box-shadow: none;
 }
 
 .portfolio-hero-v2 .portfolio-kicker {
@@ -544,16 +545,16 @@ body {
 }
 
 .home-project-card {
-  border: 1px solid rgba(120, 79, 52, 0.22);
+  border: 1px solid rgba(16, 42, 67, 0.18);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.56);
+  background: #fff;
   padding: 1rem;
   text-align: left;
 }
 
 .home-project-title {
   display: inline-block;
-  color: #2f2119;
+  color: #102a43;
   font-size: 1.18rem;
   font-weight: 800;
   line-height: 1.35;
@@ -562,13 +563,13 @@ body {
 }
 
 .home-project-title:hover {
-  color: #ff5722;
+  color: #0f6d82;
   text-decoration: none;
 }
 
 .home-project-card p {
   margin: 0 0 0.9rem;
-  color: #4d4037;
+  color: #486581;
   font-size: 0.94rem;
   line-height: 1.65;
 }
@@ -594,7 +595,7 @@ body {
 
 .home-project-highlights strong {
   display: block;
-  color: #8c3d18;
+  color: #0f6d82;
   font-size: 0.86rem;
   line-height: 1.35;
   margin-bottom: 0.25rem;
@@ -602,7 +603,7 @@ body {
 
 .home-project-highlights span {
   display: block;
-  color: #5d514b;
+  color: #627d98;
   font-size: 0.78rem;
   line-height: 1.55;
 }
@@ -622,7 +623,7 @@ body {
 }
 
 .dark .home-project-highlights strong {
-  color: #ffb076;
+  color: #72e2f0;
 }
 
 @media (max-width: 760px) {
