@@ -40,37 +40,37 @@
 <g id="node1" class="node">
 <title>n0</title>
 <path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M112.33,-130.84C112.33,-130.84 44.65,-130.84 44.65,-130.84 38.65,-130.84 32.65,-124.84 32.65,-118.84 32.65,-118.84 32.65,-91 32.65,-91 32.65,-85 38.65,-79 44.65,-79 44.65,-79 112.33,-79 112.33,-79 118.33,-79 124.33,-85 124.33,-91 124.33,-91 124.33,-118.84 124.33,-118.84 124.33,-124.84 118.33,-130.84 112.33,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="78.49" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">마우스 입력</text>
+<text xml:space="preserve" text-anchor="middle" x="78.49" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">마우스 tx · ty</text>
 </g>
 
 <g id="node2" class="node">
 <title>n1</title>
 <path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M344.95,-130.84C344.95,-130.84 213.98,-130.84 213.98,-130.84 207.98,-130.84 201.98,-124.84 201.98,-118.84 201.98,-118.84 201.98,-91 201.98,-91 201.98,-85 207.98,-79 213.98,-79 213.98,-79 344.95,-79 344.95,-79 350.95,-79 356.95,-85 356.95,-91 356.95,-91 356.95,-118.84 356.95,-118.84 356.95,-124.84 350.95,-130.84 344.95,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="279.47" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Quaternion · Vector</text>
+<text xml:space="preserve" text-anchor="middle" x="279.47" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">2D Blend Tree</text>
 </g>
 
 <g id="node3" class="node">
 <title>n2</title>
 <path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M541.21,-130.84C541.21,-130.84 413.95,-130.84 413.95,-130.84 407.95,-130.84 401.95,-124.84 401.95,-118.84 401.95,-118.84 401.95,-91 401.95,-91 401.95,-85 407.95,-79 413.95,-79 413.95,-79 541.21,-79 541.21,-79 547.21,-79 553.21,-85 553.21,-91 553.21,-91 553.21,-118.84 553.21,-118.84 553.21,-124.84 547.21,-130.84 541.21,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="477.58" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">무기 보간 · Damping</text>
+<text xml:space="preserve" text-anchor="middle" x="477.58" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">물리 추종 Collider</text>
 </g>
 
 <g id="node4" class="node">
 <title>n3</title>
 <path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M697.46,-130.84C697.46,-130.84 610.21,-130.84 610.21,-130.84 604.21,-130.84 598.21,-124.84 598.21,-118.84 598.21,-118.84 598.21,-91 598.21,-91 598.21,-85 604.21,-79 610.21,-79 610.21,-79 697.46,-79 697.46,-79 703.46,-79 709.46,-85 709.46,-91 709.46,-91 709.46,-118.84 709.46,-118.84 709.46,-124.84 703.46,-130.84 697.46,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="653.84" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">양손 IK · 충돌</text>
+<text xml:space="preserve" text-anchor="middle" x="653.84" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Hit Point · IK</text>
 </g>
 
 <g id="node5" class="node">
 <title>n4</title>
 <path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M834.14,-130.84C834.14,-130.84 766.46,-130.84 766.46,-130.84 760.46,-130.84 754.46,-124.84 754.46,-118.84 754.46,-118.84 754.46,-91 754.46,-91 754.46,-85 760.46,-79 766.46,-79 766.46,-79 834.14,-79 834.14,-79 840.14,-79 846.14,-85 846.14,-91 846.14,-91 846.14,-118.84 846.14,-118.84 846.14,-124.84 840.14,-130.84 834.14,-130.84"/>
-<text xml:space="preserve" text-anchor="middle" x="800.3" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">실시간 검술</text>
+<text xml:space="preserve" text-anchor="middle" x="800.3" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">반응 · 넉백</text>
 </g>
 
 <g id="node6" class="node">
 <title>support</title>
 <path fill="#eef6f8" stroke="#6d9bb1" stroke-width="1.7" stroke-dasharray="5,2" d="M144.98,-51.84C144.98,-51.84 12,-51.84 12,-51.84 6,-51.84 0,-45.84 0,-39.84 0,-39.84 0,-12 0,-12 0,-6 6,0 12,0 12,0 144.98,0 144.98,0 150.98,0 156.98,-6 156.98,-12 156.98,-12 156.98,-39.84 156.98,-39.84 156.98,-45.84 150.98,-51.84 144.98,-51.84"/>
-<text xml:space="preserve" text-anchor="middle" x="78.49" y="-22.02" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="13.00" fill="#486581">Animator · Physics 상태</text>
+<text xml:space="preserve" text-anchor="middle" x="78.49" y="-22.02" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="13.00" fill="#486581">Rig · Joint Damping</text>
 </g>
 </g>
 </svg>

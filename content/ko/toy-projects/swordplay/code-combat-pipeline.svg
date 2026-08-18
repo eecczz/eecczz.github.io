@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <defs>
+    <style>
+      .ui { font-family: Inter, "Segoe UI", sans-serif; }
+      .code { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; font-size: 17px; }
+      .ln { fill: #66707b; text-anchor: end; }
+      .tx { fill: #d7dae0; }
+      .kw { fill: #c586c0; }
+      .st { fill: #ce9178; }
+      .fn { fill: #dcdcaa; }
+      .ty { fill: #4ec9b0; }
+      .num { fill: #b5cea8; }
+    </style>
+  </defs>
+  <rect width="1280" height="760" rx="14" fill="#181a1f"/>
+  <rect width="1280" height="54" rx="14" fill="#22252b"/>
+  <rect y="42" width="1280" height="12" fill="#22252b"/>
+  <circle cx="27" cy="27" r="7" fill="#ff5f57"/><circle cx="50" cy="27" r="7" fill="#febc2e"/><circle cx="73" cy="27" r="7" fill="#28c840"/>
+  <text x="104" y="34" class="ui" font-size="18" fill="#c7cbd1">Swordplay · focused implementation evidence</text>
+
+  <rect x="24" y="76" width="1232" height="190" rx="8" fill="#1e2026" stroke="#343842"/>
+  <rect x="24" y="76" width="1232" height="38" rx="8" fill="#282c34"/>
+  <rect x="24" y="104" width="1232" height="10" fill="#282c34"/>
+  <text x="44" y="102" class="ui" font-size="16" font-weight="700" fill="#8ecae6">PlayerWorker.cs · mouse direction → attack Blend Tree</text>
+  <rect x="88" y="128" width="1144" height="65" rx="5" fill="#13384a" opacity="0.72"/>
+  <g class="code">
+    <text x="74" y="154" class="ln">196</text><text x="94" y="154" class="tx"><tspan class="kw">if</tspan> (swing == <tspan class="num">0</tspan> &amp;&amp; !anim.GetCurrentAnimatorStateInfo(<tspan class="num">0</tspan>).IsName(<tspan class="st">"Attack"</tspan>)) {</text>
+    <text x="74" y="185" class="ln">198</text><text x="126" y="185" class="tx">anim.<tspan class="fn">SetFloat</tspan>(<tspan class="st">"tx"</tspan>, tx);  anim.<tspan class="fn">SetFloat</tspan>(<tspan class="st">"ty"</tspan>, ty);</text>
+    <text x="74" y="216" class="ln">199</text><text x="94" y="216" class="tx">}</text>
+    <text x="74" y="247" class="ln">201</text><text x="94" y="247" class="tx">tx += Input.<tspan class="fn">GetAxis</tspan>(<tspan class="st">"Mouse X"</tspan>) * sensitivity;</text>
+  </g>
+
+  <rect x="24" y="288" width="1232" height="250" rx="8" fill="#1e2026" stroke="#343842"/>
+  <rect x="24" y="288" width="1232" height="38" rx="8" fill="#282c34"/>
+  <rect x="24" y="316" width="1232" height="10" fill="#282c34"/>
+  <text x="44" y="314" class="ui" font-size="16" font-weight="700" fill="#8ecae6">PlayerWorker.cs · contact point → reaction Blend Tree</text>
+  <rect x="88" y="341" width="1144" height="127" rx="5" fill="#4a2730" opacity="0.64"/>
+  <g class="code">
+    <text x="74" y="368" class="ln">426</text><text x="94" y="368" class="tx"><tspan class="ty">Vector3</tspan> hitpoint = Quaternion.<tspan class="fn">Euler</tspan>(<tspan class="kw">new</tspan> Vector3(<tspan class="num">0</tspan>, -transform.rotation.eulerAngles.y, <tspan class="num">0</tspan>))</text>
+    <text x="74" y="399" class="ln"></text><text x="286" y="399" class="tx">* (collision.contacts[<tspan class="num">0</tspan>].point - (transform.position + Vector3.up));</text>
+    <text x="74" y="440" class="ln">427</text><text x="94" y="440" class="tx">anim.<tspan class="fn">SetFloat</tspan>(<tspan class="st">"cx"</tspan>, Mathf.<tspan class="fn">Clamp</tspan>(hitpoint.x, -<tspan class="num">1</tspan>, <tspan class="num">1</tspan>));</text>
+    <text x="74" y="471" class="ln">428</text><text x="94" y="471" class="tx">anim.<tspan class="fn">SetFloat</tspan>(<tspan class="st">"cy"</tspan>, Mathf.<tspan class="fn">Clamp</tspan>(hitpoint.y, <tspan class="num">0</tspan>, <tspan class="num">1</tspan>));</text>
+  </g>
+
+  <rect x="24" y="560" width="1232" height="172" rx="8" fill="#1e2026" stroke="#343842"/>
+  <rect x="24" y="560" width="1232" height="38" rx="8" fill="#282c34"/>
+  <rect x="24" y="588" width="1232" height="10" fill="#282c34"/>
+  <text x="44" y="586" class="ui" font-size="16" font-weight="700" fill="#8ecae6">SampleScene.unity · physical target follower</text>
+  <g class="code">
+    <text x="74" y="630" class="ln">36158</text><text x="94" y="630" class="tx">PositionDrive:  Spring: <tspan class="num">1000</tspan>  Damper: <tspan class="num">50</tspan></text>
+    <text x="74" y="671" class="ln">36166</text><text x="94" y="671" class="tx">RotationDrive:  Spring: <tspan class="num">1000</tspan>  Damper: <tspan class="num">50</tspan></text>
+    <text x="74" y="712" class="ln">36174</text><text x="94" y="712" class="tx">Target: {fileID: 99810556013693266}</text>
+  </g>
+</svg>
