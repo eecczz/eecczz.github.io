@@ -11,6 +11,14 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 캡스톤 · FastAPI/음성 파이프라인/GraphRAG/크롤러 운영</span><span><b>검증</b> 캡스톤 최우수상 · 전북도지사 표창</span></div>
 </div>
 
+## 주요 화면
+
+도청·시군 정보를 질문하면 검색 근거를 바탕으로 답변하고, 음성 대화 중에는 아바타 상태와 사용자 발화 흐름을 함께 표시합니다.
+
+![도청 정보를 답변하는 음성 챗봇 대화 화면](detail-avatar.png)
+
+![음성 응답 상태를 보여주는 챗봇 아바타 화면](featured.png)
+
 ## 트러블 슈팅
 
 ### 1. AI가 말하는 중에도 사용자의 새 발화를 받아야 함
