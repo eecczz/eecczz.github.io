@@ -429,11 +429,12 @@ body {
 
 .case-study-lead p {
   margin: 0;
+  color: var(--portfolio-ink);
   font-size: 1.03rem;
   line-height: 1.7;
 }
 
-.case-study-kicker {
+.case-study-lead .case-study-kicker {
   margin-bottom: 0.55rem !important;
   color: var(--portfolio-cyan);
   font-size: 0.75rem !important;
