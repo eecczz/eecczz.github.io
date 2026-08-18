@@ -11,6 +11,21 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> Backend 역할 · TourAPI proxy/데이터 흐름/Trust Score/GPS 검증</span><span><b>검증</b> Web→React Native 확장 프로토타입</span></div>
 </div>
 
+## 주요 화면
+
+홈에서는 현재 위치를 기준으로 주변 코스를 제안하고, 등록 코스·수행자 수와 새로 열린 코스를 한 화면에 배치했습니다. 사용자는 스타일·시간·이동 방식으로 스마트 코스를 만들거나 실제 이용자가 등록한 코스를 바로 탐색할 수 있습니다. 코스 카드에서는 거리·경유지 수·테마를 먼저 비교한 뒤 상세 화면으로 진입합니다.
+
+<div class="screen-gallery screen-gallery--portrait">
+  <figure>
+    <img src="detail-home.webp" alt="현재 위치와 새로 열린 코스를 보여주는 TRIPICK 홈 화면">
+    <figcaption>현재 위치 추천과 스마트 코스 진입</figcaption>
+  </figure>
+  <figure>
+    <img src="detail-courses.webp" alt="전주의 시장·한옥마을·예술마을 코스를 탐색하는 화면">
+    <figcaption>거리·경유지·테마를 비교하는 코스 목록</figcaption>
+  </figure>
+</div>
+
 ## 트러블 슈팅
 
 ### 1. TourAPI CORS·키 형식·실패가 웹과 앱에서 다르게 발생
