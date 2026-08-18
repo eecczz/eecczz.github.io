@@ -11,6 +11,16 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 과제 · Agent loop/Tool Registry/API/fallback</span><span><b>검증</b> CLI trace 및 FastAPI endpoint 검증</span></div>
 </div>
 
+## 주요 화면
+
+사용자가 지역·가격·목적을 자연어로 입력하면 Agent가 조건을 정리하고 검색·필터·검증 도구를 순서대로 호출합니다. 최종 추천 화면과 내부 ReAct trace를 함께 남겨 결과뿐 아니라 도구 선택 과정도 확인할 수 있게 했습니다.
+
+![자연어 조건을 입력하고 맛집 추천을 받는 화면](featured.png)
+
+![추천 근거와 후보를 정리한 결과 화면](detail-result.png)
+
+![Agent의 Thought·Action·Observation 실행 기록](detail-trace.png)
+
 ## 트러블 슈팅
 
 ### 1. 외부 API key가 없으면 과제 전체를 실행할 수 없음
