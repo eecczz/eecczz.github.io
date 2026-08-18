@@ -11,6 +11,16 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · 미디어 UX/API/도메인/클라우드 파이프라인</span><span><b>검증</b> 업로드·변환·조회·재생 흐름 구현</span></div>
 </div>
 
+## 주요 화면
+
+영상 목록·지연 preview·상세 player·업로드 화면을 하나의 서비스로 구성했습니다. 사용자는 목록에서 콘텐츠를 탐색하고, hover preview로 장면을 확인한 뒤 상세 재생 화면으로 이동하거나 multipart 업로드를 시작할 수 있습니다.
+
+![영상 카드와 카테고리로 구성한 콘텐츠 탐색 화면](detail-library.png)
+
+![영상 정보와 썸네일·파일을 입력하는 업로드 화면](detail-upload.png)
+
+![재생 영상·추천 목록·댓글을 함께 제공하는 상세 player](detail-player.png)
+
 ## 트러블 슈팅
 
 ### 1. 대용량 영상을 Spring 서버가 직접 받아 변환하면 요청이 오래 점유됨
