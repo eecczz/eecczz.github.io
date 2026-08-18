@@ -11,6 +11,16 @@ featured: true
   <div class="case-study-meta"><span><b>역할</b> 개인 프로젝트 · XR 입력/전투/씬 로직</span><span><b>검증</b> Meta XR 기기 프로토타입</span></div>
 </div>
 
+## 주요 화면
+
+XR 컨트롤러의 위치·회전을 손과 무기에 연결하고, 오브젝트 상호작용과 적 피격이 같은 공간 좌표계에서 이어지도록 구현했습니다.
+
+![XR 캐릭터와 무기 상호작용 장면](featured.png)
+
+![컨트롤러로 공간 오브젝트를 조작하는 화면](detail-unity.png)
+
+![적과 근접 전투를 진행하는 XR 시점](detail-xr.png)
+
 ## 트러블 슈팅
 
 ### 1. 화면 입력과 달리 XR pose는 매 프레임 위치·회전 노이즈를 포함
