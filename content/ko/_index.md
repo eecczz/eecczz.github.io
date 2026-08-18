@@ -16,7 +16,7 @@ sections:
             RTSP/NPU 기반 실시간 관제까지 구현해 온 황선우의 개발 포트폴리오입니다.
           </p>
           <div class="portfolio-proof-line">
-            <span>GPA 4.0/4.5</span><span>총장상 · 전체 석차 1위</span><span>캡스톤 최우수상 · 도지사 표창</span>
+            <span>학점 4.0/4.5</span><span>총장상 · 전체 석차 1위</span><span>캡스톤 최우수상 · 도지사 표창</span>
           </div>
           <div class="portfolio-cta-row">
             <a href="./contest-projects/">프로젝트 사례 보기</a>
@@ -29,7 +29,7 @@ sections:
 
   - block: markdown
     content:
-      title: 핵심 프로젝트 3선
+      title: 핵심 프로젝트 4선
       subtitle: 제가 직접 맡은 범위의 문제와 해결 과정, 검증 결과를 먼저 보여줍니다.
       text: |
         <div class="case-study-grid">
@@ -50,6 +50,12 @@ sections:
             <span class="case-study-label">SPRING BOOT · AWS</span>
             <h3>Streaming API</h3>
             <p><b>문제</b> 대용량 업로드·변환과 목록 preview가 서버·브라우저 자원을 낭비하지 않게 했습니다. <b>기여</b> React 미디어 UX, Spring API, S3 multipart와 Lambda·MediaConvert HLS 파이프라인을 구현했습니다. <b>검증</b> 탐색·업로드·변환·재생 흐름 연결.</p>
+          </a>
+          <a class="case-study-card" href="./toy-projects/shopping-mall/">
+            <img src="./toy-projects/shopping-mall/architecture.svg" alt="쇼핑몰 백엔드 시스템 흐름">
+            <span class="case-study-label">SPRING BOOT · JPA · QUERYDSL</span>
+            <h3>쇼핑몰 백엔드</h3>
+            <p><b>문제</b> Querydsl Q타입 생성 오류와 장바구니의 회원·화면 결합도를 추적했습니다. <b>기여</b> 상품 조회, 장바구니·주문, PortOne 테스트 결제 흐름을 구현했습니다. <b>검증</b> 전체 구매 흐름과 jcloud Ubuntu 배포.</p>
           </a>
         </div>
     design:
