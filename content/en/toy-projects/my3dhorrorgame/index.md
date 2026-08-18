@@ -3,15 +3,9 @@ title: My 3D Horror Game
 date: 2026-07-01
 summary: 'A Unity 3D horror prototype experimenting with first-person exploration, tense atmosphere, pursuit flow, and simple interactions.'
 highlights:
-  - title: Horror Character
-    text: Used a close-range character image to build tension.
+  - title: First-person Encounter
+    text: An actual gameplay capture of the player encountering an enemy in the hospital corridor.
     image: featured.webp
-  - title: First-person Exploration
-    text: Tested player view, movement, and perspective transitions.
-    image: https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80
-  - title: Atmosphere Direction
-    text: Built a horror mood with dark scenes, timing, and interaction events.
-    image: https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960
 links:
   - name: GitHub
     url: https://github.com/eecczz/my3dhorrorgame
@@ -25,20 +19,8 @@ A Unity 3D horror prototype experimenting with first-person exploration, tense a
 
 ## Key Implementation Points
 
-### Horror Character
+### First-person Encounter
 
-![Horror Character](featured.webp)
+![The player encounters an enemy while exploring a hospital corridor](featured.webp)
 
-Used a close-range character image to build tension.
-
-### First-person Exploration
-
-![First-person Exploration](https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=720&q=80)
-
-Tested player view, movement, and perspective transitions.
-
-### Atmosphere Direction
-
-![Atmosphere Direction](https://commons.wikimedia.org/wiki/Special:FilePath/Abandoned_Room_%28072824%29.jpg?width=960)
-
-Built a horror mood with dark scenes, timing, and interaction events.
+This in-game scene shows the first-person exploration flow and the enemy encounter staged in a narrow hospital corridor.
