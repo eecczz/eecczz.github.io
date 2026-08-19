@@ -1,5 +1,5 @@
 ---
-title: ClipAnalyst — 스포츠 영상 분석
+title: 스포츠 분석 AI
 date: 2026-07-16
 summary: 'YouTube 영상의 선택 구간만 추출하고 FastAPI가 AI 분석 결과를 SSE로 전달하는 Next.js 기반 MVP입니다.'
 featured: true
@@ -47,7 +47,7 @@ provider adapter로 Gemini/Kimi 교체 지점을 분리했습니다.
 
 ## 시스템 흐름
 
-![ClipAnalyst — 스포츠 영상 분석 시스템 흐름](architecture.svg)
+![스포츠 분석 AI 시스템 흐름](architecture.svg)
 
 1. 웹에서 YouTube 영상을 검색하고 구간을 선택합니다.
 2. Next.js API가 영상 메타데이터와 분석 요청을 정리합니다.
