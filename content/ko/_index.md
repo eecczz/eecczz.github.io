@@ -19,8 +19,8 @@ sections:
             <span>학점 4.0/4.5</span><span>총장상 (당해 석차 1위)</span><span>캡스톤 최우수상 · 도지사 표창</span>
           </div>
           <div class="portfolio-cta-row">
-            <a href="./projects/">프로젝트 사례 보기</a>
-            <a href="https://github.com/pipecat-ai/pipecat/pull/4455" target="_blank" rel="noopener noreferrer">오픈소스 기여</a>
+            <a href="./projects/">프로젝트 보기</a>
+            <a href="https://github.com/pipecat-ai/pipecat/pull/4455" target="_blank" rel="noopener noreferrer">오픈소스 기여 보기</a>
             <a href="https://github.com/eecczz">GitHub</a>
             <a href="/uploads/portfolio_2026_08.pdf">Resume PDF</a>
           </div>
