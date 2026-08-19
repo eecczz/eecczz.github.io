@@ -1,14 +1,14 @@
 ---
-title: 토이 프로젝트
+title: 개인 프로젝트
 date: 2026-07-01
 type: landing
 
 sections:
   - block: collection
     content:
-      title: 토이 프로젝트
+      title: 개인 프로젝트
       subtitle:
-      text: 개인 학습과 기능 검증을 위해 직접 구현한 프로젝트입니다.
+      text: 기획·개발·배포를 직접 맡아 기술을 검증한 개인 프로젝트입니다.
       count: 20
       offset: 0
       order: desc
