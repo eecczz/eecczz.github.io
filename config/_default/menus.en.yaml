@@ -66,7 +66,7 @@ main:
     parent: "Toy Projects"
     weight: 38
 
-  - name: "ClipAnalyst"
+  - name: "Sports Analysis AI"
     url: "/toy-projects/sports-analyzer/"
     parent: "Toy Projects"
     weight: 39

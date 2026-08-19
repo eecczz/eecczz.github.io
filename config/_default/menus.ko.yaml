@@ -66,7 +66,7 @@ main:
     parent: "개인 프로젝트"
     weight: 38
 
-  - name: "ClipAnalyst"
+  - name: "스포츠 분석 AI"
     url: "/toy-projects/sports-analyzer/"
     parent: "개인 프로젝트"
     weight: 39
