@@ -1749,3 +1749,27 @@ body {
 .dark .project-github-link:hover {
   color: #9cecf5;
 }
+
+html.dark .article-style .case-study-lead,
+body.dark .article-style .case-study-lead {
+  background: var(--portfolio-ice) !important;
+}
+
+html.dark .article-style .case-study-lead p,
+body.dark .article-style .case-study-lead p,
+html.dark .article-style .case-study-lead p strong,
+body.dark .article-style .case-study-lead p strong {
+  color: #14324a !important;
+}
+
+html.dark .article-style .case-study-lead .case-study-kicker,
+body.dark .article-style .case-study-lead .case-study-kicker {
+  color: #007e94 !important;
+}
+
+html.dark .article-style .case-study-lead .case-study-meta span,
+body.dark .article-style .case-study-lead .case-study-meta span,
+html.dark .article-style .case-study-lead .case-study-meta span b,
+body.dark .article-style .case-study-lead .case-study-meta span b {
+  color: #486581 !important;
+}
