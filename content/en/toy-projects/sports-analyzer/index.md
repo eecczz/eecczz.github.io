@@ -1,5 +1,5 @@
 ---
-title: ClipAnalyst - Sports Video Analysis
+title: Sports Analysis AI
 date: 2026-07-01
 summary: 'A Next.js + FastAPI MVP that selects YouTube sports clips and streams AI-based motion analysis.'
 highlights:
