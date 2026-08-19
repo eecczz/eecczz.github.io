@@ -10,13 +10,13 @@ sections:
       text: |
         <section class="portfolio-hero-v2">
           <p class="portfolio-kicker">BACKEND · AI SERVICE · EDGE-AI ENGINEER</p>
-          <h1>모델을 실제 서비스와<br>현장 시스템으로 연결합니다.</h1>
+          <h1>백엔드·AI·게임을 넘나들며,<br>호기심을 실제 프로젝트로 구현합니다.</h1>
           <p class="portfolio-hero-copy">
             Spring Boot·FastAPI API, AWS 미디어 파이프라인, GraphRAG 음성 서비스,
             RTSP/NPU 기반 실시간 관제까지 구현해 온 황선우의 개발 포트폴리오입니다.
           </p>
           <div class="portfolio-proof-line">
-            <span>학점 4.0/4.5</span><span>총장상 (당해 석차 1위)</span><span>캡스톤 최우수상 · 도지사 표창</span>
+            <span>학점 4.0/4.5</span><span>총장상 (당해 석차 1위)</span><span>캡스톤 최우수상 · 도지사 표창</span><span>외주 · 인턴 · 연구 경험</span>
           </div>
           <div class="portfolio-cta-row">
             <a href="./projects/">프로젝트 보기</a>
