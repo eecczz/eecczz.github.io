@@ -1713,3 +1713,26 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.project-github-link {
+  align-items: center;
+  color: #0d3754;
+  display: inline-flex;
+  font-size: 1.05rem;
+  line-height: 1;
+  margin-left: .55rem;
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
+.project-github-link:hover {
+  color: #00a9c0;
+}
+
+.dark .project-github-link {
+  color: #f8fcfd;
+}
+
+.dark .project-github-link:hover {
+  color: #9cecf5;
+}
