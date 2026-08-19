@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg role="img" aria-label="프로젝트 시스템 흐름" width="882pt" height="171pt"
+ viewBox="0.00 0.00 882.00 171.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(20.16 151)">
+<title>G</title>
+
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;n1</title>
+<path fill="none" stroke="#00a7c4" stroke-width="2" d="M113.15,-104.92C113.15,-104.92 179.15,-104.92 179.15,-104.92"/>
+<polygon fill="#00a7c4" stroke="#00a7c4" stroke-width="2" points="179.15,-107.44 186.35,-104.92 179.15,-102.4 179.15,-107.44"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>n1&#45;&gt;n2</title>
+<path fill="none" stroke="#00a7c4" stroke-width="2" d="M352.34,-104.92C352.34,-104.92 385.9,-104.92 385.9,-104.92"/>
+<polygon fill="#00a7c4" stroke="#00a7c4" stroke-width="2" points="385.9,-107.44 393.1,-104.92 385.9,-102.4 385.9,-107.44"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>n2&#45;&gt;n3</title>
+<path fill="none" stroke="#00a7c4" stroke-width="2" d="M562.55,-104.92C562.55,-104.92 595.69,-104.92 595.69,-104.92"/>
+<polygon fill="#00a7c4" stroke="#00a7c4" stroke-width="2" points="595.69,-107.44 602.89,-104.92 595.69,-102.4 595.69,-107.44"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>n2&#45;&gt;support</title>
+<path fill="none" stroke="#6d9bb1" stroke-width="2" stroke-dasharray="5,2" d="M479.34,-78.17C479.34,-55.26 479.34,-25.92 479.34,-25.92 479.34,-25.92 262.85,-25.92 145.73,-25.92"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>n3&#45;&gt;n4</title>
+<path fill="none" stroke="#00a7c4" stroke-width="2" d="M716.57,-104.92C716.57,-104.92 749.84,-104.92 749.84,-104.92"/>
+<polygon fill="#00a7c4" stroke="#00a7c4" stroke-width="2" points="749.84,-107.44 757.04,-104.92 749.84,-102.4 749.84,-107.44"/>
+</g>
+
+<g id="node1" class="node">
+<title>n0</title>
+<path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M100.74,-130.84C100.74,-130.84 44.31,-130.84 44.31,-130.84 38.31,-130.84 32.31,-124.84 32.31,-118.84 32.31,-118.84 32.31,-91 32.31,-91 32.31,-85 38.31,-79 44.31,-79 44.31,-79 100.74,-79 100.74,-79 106.74,-79 112.74,-85 112.74,-91 112.74,-91 112.74,-118.84 112.74,-118.84 112.74,-124.84 106.74,-130.84 100.74,-130.84"/>
+<text xml:space="preserve" text-anchor="middle" x="72.53" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">도민 음성</text>
+</g>
+
+<g id="node2" class="node">
+<title>n1</title>
+<path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M339.73,-130.84C339.73,-130.84 202.06,-130.84 202.06,-130.84 196.06,-130.84 190.06,-124.84 190.06,-118.84 190.06,-118.84 190.06,-91 190.06,-91 190.06,-85 196.06,-79 202.06,-79 202.06,-79 339.73,-79 339.73,-79 345.73,-79 351.73,-85 351.73,-91 351.73,-91 351.73,-118.84 351.73,-118.84 351.73,-124.84 345.73,-130.84 339.73,-130.84"/>
+<text xml:space="preserve" text-anchor="middle" x="270.89" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">VAD · STT · Socket</text>
+</g>
+
+<g id="node3" class="node">
+<title>n2</title>
+<path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M549.74,-130.84C549.74,-130.84 408.73,-130.84 408.73,-130.84 402.73,-130.84 396.73,-124.84 396.73,-118.84 396.73,-118.84 396.73,-91 396.73,-91 396.73,-85 402.73,-79 408.73,-79 408.73,-79 549.74,-79 549.74,-79 555.74,-79 561.74,-85 561.74,-91 561.74,-91 561.74,-118.84 561.74,-118.84 561.74,-124.84 555.74,-130.84 549.74,-130.84"/>
+<text xml:space="preserve" text-anchor="middle" x="479.23" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">FastAPI · GraphRAG</text>
+</g>
+
+<g id="node4" class="node">
+<title>n3</title>
+<path fill="#f8fbfd" stroke="#7aa7bd" stroke-width="1.7" d="M703.91,-130.84C703.91,-130.84 618.74,-130.84 618.74,-130.84 612.74,-130.84 606.74,-124.84 606.74,-118.84 606.74,-118.84 606.74,-91 606.74,-91 606.74,-85 612.74,-79 618.74,-79 618.74,-79 703.91,-79 703.91,-79 709.91,-79 715.91,-85 715.91,-91 715.91,-91 715.91,-118.84 715.91,-118.84 715.91,-124.84 709.91,-130.84 703.91,-130.84"/>
+<text xml:space="preserve" text-anchor="middle" x="661.32" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">Qwen · TTS</text>
+</g>
+
+<g id="node5" class="node">
+<title>n4</title>
+<path fill="#eaf6f8" stroke="#00a7c4" stroke-width="1.7" d="M829.34,-130.84C829.34,-130.84 772.91,-130.84 772.91,-130.84 766.91,-130.84 760.91,-124.84 760.91,-118.84 760.91,-118.84 760.91,-91 760.91,-91 760.91,-85 766.91,-79 772.91,-79 772.91,-79 829.34,-79 829.34,-79 835.34,-79 841.34,-85 841.34,-91 841.34,-91 841.34,-118.84 841.34,-118.84 841.34,-124.84 835.34,-130.84 829.34,-130.84"/>
+<text xml:space="preserve" text-anchor="middle" x="801.12" y="-100.42" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="15.00" fill="#243b53">음성 답변</text>
+</g>
+
+<g id="node6" class="node">
+<title>support</title>
+<path fill="#eef6f8" stroke="#6d9bb1" stroke-width="1.7" stroke-dasharray="5,2" d="M133.06,-51.84C133.06,-51.84 12,-51.84 12,-51.84 6,-51.84 0,-45.84 0,-39.84 0,-39.84 0,-12 0,-12 0,-6 6,0 12,0 12,0 133.06,0 133.06,0 139.06,0 145.06,-6 145.06,-12 145.06,-12 145.06,-39.84 145.06,-39.84 145.06,-45.84 139.06,-51.84 133.06,-51.84"/>
+<text xml:space="preserve" text-anchor="middle" x="72.53" y="-22.02" font-family="Noto Sans KR, Pretendard, sans-serif" font-size="13.00" fill="#486581">Crawl4AI · BGE&#45;M3</text>
+</g>
+</g>
+</svg>
