@@ -9,9 +9,9 @@ sections:
       text: |
         <section class="portfolio-hero-v2">
           <p class="portfolio-kicker">BACKEND · AI SERVICE · EDGE-AI ENGINEER</p>
-          <h1>Connecting models to<br>real services and field systems.</h1>
+          <h1>Exploring backend, AI, and games—<br>turning curiosity into real projects.</h1>
           <p class="portfolio-hero-copy">Spring Boot and FastAPI APIs, AWS media pipelines, GraphRAG voice services, and real-time RTSP/NPU monitoring: this is Hwang Seon-woo's development portfolio.</p>
-          <div class="portfolio-proof-line"><span>GPA 4.0/4.5</span><span>President's Award (Top Rank of the Year)</span><span>Capstone Grand Prize · Governor's Citation</span></div>
+          <div class="portfolio-proof-line"><span>GPA 4.0/4.5</span><span>President's Award (Top Rank of the Year)</span><span>Capstone Grand Prize · Governor's Citation</span><span>Contract · Internship · Research Experience</span></div>
           <div class="portfolio-cta-row"><a href="./projects/">View Projects</a><a href="https://github.com/pipecat-ai/pipecat/pull/4455" target="_blank" rel="noopener noreferrer">View Open Source Contribution</a><a href="https://github.com/eecczz">GitHub</a><a href="/uploads/portfolio_2026_08.pdf">Resume PDF</a></div>
         </section>
     design:
