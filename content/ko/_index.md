@@ -19,7 +19,7 @@ sections:
             <span>학점 4.0/4.5</span><span>총장상 (당해 석차 1위)</span><span>캡스톤 최우수상 · 도지사 표창</span>
           </div>
           <div class="portfolio-cta-row">
-            <a href="./contest-projects/">프로젝트 사례 보기</a>
+            <a href="./projects/">프로젝트 사례 보기</a>
             <a href="https://github.com/eecczz">GitHub</a>
             <a href="/uploads/portfolio_2026_08.pdf">Resume PDF</a>
           </div>
@@ -40,7 +40,7 @@ sections:
             <p>전북도청·시군 데이터를 GraphRAG로 검색하고 STT/TTS로 전달하는 공공 음성 정보 서비스입니다.</p>
           </a>
           <a class="case-study-card" href="./contest-projects/smartcctv-fall/">
-            <img src="./contest-projects/smartcctv-fall/detail-event.png" alt="실제 관제 환경의 낙상 이벤트 탐지 화면">
+            <img src="./contest-projects/smartcctv-fall/featured.png" alt="실제 관제 환경의 낙상 이벤트 탐지 화면">
             <span class="case-study-label">BACKEND · AI · SYSTEM CASE STUDY</span>
             <h3>Smart CCTV 낙상 감지</h3>
             <p>자세 추정·낙상 객체 탐지·현장 맥락 zero-shot의 3단 검증으로 요양원 RTSP 오탐을 줄인 Edge-AI 관제 프로젝트입니다.</p>
@@ -80,8 +80,9 @@ sections:
       text: |
         <p>나머지 프로젝트는 개수로 역량을 부풀리지 않고, 지원 직무나 면접 질문에 맞춰 꺼내 볼 수 있는 보조 사례로 정리했습니다.</p>
         <div class="portfolio-link-list">
+          <a href="./projects/">프로젝트 전체 보기 →</a>
           <a href="./contest-projects/">팀·수상·현장 사례 전체 보기 →</a>
-          <a href="./toy-projects/">개인·기술 검증 사례 전체 보기 →</a>
+          <a href="./toy-projects/">개인 프로젝트 전체 보기 →</a>
           <a href="./toy-projects/swordplay/">Unity 수학·IK 대표 사례 →</a>
           <a href="./contact/">Contact →</a>
         </div>
