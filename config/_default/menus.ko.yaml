@@ -9,7 +9,7 @@ main:
     url: "/about/"
     weight: 20
 
-  - name: "토이 프로젝트"
+  - name: "개인 프로젝트"
     url: "/toy-projects/"
     weight: 30
 
@@ -33,47 +33,47 @@ main:
 
   - name: "검술대련"
     url: "/toy-projects/swordplay/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 31
 
   - name: "MetaXR"
     url: "/toy-projects/metaxr-project/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 32
 
   - name: "3D Horror Game"
     url: "/toy-projects/my3dhorrorgame/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 33
 
   - name: "쇼핑몰 프로젝트"
     url: "/toy-projects/shopping-mall/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 34
 
   - name: "Streaming API"
     url: "/toy-projects/streaming-api/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 35
 
   - name: "Job API"
     url: "/toy-projects/job-api/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 37
 
   - name: "My Movie Web"
     url: "/toy-projects/my-movie-web/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 38
 
   - name: "ClipAnalyst"
     url: "/toy-projects/sports-analyzer/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 39
 
   - name: "맛집 ReAct Agent"
     url: "/toy-projects/restaurant-agent/"
-    parent: "토이 프로젝트"
+    parent: "개인 프로젝트"
     weight: 40
 
   - name: "SpeakUp"
