@@ -599,6 +599,19 @@ body {
   color: #edf7fa;
 }
 
+/* This panel intentionally stays light in dark mode, so preserve its readable light-theme ink. */
+.dark .case-study-lead p {
+  color: var(--portfolio-ink) !important;
+}
+
+.dark .case-study-lead .case-study-kicker {
+  color: var(--portfolio-cyan) !important;
+}
+
+.dark .case-study-lead .case-study-meta span {
+  color: #486581 !important;
+}
+
 @media (max-width: 760px) {
   .portfolio-hero-v2 {
     margin: 1.6rem auto 1rem;
