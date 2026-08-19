@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Smart CCTV Fall Detection System Flow</title>
+  <desc id="desc">RTSP camera frames pass through pose estimation, a fall detector, context validation, and an alert dashboard.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#00a7c4"/></marker></defs>
+  <rect width="1200" height="430" rx="16" fill="#f5fbfc"/>
+  <text x="60" y="68" fill="#0d3857" font-family="Arial, sans-serif" font-size="30" font-weight="700">Smart CCTV Fall Detection · System Flow</text>
+  <text x="60" y="104" fill="#537083" font-family="Arial, sans-serif" font-size="18">Three-stage validation reduces false positives from occlusion, distance, sitting and bending.</text>
+  <g font-family="Arial, sans-serif">
+    <g><rect x="55" y="178" width="182" height="116" rx="14" fill="#103653"/><text x="146" y="225" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">RTSP Camera</text><text x="146" y="256" text-anchor="middle" fill="#bfe9ef" font-size="17">Live CCTV frames</text></g>
+    <g><rect x="288" y="178" width="182" height="116" rx="14" fill="#e6f6f8" stroke="#00a7c4" stroke-width="2"/><text x="379" y="221" text-anchor="middle" fill="#103653" font-size="21" font-weight="700">Pose Estimation</text><text x="379" y="253" text-anchor="middle" fill="#42697d" font-size="16">Candidate event</text></g>
+    <g><rect x="521" y="178" width="182" height="116" rx="14" fill="#e6f6f8" stroke="#00a7c4" stroke-width="2"/><text x="612" y="221" text-anchor="middle" fill="#103653" font-size="20" font-weight="700">Fall Detector</text><text x="612" y="253" text-anchor="middle" fill="#42697d" font-size="16">Object verification</text></g>
+    <g><rect x="754" y="178" width="182" height="116" rx="14" fill="#e6f6f8" stroke="#00a7c4" stroke-width="2"/><text x="845" y="220" text-anchor="middle" fill="#103653" font-size="19" font-weight="700">Context Validation</text><text x="845" y="253" text-anchor="middle" fill="#42697d" font-size="16">Zero-shot prompts</text></g>
+    <g><rect x="987" y="178" width="158" height="116" rx="14" fill="#0b869d"/><text x="1066" y="221" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Alert</text><text x="1066" y="253" text-anchor="middle" fill="#d6f7fb" font-size="16">Snapshot &amp; review</text></g>
+  </g>
+  <g stroke="#00a7c4" stroke-width="3" marker-end="url(#arrow)"><path d="M238 236H282"/><path d="M471 236H515"/><path d="M704 236H748"/><path d="M937 236H981"/></g>
+  <rect x="55" y="340" width="1090" height="48" rx="10" fill="#d9f0f3"/><text x="600" y="371" text-anchor="middle" fill="#20556d" font-family="Arial, sans-serif" font-size="18">Only validated events are sent to the operator for confirmation or false-positive feedback.</text>
+</svg>
