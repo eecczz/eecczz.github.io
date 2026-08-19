@@ -1,14 +1,14 @@
 ---
-title: Major & Competition Projects
+title: Team, Award & Field Projects
 date: 2026-07-01
 type: landing
 
 sections:
   - block: collection
     content:
-      title: Major & Competition Projects
+      title: Team, Award & Field Projects
       subtitle:
-      text: Projects built through coursework, capstone work, competitions, and club activities.
+      text: Cases built through capstone work, competitions, collaborative projects, and Edge-AI field internships.
       count: 20
       offset: 0
       order: desc
