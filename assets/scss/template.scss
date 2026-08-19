@@ -796,6 +796,7 @@ body {
 #search-box .input-group-text::-webkit-scrollbar {
   display: none;
 }
+
   background-color: #f7fafc;
 }
 
@@ -1600,4 +1601,27 @@ body {
 #search-box .input-group-prepend::-webkit-scrollbar,
 #search-box .input-group-text::-webkit-scrollbar {
   display: none;
+}
+
+// Preserve the light theme while giving article headings and body copy enough contrast in dark mode.
+.dark .article-style h2 {
+  border-bottom-color: #31536c;
+  color: #f8fcfd;
+}
+
+.dark .article-style h3 {
+  color: #9cecf5;
+}
+
+.dark .article-style p,
+.dark .article-style li {
+  color: #f0f7f9;
+}
+
+.dark .article-style strong {
+  color: #ffffff;
+}
+
+.dark .article-style a:not(.btn) {
+  color: #9cecf5;
 }
